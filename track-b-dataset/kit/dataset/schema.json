@@ -1,0 +1,284 @@
+{
+ "dataset": "da-cases",
+ "version": "1.0",
+ "generated_with": {
+  "seed": 20260918,
+  "count": 1000
+ },
+ "encoding": "UTF-8",
+ "summary": "Synthetic dealer workshop cases. The structure mirrors a production DA (Dealer Assistant) workshop planning system: one case object per workshop dossier, with its statuses, orders and workshop tasks attached. All values are invented.",
+ "files": {
+  "da-cases.json": "Array of case objects, nested.",
+  "da-cases.csv": "One flattened row per case. Lists are joined with '|'. freitext can contain newlines, so read the file with a real CSV parser.",
+  "states.json": "The workshop status vocabulary used by the cases.",
+  "schema.json": "This file."
+ },
+ "case_fields": [
+  {
+   "name": "id",
+   "type": "integer",
+   "description": "Dossier id, the case key."
+  },
+  {
+   "name": "external_ref",
+   "type": "string|null",
+   "description": "External reference, null in most cases."
+  },
+  {
+   "name": "application_id",
+   "type": "string",
+   "description": "Source application code of the case."
+  },
+  {
+   "name": "created_at",
+   "type": "datetime",
+   "description": "Case creation, 'Y-m-d H:i:s'."
+  },
+  {
+   "name": "updated_at",
+   "type": "datetime",
+   "description": "Last change."
+  },
+  {
+   "name": "canceled_at",
+   "type": "datetime|null",
+   "description": "Set when the case was cancelled; the record stays."
+  },
+  {
+   "name": "in_open_list",
+   "type": "boolean",
+   "description": "Case still on the open worklist."
+  },
+  {
+   "name": "completion_date_time",
+   "type": "datetime|null",
+   "description": "Planned or actual completion."
+  },
+  {
+   "name": "reparation_start_date_time",
+   "type": "datetime|null",
+   "description": "Repair start."
+  },
+  {
+   "name": "reparation_end_date_time",
+   "type": "datetime|null",
+   "description": "Repair end."
+  },
+  {
+   "name": "vehicle_id",
+   "type": "integer",
+   "description": "Vehicle record id."
+  },
+  {
+   "name": "contact_id",
+   "type": "integer",
+   "description": "Contact record id."
+  },
+  {
+   "name": "license_plate",
+   "type": "string",
+   "description": "Fictional plate, district codes that Germany never issues."
+  },
+  {
+   "name": "vehicle_identification_number",
+   "type": "string",
+   "description": "17 characters, fictional WMI starting with ZZ, valid ISO 3779 check digit."
+  },
+  {
+   "name": "manufacturer",
+   "type": "string",
+   "description": "Vehicle make."
+  },
+  {
+   "name": "model",
+   "type": "string",
+   "description": "Vehicle model."
+  },
+  {
+   "name": "model_type",
+   "type": "string",
+   "description": "Internal model code."
+  },
+  {
+   "name": "first_registration",
+   "type": "date",
+   "description": "First registration date."
+  },
+  {
+   "name": "mileage",
+   "type": "integer",
+   "description": "Odometer reading in km."
+  },
+  {
+   "name": "company",
+   "type": "string",
+   "description": "Company customer, empty string for private customers."
+  },
+  {
+   "name": "salutation_id",
+   "type": "integer|null",
+   "description": "Salutation code, often not maintained."
+  },
+  {
+   "name": "first_name",
+   "type": "string",
+   "description": "Contact first name, can be empty."
+  },
+  {
+   "name": "last_name",
+   "type": "string",
+   "description": "Contact last name, can be empty."
+  },
+  {
+   "name": "street",
+   "type": "string",
+   "description": "Street and house number."
+  },
+  {
+   "name": "zip_code",
+   "type": "string",
+   "description": "Postcode."
+  },
+  {
+   "name": "city",
+   "type": "string",
+   "description": "City."
+  },
+  {
+   "name": "email",
+   "type": "string|null",
+   "description": "Contact email, null in roughly one case in five."
+  },
+  {
+   "name": "phone",
+   "type": "string",
+   "description": "Mobile number, mixed formats."
+  },
+  {
+   "name": "customer_number",
+   "type": "string",
+   "description": "Customer number in the DMS."
+  },
+  {
+   "name": "note",
+   "type": "string",
+   "description": "The workshop note as the source system stores it: HTML paragraphs, some carrying a dated author prefix span."
+  },
+  {
+   "name": "freitext",
+   "type": "string",
+   "description": "The same note as plain text, paragraphs separated by newlines. This is the field the challenge works on."
+  },
+  {
+   "name": "states",
+   "type": "array",
+   "description": "Current statuses of the case, resolved inline: id, name, category_id, category, is_done. The first entry is the general case status (category 4)."
+  },
+  {
+   "name": "statables",
+   "type": "array",
+   "description": "Raw status rows: id, state_id, statable_id, statable_type, state_reason_id, changed_by, created_by, created_at, updated_at."
+  },
+  {
+   "name": "orders",
+   "type": "array",
+   "description": "Workshop orders: id, note, number, external_ref, gateway_ref, dossier_id, insurer_id, insurer_reference, auto_repair_manager_id, auto_repair_manager_reference, application_id, created_by, created_at, updated_at, order_type_id, is_sub_order, is_controlled, is_huk_relevant."
+  },
+  {
+   "name": "workshop_tasks",
+   "type": "array",
+   "description": "Planned workshop work: id, dossier_id, workshop_team_id, start_date, start_time, work_load, work_state, workshop_service_id, order_id, description. work_state: 1 in progress, 2 done, 3 new."
+  },
+  {
+   "name": "ground_truth",
+   "type": "object",
+   "description": "Synthetic labels behind the generated note: case_type (service or damage), case_kind, zones, severity, insurance_type, lifecycle_stage. Provided for scoring only. Reading it instead of the free text defeats the exercise."
+  }
+ ],
+ "csv_columns": [
+  "id",
+  "created_at",
+  "updated_at",
+  "canceled_at",
+  "in_open_list",
+  "completion_date_time",
+  "reparation_start_date_time",
+  "reparation_end_date_time",
+  "vehicle_id",
+  "contact_id",
+  "license_plate",
+  "vehicle_identification_number",
+  "manufacturer",
+  "model",
+  "model_type",
+  "first_registration",
+  "mileage",
+  "company",
+  "salutation_id",
+  "first_name",
+  "last_name",
+  "street",
+  "zip_code",
+  "city",
+  "email",
+  "phone",
+  "customer_number",
+  "state_id",
+  "state_name",
+  "state_category",
+  "state_ids",
+  "order_count",
+  "order_numbers",
+  "insurer_id",
+  "is_huk_relevant",
+  "workshop_task_count",
+  "work_load_total",
+  "gt_case_type",
+  "gt_case_kind",
+  "gt_zones",
+  "gt_severity",
+  "gt_insurance_type",
+  "gt_lifecycle_stage",
+  "freitext"
+ ],
+ "damage_zones": [
+  "Außenspiegel links",
+  "Außenspiegel rechts",
+  "Beifahrertür",
+  "Dach",
+  "Fahrertür",
+  "Heckklappe",
+  "Kotflügel hinten links",
+  "Kotflügel hinten rechts",
+  "Kotflügel vorne links",
+  "Kotflügel vorne rechts",
+  "Motorhaube",
+  "Schweller links",
+  "Schweller rechts",
+  "Stoßstange hinten",
+  "Stoßstange hinten links",
+  "Stoßstange hinten rechts",
+  "Stoßstange vorne",
+  "Stoßstange vorne links",
+  "Stoßstange vorne rechts",
+  "Tür hinten links",
+  "Tür hinten rechts",
+  "Windschutzscheibe"
+ ],
+ "damage_kinds": [
+  "Parkschaden",
+  "Auffahrunfall",
+  "Hagelschaden",
+  "Steinschlag",
+  "Vandalismus",
+  "Wildunfall",
+  "Rangierschaden"
+ ],
+ "service_kinds": [
+  "Ölwechsel",
+  "Inspektion",
+  "HU/AU",
+  "Räder und Reifen",
+  "Bremsen"
+ ]
+}

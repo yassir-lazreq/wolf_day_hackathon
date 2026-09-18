@@ -1,0 +1,1001 @@
+Case,Vehicle,Order Type,Type,Zones,Severity,Stage,Confidence
+852719,VW Tiguan · QQL-EG 396,Inspektion,service,—,,fertig,95%
+897113,VW Golf · XQM-S 510,Räder und Reifen,service,—,,abgeschlossen,95%
+847039,Ford Fiesta · QQA-CW 5800,HU/AU,service,—,,laufend,95%
+842879,Ford Focus Turnier · QQZ-LD 1,HU/AU,service,—,,fertig,95%
+860796,Audi A4 Avant · QQD-TL 7555,HU/AU,service,—,,neu,95%
+862377,BMW X1 · ZQB-G 7,Räder und Reifen,service,—,,abgeschlossen,95%
+885968,Audi Q2 · XQE-AV 89,HU/AU,service,—,,laufend,90%
+865479,Audi A1 Sportback · QQC-UA 37,Räder und Reifen,service,—,,neu,95%
+849692,Mercedes GLC · XQ-P 8707,Bremsen,service,—,,neu,90%
+834726,Ford Kuga · QQN-JC 1499,Vandalismus,damage,"FENDER_REAR_RIGHT, DOOR_FRONT_LEFT, FENDER_FRONT_RIGHT",leicht,neu,95%
+854904,VW Touran · QX-Y 27,Parkschaden,damage,TAILGATE,mittel,fertig,95%
+844782,Ford Transit Custom · XQM-P 4774,Räder und Reifen,service,—,,storniert,95%
+849332,Ford Focus Turnier · QQE-A 420,Inspektion,service,—,,storniert,95%
+868499,Seat Leon · XQM-VW 5250,HU/AU,service,—,,laufend,90%
+823107,Ford Focus Turnier · XQE-ST 64,Auffahrunfall,damage,FENDER_FRONT_LEFT,mittel,neu,95%
+843691,Ford Focus Turnier · QX-R 808,Räder und Reifen,service,—,,abgeschlossen,90%
+854758,BMW 5er Limousine · ZQL-W 41,Bremsen,service,—,,laufend,80%
+828503,Ford Fiesta · QY-T 5916,Parkschaden,damage,FENDER_REAR_RIGHT,mittel,abgeschlossen,70%
+898942,Skoda Fabia · QQA-S 338,Vandalismus,damage,"DOOR_FRONT_LEFT, BUMPER_REAR_FULL",mittel,laufend,93%
+873135,Skoda Karoq · QQN-YA 75,HU/AU,service,—,,abgeschlossen,95%
+847310,Seat Arona · XQR-GW 2,Räder und Reifen,service,—,,laufend,90%
+830928,Seat Leon · QX-N 83,Auffahrunfall,damage,BUMPER_REAR_RIGHT,mittel,laufend,90%
+855940,BMW 5er Limousine · QQV-ME 100,HU/AU,service,—,,abgeschlossen,70%
+857332,VW Tiguan · ZQD-EZ 8,Parkschaden,damage,HOOD,mittel,fertig,95%
+850023,Mercedes Sprinter · QQN-X 741,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",mittel,laufend,85%
+843725,Skoda Fabia · XQM-G 835,Parkschaden,damage,HOOD,mittel,abgeschlossen,90%
+866844,Mercedes Vito · ZQL-RV 247,Auffahrunfall,damage,"FENDER_REAR_RIGHT, BUMPER_REAR_LEFT, BUMPER_FRONT_LEFT",mittel,abgeschlossen,85%
+826552,Mercedes GLC · QQK-FL 430,Rangierschaden,damage,"BUMPER_REAR_LEFT, FENDER_REAR_RIGHT",mittel,neu,95%
+841467,Ford Kuga · ZQS-CN 590,Inspektion,service,—,,neu,90%
+888989,Opel Mokka · XQM-AM 13,Hagelschaden,damage,"ROOF, TAILGATE",mittel,abgeschlossen,90%
+891561,Opel Astra Sports Tourer · QQ-A 4694,Rangierschaden,damage,"BUMPER_REAR_LEFT, BUMPER_FRONT_FULL",leicht,fertig,93%
+847918,Audi A6 Avant · QQM-N 39,Auffahrunfall,damage,"FENDER_REAR_LEFT, FENDER_REAR_RIGHT, BUMPER_FRONT_FULL",leicht,abgeschlossen,70%
+844514,Ford Transit Custom · QQE-N 860,Inspektion,service,—,,neu,95%
+887130,Opel Vivaro · XQD-R 668,Auffahrunfall,damage,"BUMPER_REAR_LEFT, BUMPER_FRONT_RIGHT",leicht,fertig,93%
+846386,Skoda Fabia · ZQ-MT 47,Inspektion,service,—,,laufend,90%
+894927,Ford Kuga · ZQA-FN 927,Wildunfall,damage,HOOD,leicht,neu,96%
+821084,BMW X1 · QQK-ZX 4713,Auffahrunfall,damage,"BUMPER_REAR_LEFT, BUMPER_REAR_FULL, BUMPER_FRONT_RIGHT",mittel,laufend,90%
+890615,Skoda Karoq · QQT-Y 37,Wildunfall,damage,"HOOD, FENDER_FRONT_LEFT",schwer,laufend,92%
+863452,Audi A1 Sportback · QQK-U 71,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,storniert,94%
+820709,Ford Focus Turnier · ZQR-XV 506,Rangierschaden,damage,BUMPER_REAR_FULL,schwer,fertig,90%
+845766,VW Polo · QX-F 9940,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,abgeschlossen,70%
+871979,Mercedes B-Klasse · QQK-JH 6672,Räder und Reifen,service,—,,laufend,90%
+872984,BMW 3er Touring · XQ-AY 50,Rangierschaden,damage,"DOOR_REAR_RIGHT, FENDER_REAR_LEFT",mittel,laufend,95%
+892809,Audi A3 Sportback · XQE-T 33,Räder und Reifen,service,—,,neu,75%
+860983,VW Touran · QQL-U 532,Bremsen,service,—,,fertig,90%
+825174,Ford Transit Custom · ZQR-PX 89,Räder und Reifen,service,—,,abgeschlossen,90%
+865356,Mercedes A-Klasse · ZQS-ZZ 33,Parkschaden,damage,FENDER_FRONT_LEFT,mittel,laufend,95%
+822745,Audi A3 Sportback · ZQL-D 98,HU/AU,service,—,,abgeschlossen,95%
+858388,BMW X3 · XQA-R 854,Steinschlag,damage,WINDSHIELD,mittel,laufend,93%
+868913,Audi A3 Sportback · XQL-S 917,Bremsen,service,—,,fertig,90%
+872191,Ford Focus Turnier · QQE-RC 27,Inspektion,service,—,,abgeschlossen,95%
+888092,BMW X1 · XQS-S 889,Auffahrunfall,damage,"TAILGATE, BUMPER_FRONT_FULL, BUMPER_REAR_RIGHT",schwer,neu,93%
+835905,Mercedes Sprinter · ZQC-ZB 15,Parkschaden,damage,FENDER_FRONT_RIGHT,mittel,laufend,95%
+845286,Seat Leon · XQC-CL 23,Parkschaden,damage,DOOR_REAR_LEFT,mittel,laufend,95%
+831699,Mercedes E-Klasse · QQL-T 140,Parkschaden,damage,"BUMPER_FRONT_RIGHT, MIRROR_RIGHT",schwer,laufend,93%
+832679,Mercedes Vito · QQS-N 46,Räder und Reifen,service,—,,laufend,95%
+840658,Mercedes GLC · QQK-TV 6738,Räder und Reifen,service,—,,abgeschlossen,90%
+865838,Audi A4 Avant · ZQB-KP 6667,Parkschaden,damage,"SILL_RIGHT, FENDER_FRONT_LEFT",leicht,laufend,88%
+848413,Mercedes Sprinter · QQ-M 597,Auffahrunfall,damage,BUMPER_REAR_FULL,mittel,laufend,95%
+888321,Audi Q5 · XQB-H 33,Inspektion,service,—,,abgeschlossen,95%
+831149,Audi A6 Avant · QQF-ZF 333,Rangierschaden,damage,"MIRROR_LEFT, SILL_LEFT",schwer,abgeschlossen,92%
+852844,BMW 1er · XQE-PJ 1584,Hagelschaden,damage,"TAILGATE, HOOD",schwer,abgeschlossen,95%
+896932,Opel Astra Sports Tourer · QQB-XR 7757,Bremsen,service,—,,laufend,90%
+878729,Mercedes A-Klasse · XQ-WA 1149,Hagelschaden,damage,"HOOD, TAILGATE",schwer,laufend,70%
+877890,Seat Arona · ZQL-BF 2756,Parkschaden,damage,MIRROR_RIGHT,mittel,laufend,95%
+866536,Audi Q5 · QZ-L 3870,Bremsen,service,—,,fertig,90%
+895937,BMW X1 · ZQR-M 5203,Wildunfall,damage,"HOOD, BUMPER_FRONT_RIGHT",mittel,abgeschlossen,90%
+857281,VW Passat Variant · XQS-UY 423,Inspektion,service,—,,fertig,90%
+862159,Skoda Fabia · QQK-FP 536,Parkschaden,damage,"FENDER_FRONT_LEFT, DOOR_FRONT_RIGHT",schwer,abgeschlossen,90%
+871270,Audi A6 Avant · XQA-J 4,Steinschlag,damage,WINDSHIELD,schwer,neu,90%
+837418,Skoda Superb Combi · QQZ-UL 6721,Inspektion,service,—,,neu,95%
+883252,Mercedes Sprinter · XQE-YB 6634,Vandalismus,damage,"DOOR_REAR_LEFT, FENDER_FRONT_RIGHT, SILL_RIGHT",mittel,abgeschlossen,95%
+835566,Ford Puma · QQS-MV 79,Parkschaden,damage,DOOR_REAR_LEFT,mittel,laufend,95%
+843740,Skoda Kodiaq · QY-X 672,Steinschlag,damage,WINDSHIELD,leicht,neu,80%
+826351,BMW 5er Limousine · ZQC-H 962,Wildunfall,damage,BUMPER_FRONT_LEFT,leicht,neu,90%
+864893,Opel Corsa · ZQ-CP 429,Inspektion,service,—,,laufend,95%
+892250,BMW X3 · QQZ-H 6061,Inspektion,service,—,,laufend,90%
+873586,BMW X1 · ZQD-V 36,Ölwechsel,service,—,,laufend,80%
+863915,Ford Puma · QZ-W 435,Ölwechsel,service,—,,abgeschlossen,90%
+872010,Audi A4 Avant · ZQR-FF 800,Inspektion,service,—,,laufend,90%
+820498,Seat Ateca · ZQR-XL 2069,Steinschlag,damage,WINDSHIELD,leicht,neu,95%
+863160,BMW 5er Limousine · XQM-DW 16,Räder und Reifen,service,—,,neu,95%
+858274,VW T-Roc · QQF-RR 4870,HU/AU,service,—,,abgeschlossen,95%
+831881,VW Tiguan · QQR-SE 9604,Rangierschaden,damage,"FENDER_FRONT_RIGHT, DOOR_REAR_LEFT",leicht,fertig,95%
+849859,Skoda Scala · QQS-DY 65,Parkschaden,damage,"BUMPER_REAR_LEFT, DOOR_REAR_RIGHT",leicht,abgeschlossen,92%
+834495,Mercedes GLC · QQR-LJ 516,Inspektion,service,—,,abgeschlossen,90%
+859122,Mercedes Sprinter · ZQC-GZ 146,Bremsen,service,—,,laufend,90%
+852068,VW Golf · QQR-K 2,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,abgeschlossen,93%
+875222,Seat Leon · ZQR-UB 2529,Auffahrunfall,damage,"BUMPER_FRONT_RIGHT, BUMPER_REAR_RIGHT",schwer,neu,93%
+862379,Opel Astra Sports Tourer · QX-RS 60,Steinschlag,damage,WINDSHIELD,,abgeschlossen,95%
+885549,Mercedes Vito · ZQ-AK 880,Steinschlag,damage,WINDSHIELD,mittel,fertig,95%
+835203,Skoda Scala · QZ-C 654,Ölwechsel,service,—,,abgeschlossen,90%
+823239,BMW 1er · ZQR-HX 4522,HU/AU,service,—,,laufend,90%
+895621,Audi A1 Sportback · ZQC-RC 772,Ölwechsel,service,—,,abgeschlossen,90%
+846074,BMW X1 · ZQB-W 63,Steinschlag,damage,WINDSHIELD,schwer,neu,95%
+857653,BMW X1 · XQE-KF 80,Vandalismus,damage,DOOR_FRONT_LEFT,mittel,laufend,95%
+857915,Opel Vivaro · QQD-T 55,Auffahrunfall,damage,"FENDER_FRONT_LEFT, TAILGATE, FENDER_REAR_RIGHT",mittel,laufend,50%
+883763,Ford Focus Turnier · QQB-T 88,Ölwechsel,service,—,,fertig,95%
+896311,Opel Vivaro · QQH-A 54,Vandalismus,damage,SILL_LEFT,leicht,abgeschlossen,90%
+832361,BMW 1er · ZQB-D 19,Parkschaden,damage,BUMPER_REAR_LEFT,schwer,abgeschlossen,95%
+892447,VW Passat Variant · QQB-HB 29,Rangierschaden,damage,BUMPER_REAR_FULL,schwer,abgeschlossen,95%
+895608,Seat Leon · ZQM-RF 94,Rangierschaden,damage,MIRROR_LEFT,leicht,abgeschlossen,92%
+845852,BMW 5er Limousine · ZQM-TF 690,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+864854,Mercedes A-Klasse · XQC-A 7298,Rangierschaden,damage,HOOD,leicht,laufend,90%
+822452,BMW 1er · QZ-GB 227,Bremsen,service,—,,neu,95%
+840363,Audi A6 Avant · QQT-T 2137,Vandalismus,damage,"BUMPER_REAR_LEFT, MIRROR_LEFT, DOOR_FRONT_RIGHT",mittel,abgeschlossen,93%
+821583,Seat Ateca · QQZ-E 701,HU/AU,service,—,,neu,95%
+877468,Ford Focus Turnier · ZQB-D 76,Ölwechsel,service,—,,abgeschlossen,85%
+856238,BMW 5er Limousine · QQT-F 499,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+886432,BMW 5er Limousine · XQD-K 6927,HU/AU,service,—,,neu,90%
+833075,VW Caddy · XQL-V 68,Rangierschaden,damage,"TAILGATE, BUMPER_REAR_RIGHT",mittel,fertig,90%
+839757,Audi Q3 · QY-ZW 65,Rangierschaden,damage,"FENDER_REAR_LEFT, DOOR_FRONT_LEFT",mittel,storniert,92%
+846585,Opel Grandland · ZQS-T 39,Räder und Reifen,service,—,,fertig,90%
+822950,Audi A4 Avant · ZQR-J 552,Auffahrunfall,damage,BUMPER_FRONT_FULL,leicht,abgeschlossen,90%
+892053,Seat Arona · QQN-HM 98,Inspektion,service,—,,laufend,90%
+856050,Skoda Karoq · QQN-V 739,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",schwer,abgeschlossen,95%
+888452,Audi Q3 · XQB-H 51,Vandalismus,damage,"DOOR_REAR_LEFT, FENDER_REAR_RIGHT",schwer,fertig,90%
+830651,Audi Q2 · XQC-KK 4408,Inspektion,service,—,,storniert,90%
+868713,Ford Puma · ZQM-X 151,Räder und Reifen,service,—,,laufend,95%
+896170,Audi Q3 · ZQD-SH 462,Inspektion,service,—,,abgeschlossen,95%
+899757,Mercedes C-Klasse T-Modell · ZQD-ND 42,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,neu,85%
+891054,Opel Grandland · XQR-J 23,Steinschlag,damage,WINDSHIELD,schwer,neu,95%
+823609,VW Golf · XQM-SS 236,Rangierschaden,damage,"SILL_LEFT, TAILGATE",mittel,abgeschlossen,50%
+836898,BMW X1 · ZQS-TL 5306,Wildunfall,damage,BUMPER_FRONT_LEFT,mittel,abgeschlossen,95%
+884239,Audi A4 Avant · QQF-ZY 6641,Steinschlag,damage,WINDSHIELD,mittel,laufend,90%
+848603,Seat Ateca · XQE-DL 838,HU/AU,service,—,,storniert,95%
+826392,Mercedes Vito · QQM-ZP 56,Räder und Reifen,service,—,,neu,95%
+878238,Mercedes A-Klasse · XQC-KN 3938,Steinschlag,damage,WINDSHIELD,leicht,fertig,95%
+881791,Mercedes GLC · XQB-F 39,Räder und Reifen,service,—,,abgeschlossen,95%
+856351,Audi A4 Avant · QQN-YE 63,Steinschlag,damage,WINDSHIELD,,neu,95%
+844980,VW Caddy · QY-XX 8,Wildunfall,damage,"BUMPER_FRONT_RIGHT, BUMPER_FRONT_FULL, FENDER_FRONT_LEFT",schwer,abgeschlossen,92%
+829369,Skoda Karoq · QQH-X 1595,Rangierschaden,damage,"BUMPER_REAR_FULL, FENDER_FRONT_LEFT",mittel,neu,92%
+880510,Ford Focus Turnier · QQB-ZH 5294,HU/AU,service,—,,abgeschlossen,90%
+840404,VW Touran · QQ-S 71,Parkschaden,damage,SILL_LEFT,mittel,laufend,95%
+863853,Mercedes Vito · XQC-L 258,Steinschlag,damage,WINDSHIELD,mittel,abgeschlossen,95%
+851522,Mercedes E-Klasse · XQS-YC 2211,Inspektion,service,—,,storniert,90%
+858877,Audi Q2 · QX-SF 199,HU/AU,service,—,,fertig,95%
+862370,Mercedes Vito · QQC-HA 2019,Bremsen,service,—,,abgeschlossen,90%
+854033,VW Caddy · XQR-Z 419,Inspektion,service,—,,neu,95%
+884745,Ford Fiesta · XQE-KF 367,Räder und Reifen,service,—,,laufend,85%
+862790,Skoda Karoq · QQR-EN 888,Parkschaden,damage,TAILGATE,leicht,fertig,92%
+859902,Ford Puma · QQF-Z 5038,HU/AU,service,—,,fertig,90%
+862457,Mercedes A-Klasse · XQ-NR 37,Parkschaden,damage,"BUMPER_REAR_FULL, DOOR_REAR_LEFT",mittel,laufend,92%
+837265,Skoda Karoq · ZQR-L 634,Vandalismus,damage,"BUMPER_REAR_RIGHT, DOOR_REAR_LEFT, FENDER_REAR_RIGHT",mittel,laufend,92%
+865767,BMW 5er Limousine · QQK-T 50,HU/AU,service,—,,fertig,90%
+841460,Skoda Kodiaq · XQC-ZY 8164,Inspektion,service,—,,fertig,95%
+890230,BMW 3er Touring · QY-F 250,Ölwechsel,service,—,,laufend,85%
+867137,BMW 2er Active Tourer · QQN-B 21,Vandalismus,damage,BUMPER_FRONT_LEFT,mittel,neu,95%
+865981,Skoda Octavia Combi · ZQA-UX 39,Inspektion,service,—,,abgeschlossen,95%
+899492,Mercedes GLC · QQA-CN 2866,Bremsen,service,—,,laufend,95%
+899831,Mercedes A-Klasse · QQF-JK 9502,Steinschlag,damage,WINDSHIELD,leicht,abgeschlossen,95%
+891780,Ford Puma · QQD-B 677,Steinschlag,damage,WINDSHIELD,schwer,laufend,95%
+825030,Skoda Superb Combi · QQD-KV 8647,Ölwechsel,service,—,,neu,95%
+879066,Mercedes A-Klasse · ZQ-LB 849,Inspektion,service,—,,neu,90%
+881795,BMW 1er · QQF-EB 37,Inspektion,service,—,,abgeschlossen,95%
+875695,VW Passat Variant · XQD-K 704,Parkschaden,damage,FENDER_FRONT_LEFT,schwer,fertig,90%
+866323,BMW 3er Touring · QX-FE 38,HU/AU,service,—,,laufend,90%
+859189,Mercedes A-Klasse · ZQA-Z 4,Inspektion,service,—,,fertig,90%
+862181,Mercedes E-Klasse · QX-B 86,Inspektion,service,—,,laufend,90%
+838641,BMW 5er Limousine · XQE-T 975,Inspektion,service,—,,abgeschlossen,95%
+856108,Seat Ibiza · QY-K 890,Vandalismus,damage,"FENDER_FRONT_RIGHT, SILL_RIGHT, HOOD",leicht,abgeschlossen,93%
+858786,Ford Puma · XQM-TU 7929,Räder und Reifen,service,—,,fertig,95%
+865248,Audi Q5 · XQD-Z 30,Bremsen,service,—,,laufend,90%
+865155,Audi A1 Sportback · XQR-LY 4089,Bremsen,service,—,,abgeschlossen,90%
+850870,Skoda Octavia Combi · ZQM-U 5327,Parkschaden,damage,"BUMPER_REAR_FULL, DOOR_REAR_LEFT",mittel,neu,95%
+859320,VW T6.1 Transporter · QQK-AS 248,Wildunfall,damage,BUMPER_FRONT_LEFT,schwer,abgeschlossen,95%
+865386,Seat Ibiza · QQB-M 7,Rangierschaden,damage,FENDER_FRONT_RIGHT,schwer,storniert,90%
+873679,Opel Astra Sports Tourer · QQV-MV 460,Ölwechsel,service,—,,laufend,95%
+879984,Ford Fiesta · QQK-NW 296,Auffahrunfall,damage,"FENDER_FRONT_RIGHT, FENDER_FRONT_LEFT, FENDER_REAR_RIGHT",mittel,abgeschlossen,50%
+823954,Audi A4 Avant · XQA-E 9477,Parkschaden,damage,"FENDER_FRONT_LEFT, SILL_RIGHT",mittel,storniert,90%
+829887,Opel Grandland · QQD-NW 56,Steinschlag,damage,WINDSHIELD,schwer,storniert,95%
+890375,Audi A1 Sportback · XQB-GR 62,Ölwechsel,service,—,,laufend,85%
+830679,Mercedes A-Klasse · QQS-U 50,Inspektion,service,—,,laufend,95%
+831294,Audi Q5 · QQW-B 9205,Rangierschaden,damage,FENDER_FRONT_LEFT,leicht,fertig,95%
+871432,Mercedes GLC · QQV-PJ 520,Inspektion,service,—,,laufend,90%
+860080,Seat Arona · XQL-UC 76,Vandalismus,damage,"FENDER_FRONT_RIGHT, FENDER_REAR_RIGHT, FENDER_FRONT_LEFT",leicht,storniert,95%
+895796,Seat Ateca · ZQR-NW 14,Vandalismus,damage,DOOR_REAR_LEFT,leicht,laufend,90%
+851110,Audi A4 Avant · QQN-LT 82,Inspektion,service,—,,abgeschlossen,95%
+846550,VW Passat Variant · QZ-D 45,Auffahrunfall,damage,BUMPER_FRONT_RIGHT,schwer,abgeschlossen,95%
+835597,Skoda Fabia · ZQB-S 54,Wildunfall,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_RIGHT, HOOD",leicht,laufend,70%
+839335,Ford Focus Turnier · QQM-RX 422,Bremsen,service,—,,neu,90%
+829992,Opel Mokka · QQA-T 931,Räder und Reifen,service,—,,abgeschlossen,90%
+857329,Seat Ibiza · QQE-X 28,Inspektion,service,—,,abgeschlossen,100%
+846640,Opel Mokka · QQ-P 57,Ölwechsel,service,—,,neu,92%
+857227,Opel Corsa · QQV-PL 62,Vandalismus,damage,"SILL_LEFT, DOOR_REAR_RIGHT",mittel,abgeschlossen,80%
+888443,Mercedes Sprinter · XQE-LW 818,Ölwechsel,service,—,,laufend,90%
+840295,VW Touran · QQT-K 295,Inspektion,service,—,,laufend,95%
+888785,VW Touran · QQZ-V 1640,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,laufend,70%
+893019,Mercedes C-Klasse T-Modell · QQS-C 3,HU/AU,service,—,,neu,95%
+898621,Opel Mokka · QQT-UR 88,Ölwechsel,service,—,,laufend,95%
+887985,Ford Puma · ZQA-G 546,Räder und Reifen,service,—,,laufend,95%
+867862,Ford Focus Turnier · XQR-E 980,Inspektion,service,—,,storniert,90%
+845879,Ford Kuga · QQB-V 70,Auffahrunfall,damage,BUMPER_FRONT_FULL,leicht,neu,90%
+832750,Mercedes B-Klasse · XQ-VB 9044,Inspektion,service,—,,neu,95%
+879425,Audi Q2 · QQL-C 94,Inspektion,service,—,,laufend,95%
+864585,VW Polo · QQN-R 84,Inspektion,service,—,,fertig,95%
+830087,VW Golf · QQD-VL 71,Hagelschaden,damage,"TAILGATE, ROOF",,abgeschlossen,95%
+890816,BMW 1er · QQD-FA 32,Räder und Reifen,service,—,,laufend,90%
+834979,Seat Ibiza · QQ-GE 17,Steinschlag,damage,WINDSHIELD,leicht,fertig,95%
+862507,BMW 2er Active Tourer · ZQD-W 2379,Rangierschaden,damage,"BUMPER_FRONT_RIGHT, FENDER_REAR_RIGHT",leicht,storniert,90%
+876868,Ford Fiesta · XQL-ZV 46,Vandalismus,damage,"FENDER_REAR_RIGHT, DOOR_FRONT_LEFT, DOOR_FRONT_RIGHT",schwer,laufend,50%
+828851,Audi A3 Sportback · ZQA-LB 7646,Bremsen,service,—,,laufend,90%
+881143,VW Golf · XQL-XC 819,Rangierschaden,damage,DOOR_FRONT_LEFT,mittel,abgeschlossen,90%
+826049,Skoda Fabia · QQK-A 628,Inspektion,service,—,,fertig,90%
+846736,Seat Ateca · XQM-W 54,Bremsen,service,—,,fertig,95%
+840889,Seat Ateca · ZQ-VD 284,Räder und Reifen,service,—,,laufend,90%
+879768,VW Golf Variant · ZQD-L 15,Inspektion,service,—,,storniert,100%
+820223,Mercedes Sprinter · QQC-WK 807,Auffahrunfall,damage,"FENDER_REAR_LEFT, FENDER_REAR_RIGHT",leicht,laufend,90%
+892510,Seat Leon · QQV-KG 7567,Parkschaden,damage,"BUMPER_FRONT_FULL, DOOR_FRONT_LEFT",schwer,fertig,88%
+855798,VW Tiguan · QQ-U 11,Ölwechsel,service,—,,neu,95%
+878224,BMW 3er Touring · QX-MD 41,Rangierschaden,damage,"BUMPER_REAR_FULL, BUMPER_FRONT_FULL",leicht,abgeschlossen,92%
+838392,BMW 3er Touring · XQE-GB 659,HU/AU,service,—,,laufend,95%
+840172,Skoda Scala · ZQS-A 14,Parkschaden,damage,"FENDER_REAR_RIGHT, BUMPER_REAR_FULL",leicht,laufend,70%
+826591,Audi A1 Sportback · QQT-CV 532,Parkschaden,damage,BUMPER_FRONT_RIGHT,mittel,laufend,95%
+866680,BMW X1 · QQV-B 95,Parkschaden,damage,"BUMPER_FRONT_RIGHT, DOOR_FRONT_RIGHT",mittel,abgeschlossen,90%
+895806,Audi A1 Sportback · XQR-S 15,Räder und Reifen,service,—,,laufend,85%
+892891,Mercedes B-Klasse · QQD-UZ 2407,Parkschaden,damage,"FENDER_REAR_RIGHT, HOOD",schwer,laufend,95%
+899834,Mercedes Sprinter · ZQC-B 37,Bremsen,service,—,,fertig,85%
+882011,Ford Focus Turnier · QQV-R 432,Rangierschaden,damage,"FENDER_FRONT_LEFT, MIRROR_RIGHT",mittel,laufend,92%
+899100,Audi Q3 · XQD-EN 49,Wildunfall,damage,BUMPER_FRONT_FULL,schwer,fertig,90%
+853084,Seat Arona · QQV-SH 2066,Ölwechsel,service,—,,fertig,90%
+867012,Seat Arona · XQS-Y 7666,Steinschlag,damage,WINDSHIELD,leicht,fertig,90%
+890681,Skoda Karoq · QQT-V 12,Räder und Reifen,service,—,,laufend,90%
+864671,Skoda Karoq · XQR-AG 6832,Inspektion,service,—,,fertig,95%
+845837,Mercedes Vito · QX-CT 313,Rangierschaden,damage,HOOD,leicht,neu,90%
+847913,Seat Ibiza · QQ-FD 9214,Auffahrunfall,damage,"FENDER_REAR_RIGHT, BUMPER_REAR_RIGHT",leicht,laufend,95%
+887746,Ford Transit Custom · QQZ-F 147,Auffahrunfall,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_LEFT, FENDER_REAR_RIGHT",mittel,abgeschlossen,90%
+878673,Audi A6 Avant · XQE-P 4128,Räder und Reifen,service,—,,storniert,95%
+836682,Audi A4 Avant · ZQS-BE 457,Wildunfall,damage,"HOOD, FENDER_FRONT_LEFT",schwer,laufend,92%
+880357,BMW X1 · XQS-LU 60,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,abgeschlossen,92%
+829648,Mercedes Vito · QQW-E 308,Inspektion,service,—,,neu,86%
+857084,Mercedes B-Klasse · QQD-M 7264,HU/AU,service,—,,laufend,95%
+880937,Skoda Scala · ZQA-T 48,Ölwechsel,service,—,,neu,95%
+876181,Mercedes C-Klasse T-Modell · XQR-M 20,Ölwechsel,service,—,,laufend,90%
+893570,Skoda Scala · QQV-PT 5137,Ölwechsel,service,—,,fertig,90%
+890078,Ford Fiesta · QQS-RM 9376,Hagelschaden,damage,"TAILGATE, HOOD, ROOF",schwer,laufend,94%
+852197,Skoda Superb Combi · ZQD-CN 804,Ölwechsel,service,—,,laufend,95%
+821794,Mercedes GLC · ZQ-KG 378,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",schwer,abgeschlossen,50%
+855406,Skoda Kodiaq · XQB-UB 593,Parkschaden,damage,TAILGATE,leicht,neu,90%
+828990,Audi A1 Sportback · ZQA-SH 94,Bremsen,service,—,,fertig,85%
+883882,VW Touran · QZ-M 940,Parkschaden,damage,BUMPER_REAR_RIGHT,leicht,fertig,90%
+822129,Skoda Scala · QQB-VK 75,HU/AU,service,—,,laufend,95%
+847385,VW Caddy · QQC-LH 547,Ölwechsel,service,—,,abgeschlossen,95%
+837421,Opel Corsa · XQM-S 963,Inspektion,service,—,,laufend,95%
+859975,Mercedes GLC · QQM-V 679,Parkschaden,damage,"BUMPER_REAR_LEFT, SILL_LEFT",mittel,fertig,95%
+843481,Skoda Scala · XQE-J 4181,HU/AU,service,—,,abgeschlossen,75%
+894640,Skoda Superb Combi · XQB-B 30,Bremsen,service,—,,fertig,90%
+837253,VW Passat Variant · QQH-YS 56,Inspektion,service,—,,storniert,95%
+825751,BMW 3er Touring · QQ-KW 99,Bremsen,service,—,,abgeschlossen,85%
+831722,VW Touran · ZQ-GN 8530,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",mittel,fertig,92%
+839007,Seat Ibiza · XQS-R 55,Parkschaden,damage,"BUMPER_FRONT_FULL, TAILGATE",schwer,fertig,92%
+890104,Audi Q3 · ZQ-ET 113,Vandalismus,damage,"BUMPER_FRONT_RIGHT, DOOR_REAR_RIGHT",mittel,neu,87%
+897638,VW T6.1 Transporter · QQE-W 18,Parkschaden,damage,"DOOR_REAR_LEFT, BUMPER_REAR_RIGHT",leicht,laufend,92%
+854202,VW T6.1 Transporter · QX-AX 8236,Rangierschaden,damage,SILL_LEFT,mittel,abgeschlossen,85%
+828534,Ford Transit Custom · QQZ-Y 4215,Bremsen,service,—,,fertig,95%
+883029,BMW 1er · QQA-D 76,Auffahrunfall,damage,"TAILGATE, BUMPER_FRONT_FULL, BUMPER_REAR_FULL",schwer,neu,90%
+883550,Opel Grandland · ZQM-VY 1378,Räder und Reifen,service,—,,laufend,90%
+866893,BMW X3 · XQB-UL 700,Inspektion,service,—,,abgeschlossen,90%
+869622,Mercedes E-Klasse · QQV-P 841,HU/AU,service,—,,abgeschlossen,90%
+837847,Audi A3 Sportback · QQW-UA 70,Räder und Reifen,service,—,,laufend,95%
+848599,BMW X1 · XQB-Z 38,Inspektion,service,—,,neu,95%
+886803,Mercedes E-Klasse · QX-DD 41,Auffahrunfall,damage,"BUMPER_FRONT_RIGHT, BUMPER_REAR_FULL",leicht,fertig,87%
+849735,Audi A4 Avant · XQ-L 29,Inspektion,service,—,,abgeschlossen,95%
+859941,Mercedes GLC · QQV-VP 71,Vandalismus,damage,"BUMPER_FRONT_LEFT, SILL_RIGHT, FENDER_FRONT_LEFT",schwer,storniert,94%
+894188,Seat Ateca · ZQB-V 4440,Parkschaden,damage,"BUMPER_FRONT_FULL, DOOR_FRONT_RIGHT",mittel,neu,90%
+851803,VW Polo · XQC-JD 379,Ölwechsel,service,—,,fertig,90%
+828225,Skoda Octavia Combi · XQR-EG 533,Parkschaden,damage,"DOOR_REAR_RIGHT, DOOR_REAR_LEFT",mittel,neu,80%
+884436,Ford Focus Turnier · QQZ-NL 7495,Parkschaden,damage,"DOOR_REAR_RIGHT, DOOR_FRONT_LEFT",leicht,storniert,70%
+893426,Skoda Scala · QQC-TG 1119,Räder und Reifen,service,—,,fertig,90%
+837218,VW Tiguan · ZQB-T 478,Bremsen,service,—,,laufend,95%
+849708,VW Golf Variant · ZQD-ZD 71,Steinschlag,damage,WINDSHIELD,mittel,laufend,95%
+881716,Seat Ateca · XQA-K 973,Wildunfall,damage,"BUMPER_FRONT_FULL, FENDER_FRONT_RIGHT, FENDER_FRONT_LEFT",schwer,laufend,50%
+868539,Audi A4 Avant · QZ-K 18,Steinschlag,damage,WINDSHIELD,mittel,abgeschlossen,95%
+834217,Skoda Kodiaq · ZQC-MN 8826,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, BUMPER_FRONT_FULL",mittel,storniert,85%
+879671,Seat Arona · XQD-JU 9504,Rangierschaden,damage,"HOOD, TAILGATE",leicht,fertig,95%
+875761,Skoda Karoq · XQS-Z 9407,HU/AU,service,—,,neu,90%
+820879,BMW X3 · XQC-W 7216,Räder und Reifen,service,—,,laufend,85%
+863220,Skoda Karoq · QQZ-J 4840,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",schwer,laufend,50%
+897690,Opel Mokka · QQC-V 7619,Räder und Reifen,service,—,,neu,90%
+862100,Audi Q3 · QX-E 154,Auffahrunfall,damage,"BUMPER_REAR_RIGHT, FENDER_FRONT_RIGHT, BUMPER_FRONT_FULL",leicht,abgeschlossen,90%
+866919,Opel Grandland · XQA-A 1529,Rangierschaden,damage,"BUMPER_REAR_LEFT, FENDER_FRONT_RIGHT",mittel,laufend,95%
+829707,BMW 2er Active Tourer · QQA-P 99,Wildunfall,damage,FENDER_FRONT_RIGHT,mittel,laufend,95%
+868284,Audi Q3 · XQE-LM 670,Ölwechsel,service,—,,laufend,90%
+874892,Opel Corsa · QQT-S 2938,Bremsen,service,—,,abgeschlossen,78%
+825608,Ford Focus Turnier · QQC-J 29,Wildunfall,damage,"BUMPER_FRONT_LEFT, FENDER_FRONT_LEFT",mittel,neu,95%
+846562,BMW 5er Limousine · XQR-GG 503,Hagelschaden,damage,"HOOD, ROOF",schwer,storniert,70%
+836436,Audi A4 Avant · ZQC-Y 466,Ölwechsel,service,—,,laufend,90%
+889581,Seat Ateca · QQW-B 8962,Inspektion,service,—,,laufend,95%
+869898,BMW 2er Active Tourer · XQS-R 2894,Bremsen,service,—,,fertig,95%
+828670,Skoda Karoq · QQE-FG 7639,Auffahrunfall,damage,"BUMPER_FRONT_FULL, BUMPER_FRONT_LEFT, BUMPER_REAR_RIGHT",mittel,laufend,82%
+894037,BMW 5er Limousine · QQD-J 5745,Ölwechsel,service,—,,neu,85%
+824529,Audi Q2 · QQB-U 7,Hagelschaden,damage,"HOOD, TAILGATE, ROOF",schwer,abgeschlossen,95%
+826538,Opel Astra Sports Tourer · QQA-VR 3341,Ölwechsel,service,—,,laufend,90%
+882703,Audi Q3 · ZQ-SE 465,Inspektion,service,—,,neu,95%
+893861,VW T6.1 Transporter · ZQ-KJ 53,Räder und Reifen,service,—,,laufend,90%
+855218,VW Touran · ZQC-PX 42,Ölwechsel,service,—,,abgeschlossen,95%
+860161,BMW 3er Touring · ZQM-FV 3,Räder und Reifen,service,—,,abgeschlossen,90%
+828817,Audi Q3 · QQL-R 47,Ölwechsel,service,—,,abgeschlossen,95%
+832173,Opel Corsa · ZQS-N 64,Ölwechsel,service,—,,abgeschlossen,80%
+830612,Skoda Kodiaq · ZQM-VZ 6188,Parkschaden,damage,MIRROR_LEFT,mittel,laufend,95%
+820141,Seat Leon · ZQM-Z 649,Parkschaden,damage,BUMPER_REAR_RIGHT,mittel,laufend,95%
+884777,Opel Astra Sports Tourer · QQD-TF 73,Räder und Reifen,service,—,,neu,80%
+843747,BMW X3 · QX-T 1334,Parkschaden,damage,"DOOR_FRONT_RIGHT, BUMPER_REAR_FULL",mittel,neu,90%
+856067,Opel Mokka · ZQD-E 59,HU/AU,service,—,,laufend,75%
+828006,VW Polo · QQZ-VU 4810,Bremsen,service,—,,fertig,90%
+830330,Skoda Superb Combi · QQF-NY 6306,Parkschaden,damage,"FENDER_FRONT_LEFT, FENDER_REAR_LEFT",mittel,laufend,88%
+856884,BMW 2er Active Tourer · QX-XM 658,Ölwechsel,service,—,,fertig,80%
+852213,Ford Fiesta · QQT-P 87,Parkschaden,damage,DOOR_REAR_LEFT,mittel,storniert,95%
+847565,Mercedes Sprinter · QQT-B 9882,Inspektion,service,—,,laufend,95%
+867975,VW T-Roc · QZ-YF 83,Parkschaden,damage,MIRROR_RIGHT,mittel,laufend,90%
+883614,Audi A4 Avant · XQD-N 408,Bremsen,service,—,,neu,90%
+852387,BMW 2er Active Tourer · QQS-TU 7437,Wildunfall,damage,"BUMPER_FRONT_FULL, FENDER_FRONT_LEFT",leicht,fertig,92%
+894542,VW Polo · ZQM-MU 716,Räder und Reifen,service,—,,laufend,90%
+860601,Skoda Octavia Combi · QQN-GB 931,HU/AU,service,—,,fertig,90%
+862685,VW T-Roc · QQR-G 4591,Räder und Reifen,service,—,,abgeschlossen,90%
+863870,Ford Puma · QQM-C 3544,Ölwechsel,service,—,,laufend,95%
+888794,BMW 3er Touring · ZQ-PY 538,HU/AU,service,—,,laufend,100%
+881596,VW Caddy · XQL-BG 3813,Räder und Reifen,service,—,,laufend,85%
+888762,Opel Vivaro · XQB-Y 43,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, FENDER_REAR_LEFT, FENDER_FRONT_RIGHT",mittel,storniert,87%
+888218,Seat Leon · QQB-Z 237,Räder und Reifen,service,—,,neu,90%
+832266,Mercedes C-Klasse T-Modell · QQ-XU 283,Parkschaden,damage,"FENDER_FRONT_RIGHT, FENDER_REAR_LEFT",schwer,abgeschlossen,95%
+832859,Seat Ibiza · QQV-B 2373,Auffahrunfall,damage,"HOOD, FENDER_REAR_LEFT",leicht,neu,85%
+860661,VW Polo · QQS-R 956,Inspektion,service,—,,abgeschlossen,95%
+889035,Mercedes A-Klasse · QQZ-H 521,Ölwechsel,service,—,,neu,90%
+868307,Opel Astra Sports Tourer · XQB-GV 95,Parkschaden,damage,"BUMPER_FRONT_FULL, FENDER_REAR_RIGHT",leicht,laufend,94%
+886899,BMW 1er · ZQL-AC 5643,Bremsen,service,—,,abgeschlossen,90%
+846520,Ford Kuga · ZQC-MF 545,Auffahrunfall,damage,FENDER_FRONT_LEFT,schwer,fertig,95%
+865619,Opel Mokka · QX-X 29,Hagelschaden,damage,"HOOD, ROOF, TAILGATE",mittel,laufend,85%
+833936,Audi Q3 · ZQA-PG 576,Steinschlag,damage,WINDSHIELD,mittel,fertig,90%
+888180,BMW 5er Limousine · XQM-G 28,Räder und Reifen,service,—,,neu,80%
+852414,BMW X3 · XQ-BN 229,Rangierschaden,damage,MIRROR_RIGHT,mittel,fertig,95%
+862218,Seat Leon · XQD-X 36,Parkschaden,damage,HOOD,leicht,laufend,95%
+840416,Mercedes Sprinter · XQE-P 25,Parkschaden,damage,MIRROR_LEFT,leicht,laufend,95%
+839086,Skoda Superb Combi · XQC-MK 292,Vandalismus,damage,"TAILGATE, SILL_LEFT",leicht,neu,95%
+837765,Opel Vivaro · QQZ-CU 98,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,laufend,95%
+892156,Opel Mokka · ZQC-MG 849,HU/AU,service,—,,fertig,90%
+846743,Skoda Scala · QZ-TP 52,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",,abgeschlossen,90%
+841280,Audi A6 Avant · ZQS-VN 73,Auffahrunfall,damage,"FENDER_REAR_LEFT, FENDER_FRONT_LEFT",schwer,neu,92%
+861949,VW T-Roc · XQE-R 9,HU/AU,service,—,,laufend,95%
+833141,Skoda Superb Combi · QQV-EL 3435,Hagelschaden,damage,"TAILGATE, HOOD",schwer,abgeschlossen,95%
+884480,Seat Leon · QQN-LN 292,Inspektion,service,—,,laufend,95%
+875757,Opel Vivaro · QQT-FF 3216,Ölwechsel,service,—,,fertig,90%
+892507,Skoda Octavia Combi · XQ-ST 34,Inspektion,service,—,,neu,95%
+832457,BMW 3er Touring · QQF-P 928,HU/AU,service,—,,laufend,90%
+867746,VW Golf · XQC-J 3920,Steinschlag,damage,WINDSHIELD,leicht,abgeschlossen,95%
+834724,VW Passat Variant · QQT-M 9059,Rangierschaden,damage,BUMPER_FRONT_FULL,leicht,fertig,90%
+879634,Opel Astra Sports Tourer · QQC-KU 874,Inspektion,service,—,,abgeschlossen,95%
+874100,Skoda Karoq · QQA-A 90,Steinschlag,damage,WINDSHIELD,leicht,abgeschlossen,95%
+859712,Ford Fiesta · ZQD-DS 7508,Inspektion,service,—,,neu,95%
+872540,Mercedes C-Klasse T-Modell · XQR-H 148,Rangierschaden,damage,"DOOR_REAR_LEFT, TAILGATE",leicht,fertig,92%
+889181,BMW X1 · QZ-L 874,HU/AU,service,—,,neu,95%
+862157,Audi Q5 · XQD-BP 6784,Ölwechsel,service,—,,neu,95%
+864838,VW Touran · QQT-H 269,HU/AU,service,—,,laufend,85%
+873092,Seat Ateca · XQR-B 4701,Auffahrunfall,damage,BUMPER_REAR_LEFT,leicht,fertig,75%
+832153,Mercedes B-Klasse · XQR-WA 95,Bremsen,service,—,,fertig,90%
+887034,Seat Arona · QQD-N 211,Inspektion,service,—,,laufend,95%
+888197,Opel Mokka · ZQ-CM 12,Inspektion,service,—,,storniert,95%
+844778,Opel Vivaro · QQM-BF 80,Inspektion,service,—,,neu,95%
+890706,Seat Arona · QQB-Y 606,Ölwechsel,service,—,,abgeschlossen,85%
+876732,Ford Kuga · QQ-K 4,Auffahrunfall,damage,FENDER_FRONT_RIGHT,schwer,abgeschlossen,95%
+890827,VW Touran · QQB-LD 76,HU/AU,service,—,,neu,90%
+893289,BMW 3er Touring · QX-U 49,Bremsen,service,—,,laufend,80%
+831499,Mercedes A-Klasse · QQL-E 603,Räder und Reifen,service,—,,laufend,90%
+875500,Skoda Octavia Combi · ZQ-N 69,Wildunfall,damage,"BUMPER_FRONT_FULL, BUMPER_FRONT_LEFT",leicht,abgeschlossen,70%
+888740,BMW 1er · XQD-E 937,Ölwechsel,service,—,,laufend,95%
+875860,Opel Corsa · QY-T 4195,Steinschlag,damage,WINDSHIELD,,laufend,50%
+858572,Skoda Octavia Combi · QQS-MA 75,HU/AU,service,—,,fertig,95%
+899772,Mercedes B-Klasse · QQT-TE 2429,Inspektion,service,—,,laufend,85%
+860974,VW Touran · QQK-JH 6417,Rangierschaden,damage,"SILL_LEFT, BUMPER_FRONT_LEFT",leicht,abgeschlossen,95%
+844805,Audi Q3 · ZQR-HB 86,Inspektion,service,—,,fertig,95%
+878876,Skoda Kodiaq · XQB-R 3984,Räder und Reifen,service,—,,laufend,95%
+841456,Skoda Scala · QQ-YU 654,Bremsen,service,—,,abgeschlossen,80%
+897492,Opel Corsa · QZ-ES 832,Inspektion,service,—,,abgeschlossen,70%
+824844,Mercedes Sprinter · XQA-A 88,Bremsen,service,—,,neu,95%
+869934,VW Tiguan · QQE-J 32,Inspektion,service,—,,abgeschlossen,95%
+856345,Seat Ibiza · ZQ-K 912,Räder und Reifen,service,—,,neu,95%
+865051,Ford Fiesta · XQA-L 70,Ölwechsel,service,—,,neu,95%
+878138,Audi A1 Sportback · QQE-M 9837,Inspektion,service,—,,laufend,95%
+876013,Opel Mokka · QQS-B 718,Vandalismus,damage,"BUMPER_FRONT_FULL, TAILGATE, SILL_RIGHT",schwer,abgeschlossen,93%
+832574,VW Polo · QQD-LC 89,Bremsen,service,—,,abgeschlossen,90%
+873174,BMW 1er · QQB-U 81,Ölwechsel,service,—,,fertig,95%
+863379,BMW X1 · XQR-Y 2381,Ölwechsel,service,—,,fertig,95%
+849621,Audi Q5 · XQE-P 557,HU/AU,service,—,,abgeschlossen,95%
+893790,Audi Q3 · XQM-V 7697,HU/AU,service,—,,abgeschlossen,95%
+824575,Opel Vivaro · ZQD-DR 820,Inspektion,service,—,,neu,90%
+833500,Seat Arona · QQN-SU 269,Rangierschaden,damage,BUMPER_FRONT_RIGHT,schwer,fertig,95%
+881399,Skoda Fabia · QQS-WE 74,Wildunfall,damage,"FENDER_FRONT_LEFT, BUMPER_FRONT_FULL",schwer,laufend,95%
+834130,Skoda Karoq · ZQB-A 7,Parkschaden,damage,MIRROR_RIGHT,leicht,laufend,95%
+844033,Skoda Scala · QQL-H 902,Bremsen,service,—,,abgeschlossen,95%
+851332,BMW 2er Active Tourer · ZQC-TH 1235,Wildunfall,damage,"BUMPER_FRONT_LEFT, HOOD",schwer,neu,95%
+877660,Audi A3 Sportback · QQT-RV 71,Wildunfall,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_LEFT",leicht,storniert,70%
+857391,BMW 5er Limousine · XQE-P 7536,Inspektion,service,—,,abgeschlossen,95%
+892094,BMW 5er Limousine · QQS-GL 30,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+859101,Ford Transit Custom · XQB-X 8715,Auffahrunfall,damage,"BUMPER_REAR_RIGHT, FENDER_REAR_LEFT, BUMPER_REAR_LEFT",schwer,abgeschlossen,92%
+864060,Ford Puma · XQD-T 507,Räder und Reifen,service,—,,neu,80%
+844920,Mercedes GLC · QZ-HH 3330,Vandalismus,damage,MIRROR_RIGHT,leicht,neu,95%
+862268,Mercedes E-Klasse · QQL-P 437,HU/AU,service,—,,fertig,90%
+887724,Skoda Superb Combi · QQD-W 79,Bremsen,service,—,,abgeschlossen,90%
+822460,Skoda Superb Combi · QZ-A 58,Bremsen,service,—,,laufend,95%
+881569,Skoda Karoq · QX-KN 262,Hagelschaden,damage,"ROOF, HOOD, WINDSHIELD",schwer,laufend,85%
+874957,Opel Grandland · ZQM-X 5512,Ölwechsel,service,—,,abgeschlossen,90%
+861417,BMW 5er Limousine · XQL-TA 945,Auffahrunfall,damage,"HOOD, FENDER_REAR_LEFT, FENDER_FRONT_LEFT",mittel,abgeschlossen,50%
+851816,Skoda Fabia · ZQ-T 9,Bremsen,service,—,,fertig,85%
+839846,Mercedes C-Klasse T-Modell · QQT-M 8204,Inspektion,service,—,,neu,90%
+839492,Ford Kuga · XQB-N 41,unknown,unknown,—,,abgeschlossen,0%
+858677,VW Touran · ZQB-NW 118,Ölwechsel,service,—,,laufend,95%
+864888,VW Tiguan · QQB-H 350,Hagelschaden,damage,"TAILGATE, ROOF",schwer,neu,95%
+884196,Seat Ibiza · ZQD-HG 717,Bremsen,service,—,,fertig,90%
+833827,Skoda Octavia Combi · QQW-U 7318,Inspektion,service,—,,laufend,90%
+859115,Mercedes Vito · XQS-F 59,Parkschaden,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_FULL",mittel,laufend,95%
+864985,VW Tiguan · QQT-SY 863,Hagelschaden,damage,"TAILGATE, ROOF",schwer,abgeschlossen,93%
+859595,Skoda Octavia Combi · QQE-X 7137,Hagelschaden,damage,"TAILGATE, HOOD, ROOF",schwer,laufend,70%
+883065,Audi A4 Avant · XQM-TU 2257,Parkschaden,damage,TAILGATE,leicht,laufend,95%
+874265,Skoda Superb Combi · QQF-H 111,Räder und Reifen,service,—,,fertig,90%
+895141,Audi A4 Avant · XQ-P 260,HU/AU,service,—,,neu,90%
+839215,Audi A1 Sportback · XQB-D 67,Parkschaden,damage,FENDER_FRONT_RIGHT,mittel,storniert,95%
+862151,VW Tiguan · QQF-V 845,Wildunfall,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_LEFT",leicht,storniert,88%
+881547,Ford Puma · QQC-UJ 244,Auffahrunfall,damage,"FENDER_REAR_RIGHT, FENDER_FRONT_RIGHT",schwer,laufend,95%
+874379,Audi A6 Avant · QQL-E 8989,Inspektion,service,—,,laufend,90%
+824377,VW Polo · QQB-YA 43,Ölwechsel,service,—,,neu,90%
+867644,Ford Fiesta · QQ-WT 229,Inspektion,service,—,,laufend,95%
+853437,Seat Leon · QQS-AE 54,HU/AU,service,—,,laufend,90%
+874316,Ford Puma · XQD-S 487,Ölwechsel,service,—,,laufend,90%
+893103,Mercedes B-Klasse · QQM-ZJ 561,Vandalismus,damage,"BUMPER_REAR_LEFT, BUMPER_REAR_FULL",mittel,laufend,92%
+830295,Mercedes E-Klasse · QQV-XP 365,Steinschlag,damage,WINDSHIELD,leicht,storniert,93%
+859641,VW Passat Variant · XQ-NR 36,Inspektion,service,—,,fertig,95%
+857254,VW Polo · ZQM-WK 6358,Inspektion,service,—,,neu,90%
+839875,Mercedes Vito · QQH-CZ 2,Räder und Reifen,service,—,,laufend,95%
+897855,VW Caddy · XQM-S 69,Bremsen,service,—,,abgeschlossen,80%
+877072,Skoda Fabia · XQM-YY 44,Rangierschaden,damage,"BUMPER_REAR_FULL, DOOR_REAR_LEFT",leicht,abgeschlossen,93%
+850163,VW Polo · ZQA-K 99,Rangierschaden,damage,FENDER_FRONT_LEFT,mittel,laufend,90%
+860598,Seat Arona · ZQS-PJ 9296,Auffahrunfall,damage,"FENDER_REAR_RIGHT, FENDER_FRONT_RIGHT, BUMPER_REAR_LEFT",leicht,laufend,70%
+884084,Skoda Kodiaq · QZ-XJ 1086,Räder und Reifen,service,—,,neu,90%
+860433,Audi A1 Sportback · QX-X 6574,Parkschaden,damage,"BUMPER_REAR_RIGHT, TAILGATE",schwer,laufend,93%
+843743,Seat Leon · QQL-D 45,Steinschlag,damage,WINDSHIELD,schwer,laufend,95%
+870270,Seat Arona · ZQ-PR 9480,Inspektion,service,—,,neu,95%
+836165,Audi Q5 · XQM-WZ 62,Inspektion,service,—,,abgeschlossen,95%
+854876,Audi A1 Sportback · QQZ-F 14,Bremsen,service,—,,neu,85%
+881044,VW T-Roc · QQR-Y 330,Bremsen,service,—,,fertig,90%
+828374,Seat Arona · XQC-P 839,Bremsen,service,—,,fertig,90%
+867951,Audi Q2 · XQS-HS 8986,Auffahrunfall,damage,"TAILGATE, BUMPER_REAR_FULL",schwer,fertig,95%
+887711,Opel Astra Sports Tourer · ZQL-S 848,Räder und Reifen,service,—,,abgeschlossen,95%
+835520,BMW X3 · QQT-P 69,Inspektion,service,—,,laufend,80%
+838366,Seat Ateca · QY-TS 3497,Bremsen,service,—,,laufend,85%
+827426,BMW 1er · QQM-P 504,Auffahrunfall,damage,TAILGATE,mittel,laufend,90%
+896868,Ford Fiesta · QQZ-F 74,Bremsen,service,—,,fertig,90%
+847648,VW Caddy · QX-BN 6258,Bremsen,service,—,,fertig,95%
+887234,BMW 3er Touring · QQS-XM 7616,Rangierschaden,damage,MIRROR_RIGHT,schwer,laufend,90%
+854935,Skoda Fabia · QX-A 7165,Räder und Reifen,service,—,,storniert,90%
+826694,BMW X3 · ZQM-F 1580,Vandalismus,damage,"MIRROR_LEFT, TAILGATE, SILL_RIGHT",mittel,laufend,95%
+894099,Audi A6 Avant · QQR-P 59,HU/AU,service,—,,laufend,95%
+833248,Seat Arona · QQS-EU 40,Räder und Reifen,service,—,,fertig,90%
+823116,Mercedes A-Klasse · QQK-KV 24,Parkschaden,damage,DOOR_REAR_RIGHT,mittel,abgeschlossen,92%
+860577,VW Tiguan · QQW-DR 1821,Inspektion,service,—,,neu,95%
+872526,Mercedes GLC · ZQC-S 4968,Rangierschaden,damage,BUMPER_FRONT_FULL,mittel,laufend,90%
+876742,BMW 3er Touring · ZQA-G 590,Wildunfall,damage,HOOD,schwer,neu,95%
+853139,Audi A3 Sportback · QQV-WZ 4244,Inspektion,service,—,,neu,95%
+883952,Ford Fiesta · QQS-W 53,Auffahrunfall,damage,FENDER_REAR_RIGHT,schwer,neu,95%
+854832,BMW X3 · QQB-YC 6505,Inspektion,service,—,,laufend,95%
+885284,BMW X1 · QQK-U 146,Rangierschaden,damage,BUMPER_REAR_RIGHT,leicht,laufend,95%
+834742,BMW 2er Active Tourer · QZ-WW 2,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,fertig,50%
+821324,BMW 3er Touring · QQZ-F 21,Steinschlag,damage,WINDSHIELD,mittel,laufend,95%
+885250,VW Tiguan · QQV-E 26,Parkschaden,damage,"HOOD, SILL_LEFT",mittel,abgeschlossen,88%
+873576,Mercedes Vito · ZQB-SN 5130,Ölwechsel,service,—,,fertig,80%
+838936,Audi Q2 · QY-C 5975,HU/AU,service,—,,abgeschlossen,95%
+857624,Seat Ibiza · QQZ-A 87,HU/AU,service,—,,laufend,90%
+887137,BMW 5er Limousine · QQH-U 175,Ölwechsel,service,—,,laufend,90%
+878080,VW Golf · XQS-PR 814,Räder und Reifen,service,—,,laufend,95%
+879854,Mercedes A-Klasse · XQE-Z 66,Parkschaden,damage,HOOD,leicht,abgeschlossen,95%
+865107,Skoda Fabia · XQB-PG 11,HU/AU,service,—,,fertig,95%
+822311,Seat Leon · ZQC-FL 691,Bremsen,service,—,,laufend,90%
+890318,Seat Ateca · XQ-TK 8105,Wildunfall,damage,"FENDER_FRONT_LEFT, BUMPER_FRONT_RIGHT",leicht,laufend,95%
+838581,Seat Ibiza · QX-Z 4463,Rangierschaden,damage,DOOR_REAR_LEFT,mittel,abgeschlossen,95%
+830264,Opel Grandland · ZQR-S 132,Bremsen,service,—,,neu,95%
+851573,VW Polo · QQB-K 6885,Parkschaden,damage,BUMPER_FRONT_FULL,schwer,abgeschlossen,95%
+857630,Mercedes Vito · QQM-A 5326,Ölwechsel,service,—,,storniert,90%
+862646,Opel Vivaro · QQD-HV 94,Räder und Reifen,service,—,,laufend,90%
+864355,VW Polo · QY-BY 654,Bremsen,service,—,,neu,90%
+892061,Mercedes GLC · ZQC-N 677,Ölwechsel,service,—,,laufend,90%
+884222,Audi Q3 · QQR-RY 28,Hagelschaden,damage,"HOOD, TAILGATE",schwer,neu,92%
+873129,Skoda Fabia · ZQC-YL 157,Ölwechsel,service,—,,neu,95%
+821277,BMW X3 · QQ-HR 27,Bremsen,service,—,,fertig,90%
+860108,VW Tiguan · QZ-KX 1278,Räder und Reifen,service,—,,abgeschlossen,90%
+879442,Ford Kuga · XQE-D 302,Vandalismus,damage,"FENDER_REAR_LEFT, DOOR_FRONT_LEFT",leicht,laufend,70%
+893153,BMW 1er · XQA-R 341,Räder und Reifen,service,—,,fertig,85%
+840566,Mercedes B-Klasse · XQ-ZG 76,Rangierschaden,damage,BUMPER_FRONT_RIGHT,mittel,abgeschlossen,95%
+859828,Skoda Scala · QQA-NX 857,Parkschaden,damage,"SILL_RIGHT, BUMPER_REAR_LEFT",mittel,abgeschlossen,88%
+858084,Opel Corsa · QQN-EV 460,Räder und Reifen,service,—,,laufend,95%
+847522,Opel Astra Sports Tourer · ZQR-Y 85,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,abgeschlossen,95%
+845140,Mercedes B-Klasse · QQC-KE 4995,Wildunfall,damage,FENDER_FRONT_LEFT,mittel,laufend,95%
+858814,Seat Leon · ZQR-L 1249,Bremsen,service,—,,abgeschlossen,90%
+858424,Audi A1 Sportback · ZQL-ZW 3639,Vandalismus,damage,BUMPER_FRONT_RIGHT,leicht,abgeschlossen,92%
+869331,VW Polo · QQE-A 80,Bremsen,service,—,,laufend,80%
+821300,Audi Q2 · XQS-DR 7552,Parkschaden,damage,"SILL_LEFT, FENDER_REAR_RIGHT",schwer,laufend,95%
+833710,Mercedes A-Klasse · QQA-RK 15,HU/AU,service,—,,abgeschlossen,90%
+826178,Seat Arona · XQL-N 630,Wildunfall,damage,"HOOD, BUMPER_FRONT_LEFT",mittel,abgeschlossen,90%
+892669,Opel Corsa · QQM-SJ 347,Wildunfall,damage,HOOD,schwer,abgeschlossen,90%
+882855,Mercedes Vito · QY-RP 33,Räder und Reifen,service,—,,abgeschlossen,95%
+887291,VW Touran · QQM-EE 20,HU/AU,service,—,,neu,95%
+841315,Ford Transit Custom · XQC-BP 6223,Räder und Reifen,service,—,,storniert,95%
+867311,VW Touran · ZQS-TP 6332,Bremsen,service,—,,laufend,90%
+881233,Ford Kuga · QY-FC 86,Wildunfall,damage,FENDER_FRONT_LEFT,schwer,abgeschlossen,95%
+871303,VW T6.1 Transporter · XQA-DP 85,Parkschaden,damage,DOOR_REAR_LEFT,mittel,laufend,90%
+820951,BMW 2er Active Tourer · QZ-R 532,Ölwechsel,service,—,,laufend,95%
+859982,BMW 5er Limousine · ZQC-V 6892,Inspektion,service,—,,laufend,95%
+871781,Skoda Scala · QQB-W 58,Räder und Reifen,service,—,,laufend,90%
+875352,BMW 2er Active Tourer · QQD-F 999,Ölwechsel,service,—,,fertig,95%
+881785,BMW 3er Touring · XQ-U 9,HU/AU,service,—,,abgeschlossen,95%
+869938,Audi Q3 · XQC-JF 161,Vandalismus,damage,"HOOD, FENDER_FRONT_RIGHT, BUMPER_FRONT_RIGHT",leicht,laufend,93%
+837083,Skoda Fabia · XQB-KA 111,Rangierschaden,damage,"SILL_LEFT, FENDER_FRONT_RIGHT",mittel,laufend,90%
+892954,Audi A4 Avant · ZQC-F 1050,Vandalismus,damage,"SILL_LEFT, BUMPER_REAR_LEFT",mittel,laufend,93%
+833373,Mercedes E-Klasse · QQR-F 15,Inspektion,service,—,,fertig,95%
+822430,VW T6.1 Transporter · QQV-N 1223,Parkschaden,damage,HOOD,mittel,neu,90%
+884431,Ford Puma · XQM-BH 6843,Ölwechsel,service,—,,abgeschlossen,85%
+890691,BMW 2er Active Tourer · QQL-LV 24,HU/AU,service,—,,fertig,85%
+854791,VW T-Roc · QQB-JW 54,Auffahrunfall,damage,"BUMPER_REAR_FULL, BUMPER_REAR_RIGHT",leicht,abgeschlossen,90%
+889564,Opel Astra Sports Tourer · ZQM-W 8,Inspektion,service,—,,laufend,95%
+842824,Mercedes A-Klasse · ZQA-N 12,Ölwechsel,service,—,,neu,95%
+861868,Skoda Superb Combi · XQD-JY 8,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+866177,VW Golf · QQV-KK 723,Bremsen,service,—,,laufend,85%
+871750,Seat Ateca · ZQB-DY 374,HU/AU,service,—,,neu,90%
+824929,BMW 2er Active Tourer · QQD-UC 85,Parkschaden,damage,"FENDER_REAR_RIGHT, BUMPER_FRONT_RIGHT",mittel,fertig,95%
+876312,VW Tiguan · XQB-N 3181,Inspektion,service,—,,abgeschlossen,80%
+830105,Skoda Scala · QQA-DZ 10,Steinschlag,damage,WINDSHIELD,schwer,neu,95%
+883345,Mercedes A-Klasse · QQA-Z 3558,Rangierschaden,damage,"SILL_LEFT, BUMPER_REAR_FULL",leicht,neu,88%
+869971,Mercedes C-Klasse T-Modell · XQS-LD 594,Ölwechsel,service,—,,laufend,95%
+874740,Mercedes E-Klasse · QQM-MV 7162,Vandalismus,damage,"DOOR_REAR_RIGHT, SILL_LEFT",leicht,laufend,93%
+837956,Skoda Fabia · XQB-X 86,Auffahrunfall,damage,"TAILGATE, FENDER_FRONT_LEFT",schwer,abgeschlossen,90%
+835826,Opel Grandland · ZQC-F 15,Räder und Reifen,service,—,,abgeschlossen,70%
+894726,Audi A3 Sportback · XQS-X 44,Bremsen,service,—,,fertig,90%
+873795,Audi Q2 · QQR-CG 111,Räder und Reifen,service,—,,fertig,90%
+821314,Audi A6 Avant · XQC-YS 898,Vandalismus,damage,"MIRROR_RIGHT, BUMPER_FRONT_RIGHT, DOOR_REAR_RIGHT",leicht,abgeschlossen,95%
+855877,BMW X1 · ZQR-M 2408,Parkschaden,damage,"TAILGATE, BUMPER_FRONT_LEFT",leicht,laufend,95%
+859329,Ford Focus Turnier · QQZ-J 4151,Parkschaden,damage,DOOR_REAR_LEFT,schwer,fertig,90%
+839735,BMW 2er Active Tourer · QQZ-KK 99,Inspektion,service,—,,abgeschlossen,90%
+878678,Ford Puma · QQZ-SU 5052,Auffahrunfall,damage,BUMPER_FRONT_LEFT,schwer,fertig,90%
+861554,Audi Q3 · ZQ-Z 47,Rangierschaden,damage,MIRROR_LEFT,mittel,fertig,90%
+865171,VW Golf Variant · QY-D 3195,Rangierschaden,damage,"BUMPER_REAR_LEFT, BUMPER_FRONT_FULL",mittel,abgeschlossen,85%
+846834,BMW 3er Touring · XQ-XL 7190,Inspektion,service,—,,laufend,92%
+834616,Skoda Octavia Combi · QQH-S 7371,Rangierschaden,damage,BUMPER_REAR_RIGHT,schwer,laufend,95%
+850634,VW Passat Variant · QQH-DJ 614,Parkschaden,damage,BUMPER_REAR_RIGHT,schwer,fertig,95%
+894789,Mercedes GLC · ZQA-UZ 3958,Rangierschaden,damage,BUMPER_REAR_RIGHT,mittel,laufend,90%
+858735,VW Tiguan · XQR-A 544,HU/AU,service,—,,abgeschlossen,85%
+823086,Ford Puma · ZQC-AA 821,Räder und Reifen,service,—,,laufend,95%
+828141,Ford Kuga · QZ-TT 3674,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, BUMPER_REAR_LEFT",mittel,laufend,92%
+834328,Audi A4 Avant · ZQS-E 4324,Bremsen,service,—,,neu,90%
+897769,Skoda Octavia Combi · XQD-Y 40,Räder und Reifen,service,—,,abgeschlossen,80%
+843459,Skoda Scala · ZQA-A 885,Ölwechsel,service,—,,fertig,90%
+845810,Skoda Fabia · QQL-Y 57,Inspektion,service,—,,abgeschlossen,90%
+840388,Opel Corsa · XQR-N 62,Ölwechsel,service,—,,abgeschlossen,95%
+829072,VW Touran · QY-PP 48,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+826963,Audi A3 Sportback · QQV-Z 41,HU/AU,service,—,,abgeschlossen,95%
+859095,BMW 5er Limousine · QQT-P 534,Räder und Reifen,service,—,,neu,90%
+841376,BMW 3er Touring · ZQB-J 896,Vandalismus,damage,BUMPER_FRONT_LEFT,mittel,neu,95%
+876763,Mercedes C-Klasse T-Modell · ZQL-E 67,Inspektion,service,—,,fertig,90%
+895033,Seat Leon · XQM-D 6207,Inspektion,service,—,,laufend,95%
+857129,Audi A6 Avant · QQW-UN 2274,Parkschaden,damage,"SILL_RIGHT, BUMPER_FRONT_RIGHT",leicht,neu,50%
+851339,Seat Leon · XQE-N 242,HU/AU,service,—,,abgeschlossen,90%
+873550,Seat Ateca · XQL-N 776,HU/AU,service,—,,abgeschlossen,90%
+881845,VW T6.1 Transporter · QY-ER 250,Vandalismus,damage,"DOOR_REAR_RIGHT, BUMPER_REAR_RIGHT, SILL_RIGHT",schwer,abgeschlossen,90%
+843833,Skoda Kodiaq · QQW-JA 9266,Hagelschaden,damage,"ROOF, TAILGATE",schwer,abgeschlossen,95%
+880821,BMW X3 · QQK-WF 354,Räder und Reifen,service,—,,neu,90%
+896862,VW Golf Variant · QQD-U 684,HU/AU,service,—,,storniert,90%
+886870,Mercedes Vito · ZQL-BK 89,Parkschaden,damage,BUMPER_REAR_FULL,schwer,neu,90%
+832343,Opel Mokka · XQE-D 349,Inspektion,service,—,,abgeschlossen,80%
+841524,VW Tiguan · QQV-YU 57,Vandalismus,damage,"BUMPER_FRONT_RIGHT, FENDER_FRONT_LEFT",leicht,laufend,95%
+846807,Audi A1 Sportback · XQD-XG 4301,Rangierschaden,damage,FENDER_FRONT_RIGHT,leicht,neu,85%
+885969,VW Golf Variant · QQD-KZ 3978,Bremsen,service,—,,laufend,90%
+846087,VW Polo · XQR-S 20,Rangierschaden,damage,"FENDER_FRONT_RIGHT, MIRROR_RIGHT",mittel,abgeschlossen,85%
+837549,Mercedes B-Klasse · QQF-PS 93,Wildunfall,damage,HOOD,schwer,laufend,90%
+849058,Mercedes A-Klasse · QQL-XX 560,Inspektion,service,—,,fertig,80%
+859960,VW T-Roc · QQN-L 259,Räder und Reifen,service,—,,abgeschlossen,90%
+891219,BMW X3 · XQL-Y 48,Ölwechsel,service,—,,abgeschlossen,60%
+851957,BMW X3 · XQ-VA 635,Inspektion,service,—,,abgeschlossen,95%
+874700,Mercedes E-Klasse · QQK-K 4683,HU/AU,service,—,,laufend,95%
+857882,Skoda Kodiaq · XQC-TE 89,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+845351,VW Passat Variant · QQ-ZE 4371,Ölwechsel,service,—,,fertig,90%
+860356,Audi Q2 · QQF-G 2662,Räder und Reifen,service,—,,laufend,95%
+828461,Ford Transit Custom · QQE-E 830,Steinschlag,damage,WINDSHIELD,schwer,fertig,95%
+882187,Skoda Scala · ZQM-J 4257,Inspektion,service,—,,abgeschlossen,95%
+820258,Opel Vivaro · QQR-H 245,Parkschaden,damage,"MIRROR_LEFT, BUMPER_FRONT_LEFT",schwer,laufend,95%
+823577,VW Golf · ZQM-SG 655,Wildunfall,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_LEFT",schwer,abgeschlossen,95%
+842344,Audi A4 Avant · QQA-KL 4560,Auffahrunfall,damage,"BUMPER_REAR_RIGHT, BUMPER_REAR_FULL, BUMPER_FRONT_FULL",mittel,laufend,50%
+830266,BMW 5er Limousine · ZQ-XL 24,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",,fertig,50%
+860024,Ford Kuga · ZQA-PY 8208,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,fertig,70%
+837856,VW T6.1 Transporter · QQW-R 4843,Rangierschaden,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_FULL",mittel,laufend,80%
+836531,Mercedes GLC · QQR-VD 92,Inspektion,service,—,,fertig,90%
+839223,Seat Arona · ZQS-W 7568,HU/AU,service,—,,neu,85%
+884512,Audi Q2 · ZQM-X 8626,Räder und Reifen,service,—,,abgeschlossen,95%
+831857,Seat Ateca · XQR-Y 46,Inspektion,service,—,,fertig,95%
+844825,VW Golf Variant · QY-K 79,Bremsen,service,—,,laufend,95%
+847001,VW Passat Variant · XQR-LN 48,Auffahrunfall,damage,BUMPER_REAR_FULL,mittel,abgeschlossen,92%
+888935,Ford Kuga · XQD-LM 77,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,laufend,50%
+859209,VW Caddy · QQF-SG 399,Parkschaden,damage,BUMPER_FRONT_RIGHT,leicht,laufend,85%
+838013,BMW 1er · ZQ-LU 9718,Inspektion,service,—,,fertig,90%
+868631,Audi A6 Avant · XQA-FN 71,Parkschaden,damage,MIRROR_RIGHT,leicht,laufend,95%
+889335,Ford Focus Turnier · ZQR-XE 2545,Inspektion,service,—,,fertig,95%
+842246,Audi A6 Avant · XQA-VT 7772,Ölwechsel,service,—,,abgeschlossen,95%
+851935,Skoda Octavia Combi · ZQR-PX 23,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, BUMPER_FRONT_FULL, HOOD",mittel,abgeschlossen,50%
+892575,Opel Vivaro · XQA-BH 724,HU/AU,service,—,,abgeschlossen,90%
+878960,Audi Q2 · ZQA-YW 742,Inspektion,service,—,,abgeschlossen,95%
+875097,Mercedes Vito · ZQB-H 77,Rangierschaden,damage,TAILGATE,mittel,neu,95%
+882498,Skoda Superb Combi · QQS-T 67,Räder und Reifen,service,—,,abgeschlossen,90%
+878653,Ford Fiesta · QZ-BZ 42,Parkschaden,damage,HOOD,schwer,abgeschlossen,96%
+835973,Opel Vivaro · QQK-H 59,HU/AU,service,—,,abgeschlossen,95%
+884433,Mercedes Vito · ZQB-A 774,Inspektion,service,—,,abgeschlossen,95%
+878284,Audi A3 Sportback · XQD-Z 73,Hagelschaden,damage,"HOOD, ROOF",schwer,abgeschlossen,85%
+890392,VW Passat Variant · QQE-R 743,Auffahrunfall,damage,"HOOD, FENDER_REAR_LEFT",schwer,neu,93%
+836557,Seat Arona · XQL-YK 85,Bremsen,service,—,,fertig,85%
+880953,Skoda Kodiaq · QQR-W 9390,Ölwechsel,service,—,,neu,65%
+868710,BMW 2er Active Tourer · XQR-RG 67,Wildunfall,damage,"BUMPER_FRONT_RIGHT, FENDER_FRONT_RIGHT",leicht,fertig,93%
+899078,Skoda Scala · ZQS-F 68,Räder und Reifen,service,—,,abgeschlossen,95%
+832586,Mercedes Vito · XQM-ET 4382,Inspektion,service,—,,neu,90%
+833889,Ford Transit Custom · QQZ-YW 591,Bremsen,service,—,,laufend,80%
+846190,VW Polo · ZQM-YJ 388,Parkschaden,damage,"MIRROR_RIGHT, BUMPER_FRONT_FULL",leicht,abgeschlossen,92%
+884955,BMW 2er Active Tourer · ZQD-AH 60,Ölwechsel,service,—,,laufend,95%
+846261,Skoda Octavia Combi · QQ-Y 12,Ölwechsel,service,—,,laufend,95%
+883006,Skoda Fabia · QQM-L 2,Bremsen,service,—,,laufend,90%
+864149,VW T6.1 Transporter · XQC-K 603,Bremsen,service,—,,fertig,80%
+846978,Skoda Fabia · ZQL-V 54,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+831146,Audi Q3 · XQB-HJ 315,Hagelschaden,damage,"HOOD, TAILGATE",schwer,fertig,93%
+882180,Mercedes Vito · XQM-LJ 3781,Bremsen,service,—,,fertig,80%
+885276,BMW 5er Limousine · XQD-N 2935,Bremsen,service,—,,abgeschlossen,85%
+855977,Skoda Fabia · ZQL-NZ 84,Wildunfall,damage,FENDER_FRONT_RIGHT,leicht,neu,95%
+849518,Audi Q5 · ZQL-TY 6550,Räder und Reifen,service,—,,laufend,95%
+836854,Seat Arona · QQV-P 740,Parkschaden,damage,"BUMPER_REAR_RIGHT, MIRROR_LEFT",mittel,neu,95%
+860255,Mercedes GLC · QQM-FF 7878,Bremsen,service,—,,neu,90%
+877756,Skoda Superb Combi · XQC-U 52,Wildunfall,damage,"HOOD, FENDER_FRONT_RIGHT, FENDER_FRONT_LEFT",leicht,fertig,90%
+891362,VW Passat Variant · XQL-SP 7017,Inspektion,service,—,,abgeschlossen,90%
+850382,VW T-Roc · QQC-DZ 32,Auffahrunfall,damage,"FENDER_REAR_RIGHT, HOOD",leicht,laufend,95%
+863515,Mercedes E-Klasse · ZQL-D 121,Ölwechsel,service,—,,laufend,90%
+876687,Mercedes A-Klasse · ZQL-N 78,Wildunfall,damage,HOOD,leicht,abgeschlossen,95%
+877484,Ford Kuga · QQN-SU 466,Ölwechsel,service,—,,fertig,70%
+853138,Mercedes A-Klasse · QY-UV 7941,HU/AU,service,—,,fertig,90%
+850257,Skoda Karoq · QQR-U 17,Räder und Reifen,service,—,,laufend,90%
+853563,VW Caddy · ZQL-F 769,Hagelschaden,damage,"HOOD, TAILGATE",schwer,abgeschlossen,92%
+888550,Mercedes Vito · QQZ-HJ 84,Räder und Reifen,service,—,,laufend,85%
+855527,VW T6.1 Transporter · QQH-AG 856,Ölwechsel,service,—,,abgeschlossen,100%
+861722,VW Caddy · QQM-HL 4165,Bremsen,service,—,,abgeschlossen,80%
+824560,BMW 2er Active Tourer · XQC-B 6651,Auffahrunfall,damage,"BUMPER_FRONT_FULL, FENDER_REAR_LEFT",leicht,abgeschlossen,85%
+893624,Ford Puma · QQS-KE 7779,Rangierschaden,damage,BUMPER_REAR_RIGHT,leicht,neu,95%
+859509,Skoda Fabia · QQW-DD 473,Inspektion,service,—,,laufend,95%
+833184,VW T6.1 Transporter · ZQL-BK 308,Wildunfall,damage,"HOOD, FENDER_FRONT_RIGHT",mittel,laufend,94%
+826776,Opel Corsa · QQ-C 369,Ölwechsel,service,—,,abgeschlossen,100%
+825590,BMW 1er · QQ-J 9602,Räder und Reifen,service,—,,neu,85%
+850302,VW Caddy · QQH-KJ 637,Bremsen,service,—,,abgeschlossen,90%
+843965,VW Tiguan · QZ-CC 36,Bremsen,service,—,,abgeschlossen,90%
+838289,Opel Mokka · QQZ-F 1071,Ölwechsel,service,—,,storniert,95%
+864629,Audi Q2 · XQE-H 182,Vandalismus,damage,SILL_RIGHT,leicht,laufend,97%
+895649,VW Tiguan · QZ-UT 813,Räder und Reifen,service,—,,laufend,95%
+861889,Mercedes E-Klasse · XQS-KL 4962,Wildunfall,damage,BUMPER_FRONT_FULL,mittel,laufend,95%
+893565,Ford Transit Custom · QQF-C 66,HU/AU,service,—,,abgeschlossen,90%
+870831,BMW 3er Touring · QQE-FF 78,HU/AU,service,—,,laufend,95%
+878818,Mercedes E-Klasse · ZQC-G 76,Inspektion,service,—,,laufend,95%
+820558,BMW 1er · ZQA-EZ 14,Rangierschaden,damage,"FENDER_REAR_RIGHT, FENDER_REAR_LEFT",leicht,abgeschlossen,95%
+844715,VW Tiguan · QY-HM 893,Ölwechsel,service,—,,fertig,85%
+895208,Mercedes A-Klasse · XQA-H 570,Räder und Reifen,service,—,,neu,95%
+835514,Skoda Kodiaq · XQC-H 1677,HU/AU,service,—,,laufend,100%
+837339,Audi Q2 · QQB-NC 41,Parkschaden,damage,"SILL_RIGHT, MIRROR_RIGHT",mittel,fertig,95%
+862480,Skoda Kodiaq · ZQ-EH 49,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+890031,Audi Q5 · QQV-CC 119,Vandalismus,damage,"BUMPER_REAR_RIGHT, DOOR_REAR_RIGHT, DOOR_FRONT_LEFT",schwer,laufend,88%
+886217,Audi A3 Sportback · XQ-JJ 7,Bremsen,service,—,,neu,90%
+877050,VW Polo · XQD-ZD 8143,Ölwechsel,service,—,,neu,85%
+841729,Skoda Fabia · ZQM-H 571,Räder und Reifen,service,—,,abgeschlossen,100%
+897062,Mercedes B-Klasse · QQS-W 249,Hagelschaden,damage,"HOOD, ROOF, TAILGATE",mittel,laufend,85%
+837808,Seat Arona · QQM-PE 526,Ölwechsel,service,—,,neu,95%
+825886,Mercedes Sprinter · ZQA-J 33,Räder und Reifen,service,—,,laufend,90%
+899442,VW T-Roc · ZQL-V 95,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, BUMPER_REAR_RIGHT, TAILGATE",leicht,neu,90%
+825880,VW Caddy · XQL-XU 10,Steinschlag,damage,WINDSHIELD,mittel,fertig,95%
+826236,VW Polo · ZQL-M 7,Rangierschaden,damage,MIRROR_LEFT,mittel,laufend,95%
+833465,VW Tiguan · ZQL-A 4918,HU/AU,service,—,,fertig,95%
+894518,Mercedes E-Klasse · QQZ-LC 436,Parkschaden,damage,"BUMPER_REAR_FULL, BUMPER_FRONT_RIGHT",schwer,neu,70%
+880383,Skoda Octavia Combi · QQZ-KU 91,Räder und Reifen,service,—,,neu,85%
+898540,Audi A1 Sportback · QQD-P 86,HU/AU,service,—,,abgeschlossen,90%
+895593,Ford Kuga · QQD-M 890,Parkschaden,damage,"FENDER_FRONT_RIGHT, DOOR_REAR_LEFT",mittel,abgeschlossen,90%
+852292,VW T6.1 Transporter · XQA-F 87,Räder und Reifen,service,—,,laufend,95%
+833783,Opel Grandland · QQL-F 22,Ölwechsel,service,—,,laufend,90%
+861394,Opel Vivaro · ZQ-D 22,Bremsen,service,—,,abgeschlossen,85%
+823016,Ford Puma · QY-AW 782,Inspektion,service,—,,neu,95%
+832802,VW Touran · XQC-Z 11,Räder und Reifen,service,—,,storniert,90%
+832614,BMW 1er · XQA-AX 8835,Parkschaden,damage,BUMPER_FRONT_FULL,mittel,neu,90%
+896468,BMW X1 · QQL-ST 5186,Räder und Reifen,service,—,,neu,95%
+866895,Mercedes GLC · QQF-M 5626,Inspektion,service,—,,storniert,95%
+890593,BMW X3 · QQF-VV 1871,Ölwechsel,service,—,,storniert,95%
+838710,VW Caddy · QQC-LE 5302,Parkschaden,damage,MIRROR_RIGHT,schwer,abgeschlossen,95%
+867060,Skoda Karoq · ZQ-T 793,Ölwechsel,service,—,,laufend,95%
+874946,Skoda Kodiaq · QQL-H 9953,Bremsen,service,—,,fertig,95%
+841981,Seat Ibiza · ZQA-DS 9,Parkschaden,damage,"FENDER_FRONT_RIGHT, FENDER_REAR_LEFT",leicht,abgeschlossen,92%
+871366,Seat Ateca · QQC-C 6085,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+892400,Audi Q3 · ZQ-N 211,Räder und Reifen,service,—,,neu,90%
+840632,Skoda Fabia · XQA-N 2,Parkschaden,damage,FENDER_REAR_RIGHT,schwer,laufend,95%
+892941,Ford Fiesta · ZQB-L 79,Räder und Reifen,service,—,,laufend,80%
+887161,Skoda Scala · QY-Y 8410,Bremsen,service,—,,abgeschlossen,70%
+883714,Mercedes Vito · QQF-UW 675,Vandalismus,damage,"HOOD, MIRROR_LEFT, SILL_RIGHT",schwer,abgeschlossen,88%
+828042,Audi Q5 · QQK-J 277,HU/AU,service,—,,neu,95%
+856854,Audi A6 Avant · ZQS-LG 111,Parkschaden,damage,"FENDER_REAR_LEFT, FENDER_REAR_RIGHT",mittel,abgeschlossen,93%
+829622,Mercedes B-Klasse · QQB-W 7513,Parkschaden,damage,"FENDER_FRONT_LEFT, BUMPER_REAR_RIGHT",leicht,fertig,93%
+821533,Mercedes B-Klasse · QQ-UW 8574,Parkschaden,damage,"FENDER_REAR_LEFT, DOOR_FRONT_LEFT",leicht,fertig,90%
+826460,Mercedes GLC · QQA-Y 46,Vandalismus,damage,"BUMPER_REAR_RIGHT, BUMPER_FRONT_FULL, BUMPER_REAR_LEFT",leicht,abgeschlossen,85%
+834108,Ford Focus Turnier · QQM-HF 71,Parkschaden,damage,"BUMPER_REAR_LEFT, SILL_LEFT",mittel,laufend,92%
+886758,Mercedes Vito · QQC-Y 570,Inspektion,service,—,,laufend,95%
+853741,Audi Q5 · QQZ-PZ 2414,Rangierschaden,damage,HOOD,leicht,laufend,95%
+841770,Audi A1 Sportback · QQM-EA 4963,Hagelschaden,damage,"HOOD, ROOF",mittel,neu,90%
+858459,BMW X3 · QQK-VM 9,Bremsen,service,—,,laufend,90%
+884372,Opel Corsa · QQB-Y 592,HU/AU,service,—,,abgeschlossen,90%
+834575,VW Touran · ZQD-F 9376,Ölwechsel,service,—,,abgeschlossen,90%
+890564,VW Golf Variant · ZQS-U 137,Bremsen,service,—,,neu,95%
+885078,VW Tiguan · QQM-HN 94,Bremsen,service,—,,laufend,90%
+838355,Ford Fiesta · QQV-K 16,Hagelschaden,damage,"HOOD, ROOF",schwer,abgeschlossen,95%
+860606,VW Polo · ZQD-V 7878,Hagelschaden,damage,"HOOD, TAILGATE, ROOF",schwer,abgeschlossen,95%
+866540,Seat Leon · XQS-U 40,Bremsen,service,—,,laufend,90%
+841345,Mercedes Sprinter · QX-J 9287,Räder und Reifen,service,—,,laufend,95%
+852899,VW Golf · ZQA-KM 891,Rangierschaden,damage,"FENDER_FRONT_RIGHT, DOOR_REAR_RIGHT",schwer,abgeschlossen,92%
+831430,Skoda Fabia · QQN-V 179,Ölwechsel,service,—,,abgeschlossen,95%
+847283,Audi A6 Avant · XQB-PS 923,Vandalismus,damage,HOOD,mittel,storniert,95%
+893639,Audi A4 Avant · XQD-UM 7252,HU/AU,service,—,,abgeschlossen,90%
+839073,Mercedes B-Klasse · QX-MV 558,HU/AU,service,—,,abgeschlossen,90%
+850562,Ford Fiesta · XQA-L 46,Räder und Reifen,service,—,,abgeschlossen,90%
+869002,Mercedes B-Klasse · QQE-S 76,Inspektion,service,—,,abgeschlossen,97%
+851056,Skoda Kodiaq · XQB-H 16,Bremsen,service,—,,storniert,90%
+830220,VW Golf Variant · QQV-KN 5691,Steinschlag,damage,WINDSHIELD,mittel,abgeschlossen,95%
+828166,VW Tiguan · ZQB-AH 3787,Räder und Reifen,service,—,,laufend,95%
+869162,BMW X3 · ZQL-GV 102,Bremsen,service,—,,laufend,95%
+891313,Opel Mokka · XQB-AA 29,HU/AU,service,—,,fertig,90%
+899366,Audi A3 Sportback · QQC-H 163,Ölwechsel,service,—,,fertig,95%
+860578,Audi A1 Sportback · QQV-P 899,Hagelschaden,damage,"HOOD, TAILGATE, ROOF",schwer,fertig,94%
+898518,VW Golf Variant · QQN-BH 3665,Rangierschaden,damage,DOOR_REAR_RIGHT,mittel,neu,95%
+826705,Skoda Superb Combi · QZ-GX 655,Parkschaden,damage,"FENDER_REAR_RIGHT, FENDER_FRONT_LEFT",leicht,abgeschlossen,90%
+833641,VW T6.1 Transporter · ZQL-M 7358,Rangierschaden,damage,BUMPER_REAR_LEFT,leicht,abgeschlossen,95%
+863969,Skoda Karoq · XQB-DK 18,Inspektion,service,—,,storniert,95%
+895463,Mercedes Vito · ZQB-K 650,Ölwechsel,service,—,,fertig,95%
+893707,Audi A6 Avant · QQA-SS 770,Inspektion,service,—,,fertig,85%
+853217,Skoda Superb Combi · QQK-FX 443,HU/AU,service,—,,laufend,95%
+877085,VW Golf · QQM-ST 6028,Bremsen,service,—,,abgeschlossen,90%
+860319,Mercedes GLC · XQD-FN 512,Räder und Reifen,service,—,,fertig,90%
+827151,Opel Grandland · QQ-UA 34,Rangierschaden,damage,"DOOR_FRONT_LEFT, TAILGATE",leicht,laufend,95%
+872990,VW Passat Variant · QQL-AT 90,Parkschaden,damage,BUMPER_FRONT_RIGHT,leicht,neu,95%
+828911,VW Golf · QQH-NN 86,Parkschaden,damage,"TAILGATE, BUMPER_FRONT_LEFT",mittel,abgeschlossen,95%
+890337,Opel Mokka · XQS-D 11,Rangierschaden,damage,"HOOD, BUMPER_FRONT_RIGHT",mittel,abgeschlossen,93%
+874398,Skoda Superb Combi · QQS-ZH 7930,Rangierschaden,damage,"HOOD, FENDER_REAR_LEFT",leicht,laufend,90%
+821214,Opel Corsa · ZQC-S 9150,Parkschaden,damage,FENDER_FRONT_LEFT,mittel,neu,90%
+853123,Seat Leon · QZ-U 38,Bremsen,service,—,,laufend,70%
+825546,BMW 2er Active Tourer · ZQM-PV 30,Ölwechsel,service,—,,laufend,90%
+864536,Ford Puma · QZ-L 144,HU/AU,service,—,,abgeschlossen,90%
+829134,BMW 5er Limousine · QQC-MS 53,Räder und Reifen,service,—,,laufend,90%
+882891,Audi A6 Avant · QX-Z 2893,Bremsen,service,—,,abgeschlossen,95%
+833203,BMW 5er Limousine · ZQL-PP 575,Ölwechsel,service,—,,fertig,98%
+883347,BMW X1 · ZQD-UW 46,Steinschlag,damage,WINDSHIELD,mittel,abgeschlossen,90%
+851484,VW Touran · ZQS-TV 28,Parkschaden,damage,MIRROR_LEFT,leicht,abgeschlossen,95%
+856097,VW T-Roc · QQV-M 7676,Auffahrunfall,damage,"FENDER_REAR_RIGHT, FENDER_FRONT_LEFT, FENDER_REAR_LEFT",leicht,fertig,70%
+828556,VW T6.1 Transporter · XQD-N 5913,Inspektion,service,—,,abgeschlossen,95%
+871198,Ford Puma · XQM-T 319,Inspektion,service,—,,fertig,95%
+820579,Audi Q3 · QQR-TU 32,HU/AU,service,—,,laufend,90%
+843698,Seat Ibiza · XQA-T 5731,HU/AU,service,—,,fertig,95%
+879863,VW T-Roc · QZ-J 6978,Räder und Reifen,service,—,,abgeschlossen,95%
+853680,Mercedes B-Klasse · QQS-P 142,Steinschlag,damage,WINDSHIELD,mittel,fertig,95%
+891910,Seat Ateca · ZQL-M 292,Inspektion,service,—,,abgeschlossen,90%
+838159,Audi A6 Avant · XQD-K 885,Parkschaden,damage,SILL_RIGHT,leicht,fertig,95%
+884844,VW Golf · QQW-DS 94,Wildunfall,damage,"BUMPER_FRONT_LEFT, FENDER_FRONT_RIGHT, BUMPER_FRONT_FULL",schwer,laufend,50%
+835979,Opel Astra Sports Tourer · XQL-SB 19,Räder und Reifen,service,—,,abgeschlossen,90%
+880199,Skoda Karoq · XQA-C 15,Räder und Reifen,service,—,,storniert,80%
+824427,Audi A3 Sportback · QQL-C 563,Inspektion,service,—,,neu,90%
+862161,VW Touran · QQA-L 84,Auffahrunfall,damage,FENDER_FRONT_RIGHT,leicht,abgeschlossen,95%
+856310,BMW 5er Limousine · XQS-PF 42,Parkschaden,damage,"BUMPER_FRONT_FULL, FENDER_REAR_RIGHT",leicht,neu,92%
+895978,Ford Kuga · QQT-LW 90,Parkschaden,damage,"BUMPER_REAR_FULL, TAILGATE",schwer,laufend,90%
+821961,VW T-Roc · QQC-TS 682,Hagelschaden,damage,"ROOF, HOOD",schwer,laufend,95%
+826385,Ford Puma · ZQD-KJ 5835,HU/AU,service,—,,neu,95%
+896917,Opel Mokka · ZQL-PZ 60,Vandalismus,damage,DOOR_FRONT_RIGHT,mittel,abgeschlossen,95%
+875974,BMW X1 · XQC-C 701,Ölwechsel,service,—,,laufend,90%
+885291,Audi A3 Sportback · QQA-UJ 7244,Wildunfall,damage,BUMPER_FRONT_RIGHT,,abgeschlossen,50%
+835359,Mercedes B-Klasse · QQT-R 227,Rangierschaden,damage,DOOR_FRONT_RIGHT,leicht,abgeschlossen,90%
+865863,Audi A6 Avant · QX-CV 474,Inspektion,service,—,,fertig,90%
+865286,Ford Focus Turnier · ZQD-BD 304,HU/AU,service,—,,laufend,95%
+834462,BMW X3 · QQK-D 649,Bremsen,service,—,,neu,80%
+873186,Skoda Karoq · QQ-LJ 2526,Rangierschaden,damage,"FENDER_REAR_LEFT, DOOR_FRONT_RIGHT",mittel,laufend,92%
+896654,Mercedes A-Klasse · QQC-J 7069,Inspektion,service,—,,abgeschlossen,95%
+898607,VW Passat Variant · QQV-CL 84,HU/AU,service,—,,laufend,85%
+835052,Seat Ateca · XQD-RT 985,Bremsen,service,—,,laufend,95%
+875573,Mercedes E-Klasse · QQD-GN 419,Parkschaden,damage,"FENDER_FRONT_RIGHT, BUMPER_REAR_RIGHT",schwer,abgeschlossen,92%
+836999,Seat Ibiza · QQF-AU 611,Ölwechsel,service,—,,abgeschlossen,90%
+888381,BMW 3er Touring · XQA-EZ 9834,Parkschaden,damage,"SILL_RIGHT, BUMPER_FRONT_LEFT",leicht,neu,94%
+895323,Mercedes B-Klasse · QQN-MY 675,Hagelschaden,damage,"HOOD, TAILGATE, ROOF",schwer,abgeschlossen,95%
+846821,Ford Kuga · QQC-K 4584,Parkschaden,damage,"SILL_LEFT, DOOR_REAR_RIGHT",leicht,abgeschlossen,92%
+838258,Audi A3 Sportback · QQN-D 493,Parkschaden,damage,"MIRROR_RIGHT, SILL_RIGHT",leicht,fertig,92%
+853758,BMW 5er Limousine · QQN-B 2949,Ölwechsel,service,—,,fertig,90%
+831427,VW Polo · QQM-EZ 16,Wildunfall,damage,BUMPER_FRONT_RIGHT,mittel,laufend,85%
+879875,BMW 2er Active Tourer · QQF-XT 75,Parkschaden,damage,"BUMPER_FRONT_LEFT, DOOR_REAR_RIGHT",mittel,neu,92%
+856484,VW T-Roc · QZ-RN 28,Vandalismus,damage,"FENDER_FRONT_RIGHT, BUMPER_FRONT_RIGHT, BUMPER_REAR_RIGHT",leicht,fertig,90%
+823013,Opel Mokka · XQM-S 173,Rangierschaden,damage,BUMPER_FRONT_FULL,schwer,fertig,85%
+873593,VW Touran · QQS-ZZ 8049,HU/AU,service,—,,laufend,90%
+826621,Mercedes E-Klasse · ZQC-V 8378,Inspektion,service,—,,laufend,95%
+884027,Skoda Fabia · QY-KB 8116,Steinschlag,damage,WINDSHIELD,mittel,laufend,95%
+867006,Mercedes A-Klasse · QQT-SY 13,Inspektion,service,—,,laufend,95%
+865392,Opel Grandland · XQA-V 497,Inspektion,service,—,,neu,85%
+894117,VW T-Roc · QQS-LH 19,Ölwechsel,service,—,,abgeschlossen,95%
+857936,VW Caddy · QQR-GR 743,Ölwechsel,service,—,,abgeschlossen,95%
+879108,Seat Ateca · XQD-NW 185,Inspektion,service,—,,fertig,95%
+835918,Mercedes C-Klasse T-Modell · QZ-GG 72,Inspektion,service,—,,abgeschlossen,95%
+898707,Ford Puma · XQ-FA 596,Rangierschaden,damage,"MIRROR_LEFT, HOOD",mittel,laufend,90%
+893887,Opel Astra Sports Tourer · QZ-FW 403,Bremsen,service,—,,neu,90%
+890056,Skoda Fabia · QQC-T 55,Hagelschaden,damage,"HOOD, ROOF, TAILGATE",schwer,abgeschlossen,70%
+853508,Seat Ateca · QQB-MD 479,Wildunfall,damage,"HOOD, BUMPER_FRONT_RIGHT",leicht,neu,95%
+876640,VW Polo · XQB-F 77,Wildunfall,damage,FENDER_FRONT_LEFT,leicht,neu,95%
+846368,Ford Transit Custom · QQE-TV 318,Auffahrunfall,damage,"BUMPER_FRONT_RIGHT, BUMPER_REAR_RIGHT",schwer,fertig,93%
+892694,Seat Ibiza · QQW-LZ 57,Räder und Reifen,service,—,,abgeschlossen,90%
+857700,Opel Mokka · ZQR-V 16,Ölwechsel,service,—,,laufend,95%
+874658,Audi A3 Sportback · QQH-BJ 93,HU/AU,service,—,,laufend,90%
+897848,Opel Corsa · XQR-GR 525,Rangierschaden,damage,"MIRROR_RIGHT, BUMPER_FRONT_RIGHT",leicht,laufend,92%
+835400,Skoda Octavia Combi · XQB-A 22,Inspektion,service,—,,laufend,90%
+846868,VW T-Roc · ZQM-X 3339,Rangierschaden,damage,"HOOD, FENDER_REAR_LEFT",mittel,fertig,92%
+845725,Opel Astra Sports Tourer · QQW-AT 293,Rangierschaden,damage,"DOOR_REAR_RIGHT, BUMPER_REAR_FULL",leicht,neu,70%
+896699,Mercedes Vito · XQR-Y 313,Vandalismus,damage,"SILL_RIGHT, DOOR_REAR_LEFT",mittel,abgeschlossen,93%
+883493,BMW 1er · ZQR-GF 1034,Hagelschaden,damage,"HOOD, ROOF, TAILGATE",schwer,abgeschlossen,95%
+842555,Opel Mokka · QZ-H 81,Ölwechsel,service,—,,neu,80%
+846916,Audi Q3 · QQK-KR 736,Inspektion,service,—,,neu,95%
+893250,Audi A1 Sportback · QQK-P 153,Parkschaden,damage,SILL_RIGHT,schwer,neu,95%
+869342,VW Touran · QQD-Z 68,Inspektion,service,—,,abgeschlossen,90%
+836689,Opel Vivaro · QQK-C 184,Inspektion,service,—,,abgeschlossen,95%
+858974,Seat Ibiza · QQE-M 20,Parkschaden,damage,"MIRROR_LEFT, BUMPER_REAR_RIGHT",schwer,neu,93%
+869747,Skoda Scala · XQB-U 2280,Rangierschaden,damage,BUMPER_FRONT_RIGHT,mittel,laufend,90%
+841588,Ford Focus Turnier · XQL-C 82,Auffahrunfall,damage,"BUMPER_FRONT_LEFT, FENDER_REAR_LEFT",leicht,abgeschlossen,90%
+864009,Audi Q3 · QQT-YN 32,Räder und Reifen,service,—,,fertig,95%
+865211,VW Passat Variant · QQS-S 4845,Parkschaden,damage,"BUMPER_REAR_FULL, BUMPER_FRONT_LEFT",leicht,abgeschlossen,50%
+865202,Opel Vivaro · XQS-Y 50,Bremsen,service,—,,laufend,95%
+839960,VW Golf · XQB-L 941,Bremsen,service,—,,abgeschlossen,90%
+831826,Seat Ibiza · QQL-L 72,Inspektion,service,—,,laufend,90%
+838699,Seat Arona · ZQL-XU 75,Räder und Reifen,service,—,,laufend,90%
+862770,BMW 3er Touring · QQV-B 3490,Bremsen,service,—,,abgeschlossen,95%
+841500,Ford Kuga · QY-H 84,Bremsen,service,—,,fertig,90%
+833288,Skoda Octavia Combi · XQB-PF 29,Räder und Reifen,service,—,,abgeschlossen,70%
+841971,Opel Vivaro · QQT-FY 714,Rangierschaden,damage,SILL_LEFT,schwer,neu,96%
+852650,VW Golf Variant · XQE-E 7942,Parkschaden,damage,"FENDER_FRONT_LEFT, DOOR_FRONT_LEFT",schwer,abgeschlossen,88%
+847051,Opel Corsa · XQA-XW 34,Hagelschaden,damage,"TAILGATE, ROOF, HOOD",schwer,laufend,70%
+892386,Mercedes C-Klasse T-Modell · QQF-JC 8288,Vandalismus,damage,"TAILGATE, BUMPER_REAR_RIGHT",mittel,laufend,92%
+852729,Audi A6 Avant · XQL-N 8311,Rangierschaden,damage,FENDER_FRONT_RIGHT,leicht,fertig,90%
+864189,BMW 2er Active Tourer · ZQA-YD 27,Bremsen,service,—,,laufend,90%
+837712,Seat Ibiza · QQS-BB 3843,HU/AU,service,—,,fertig,80%
+843211,Skoda Karoq · XQD-X 1642,Ölwechsel,service,—,,abgeschlossen,90%
+886828,Skoda Scala · XQA-P 129,Parkschaden,damage,BUMPER_FRONT_RIGHT,leicht,storniert,90%
+897461,Seat Arona · QQS-F 7959,Bremsen,service,—,,neu,90%
+866488,BMW 2er Active Tourer · XQE-LE 21,Inspektion,service,—,,neu,95%
+869493,BMW X1 · QQD-L 9533,Inspektion,service,—,,laufend,95%
+849165,Mercedes E-Klasse · QQM-F 2386,Steinschlag,damage,WINDSHIELD,leicht,laufend,95%
+832530,Audi A1 Sportback · QQN-V 17,HU/AU,service,—,,laufend,90%
+863626,Mercedes A-Klasse · ZQC-N 2844,HU/AU,service,—,,abgeschlossen,90%
+898615,Opel Mokka · QQE-SF 730,HU/AU,service,—,,laufend,95%
+864706,VW T6.1 Transporter · QQ-J 553,Auffahrunfall,damage,BUMPER_FRONT_LEFT,mittel,laufend,80%
+823588,VW T-Roc · XQR-N 7752,Wildunfall,damage,"BUMPER_FRONT_FULL, BUMPER_FRONT_LEFT, FENDER_FRONT_RIGHT",mittel,fertig,95%
+841959,Ford Fiesta · XQL-LB 38,Inspektion,service,—,,abgeschlossen,95%
+892139,BMW 3er Touring · XQB-DP 456,HU/AU,service,—,,neu,65%
+895687,BMW 3er Touring · QQL-A 52,Auffahrunfall,damage,BUMPER_REAR_LEFT,schwer,abgeschlossen,95%
+897102,Skoda Superb Combi · ZQA-Y 93,Inspektion,service,—,,neu,100%
+877485,VW Touran · QQR-LB 63,Hagelschaden,damage,"ROOF, TAILGATE, HOOD",schwer,laufend,70%
+839293,BMW X3 · QQD-Z 9427,Inspektion,service,—,,abgeschlossen,90%
+837732,Audi A6 Avant · QQT-P 4734,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,abgeschlossen,70%
+858134,Seat Ateca · QQW-V 853,Inspektion,service,—,,abgeschlossen,95%
+878421,Opel Corsa · QQN-N 19,Wildunfall,damage,FENDER_FRONT_RIGHT,mittel,laufend,88%
+846256,BMW 2er Active Tourer · ZQM-P 91,Steinschlag,damage,WINDSHIELD,schwer,laufend,97%
+857268,VW T6.1 Transporter · ZQM-KZ 463,Bremsen,service,—,,neu,90%
+844224,Skoda Fabia · ZQC-K 603,Parkschaden,damage,"BUMPER_FRONT_LEFT, SILL_RIGHT",mittel,abgeschlossen,93%
+870110,BMW 3er Touring · QZ-DK 888,Inspektion,service,—,,laufend,90%
+866558,Audi A4 Avant · QX-DB 274,Räder und Reifen,service,—,,laufend,80%
+856176,VW Polo · ZQS-FT 7,Bremsen,service,—,,fertig,90%
+836805,Audi A6 Avant · XQE-M 2,Bremsen,service,—,,abgeschlossen,90%
+856983,Audi A4 Avant · ZQS-Y 105,Vandalismus,damage,"DOOR_REAR_LEFT, SILL_LEFT",leicht,laufend,95%
+857831,VW Tiguan · ZQC-K 887,Hagelschaden,damage,"TAILGATE, HOOD, ROOF",schwer,neu,50%
+862801,VW Golf Variant · ZQR-X 223,Auffahrunfall,damage,"HOOD, BUMPER_REAR_LEFT, FENDER_REAR_RIGHT",schwer,neu,93%
+838935,Skoda Superb Combi · QQR-A 328,Ölwechsel,service,—,,laufend,95%
+825286,Ford Transit Custom · QQF-B 624,Ölwechsel,service,—,,storniert,90%
+863189,Opel Corsa · QQH-H 33,Ölwechsel,service,—,,abgeschlossen,90%
+825957,VW Golf Variant · QQR-C 10,Ölwechsel,service,—,,neu,85%
+862977,Skoda Octavia Combi · ZQD-T 88,Bremsen,service,—,,abgeschlossen,90%
+869381,Ford Focus Turnier · ZQD-ZT 9036,Räder und Reifen,service,—,,laufend,90%
+863805,Audi A3 Sportback · QQW-M 2991,Rangierschaden,damage,"DOOR_REAR_LEFT, FENDER_FRONT_RIGHT",schwer,abgeschlossen,95%
+855760,Audi A4 Avant · ZQR-VN 8151,Ölwechsel,service,—,,abgeschlossen,95%
+889496,VW Polo · QQS-FS 283,Bremsen,service,—,,fertig,90%
+863074,Mercedes Sprinter · ZQS-YR 61,Ölwechsel,service,—,,neu,95%
+844402,BMW 1er · QQF-S 57,Räder und Reifen,service,—,,laufend,90%
+877197,Mercedes Vito · QQ-FX 330,HU/AU,service,—,,abgeschlossen,95%
+895612,BMW 1er · QQZ-G 120,Steinschlag,damage,WINDSHIELD,leicht,abgeschlossen,95%
+884293,Mercedes GLC · XQB-JR 3,Wildunfall,damage,FENDER_FRONT_RIGHT,leicht,laufend,88%
+857015,Opel Mokka · ZQC-Z 313,Rangierschaden,damage,"TAILGATE, BUMPER_REAR_LEFT",mittel,fertig,90%
+841973,VW Touran · QQC-U 366,Auffahrunfall,damage,BUMPER_FRONT_FULL,mittel,neu,90%
+842345,Skoda Octavia Combi · ZQD-AS 18,Parkschaden,damage,FENDER_REAR_RIGHT,leicht,laufend,95%
+855379,Mercedes A-Klasse · QZ-XA 18,Vandalismus,damage,"FENDER_FRONT_LEFT, MIRROR_LEFT, MIRROR_RIGHT",mittel,neu,90%
+890645,Opel Corsa · QQ-MX 1409,Inspektion,service,—,,fertig,92%
+866409,Skoda Karoq · QQA-PS 352,Bremsen,service,—,,laufend,90%
+851094,BMW 3er Touring · QQD-KU 6242,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",schwer,fertig,95%
+853843,Skoda Karoq · XQS-N 711,Inspektion,service,—,,abgeschlossen,95%
+832735,Seat Arona · ZQR-J 4566,Inspektion,service,—,,abgeschlossen,95%
+879298,Mercedes E-Klasse · QQM-R 650,HU/AU,service,—,,laufend,95%
+844069,Audi A4 Avant · ZQB-R 1847,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+820869,VW Caddy · QZ-S 2103,Bremsen,service,—,,abgeschlossen,90%
+829689,VW Touran · ZQL-UL 83,Vandalismus,damage,FENDER_REAR_RIGHT,,neu,90%
+894613,BMW 3er Touring · ZQR-U 3,Räder und Reifen,service,—,,neu,95%
+851459,Ford Fiesta · QQE-Y 37,Inspektion,service,—,,abgeschlossen,90%
+827140,VW T-Roc · QQC-LC 711,Parkschaden,damage,"BUMPER_FRONT_FULL, DOOR_REAR_LEFT",leicht,neu,70%
+855146,Ford Kuga · QQ-V 329,Ölwechsel,service,—,,fertig,95%
+859239,Skoda Octavia Combi · QQE-R 6293,Wildunfall,damage,"FENDER_FRONT_LEFT, FENDER_FRONT_RIGHT, BUMPER_FRONT_RIGHT",mittel,laufend,89%
+886567,Opel Mokka · ZQL-C 6342,HU/AU,service,—,,laufend,75%
+866778,Skoda Octavia Combi · QQH-E 43,Vandalismus,damage,DOOR_FRONT_LEFT,leicht,fertig,95%
+874843,Mercedes Vito · XQL-HY 2168,Rangierschaden,damage,MIRROR_LEFT,schwer,fertig,95%
+836941,Mercedes Sprinter · QZ-WM 71,HU/AU,service,—,,abgeschlossen,90%
+871673,Skoda Fabia · XQM-WK 37,Rangierschaden,damage,"BUMPER_REAR_RIGHT, BUMPER_FRONT_RIGHT",mittel,laufend,92%
+824089,Audi Q2 · QQF-KR 62,HU/AU,service,—,,laufend,95%
+852076,Opel Mokka · QQA-LE 404,Steinschlag,damage,WINDSHIELD,schwer,laufend,95%
+824137,Skoda Octavia Combi · QQE-Y 112,Inspektion,service,—,,abgeschlossen,95%
+864771,Audi Q2 · QQZ-ER 4318,HU/AU,service,—,,fertig,95%
+848920,VW Golf · ZQR-E 3154,Räder und Reifen,service,—,,laufend,95%
+858123,Seat Ibiza · XQA-K 82,Rangierschaden,damage,SILL_LEFT,mittel,abgeschlossen,90%
+888308,Audi Q3 · ZQC-FR 1691,Steinschlag,damage,WINDSHIELD,mittel,laufend,95%
+867265,VW T6.1 Transporter · XQA-ZC 34,Auffahrunfall,damage,"FENDER_REAR_RIGHT, BUMPER_REAR_FULL, FENDER_FRONT_LEFT",mittel,laufend,93%
+841953,Ford Focus Turnier · QY-G 72,Steinschlag,damage,WINDSHIELD,leicht,neu,95%
+877345,BMW X1 · XQM-PR 991,Räder und Reifen,service,—,,abgeschlossen,95%
+875486,BMW 3er Touring · QY-EZ 73,Bremsen,service,—,,fertig,90%
+870462,Audi A1 Sportback · XQR-B 47,Inspektion,service,—,,abgeschlossen,90%
+826654,BMW 5er Limousine · QQV-C 432,Inspektion,service,—,,laufend,85%
+885750,Mercedes E-Klasse · QQV-FH 161,Inspektion,service,—,,laufend,90%
+838742,Audi Q2 · QQA-K 935,Wildunfall,damage,"BUMPER_FRONT_RIGHT, BUMPER_FRONT_LEFT",leicht,abgeschlossen,95%
+858295,Mercedes C-Klasse T-Modell · QY-L 684,Steinschlag,damage,WINDSHIELD,mittel,neu,90%
+849458,Ford Focus Turnier · QQV-LX 8538,Hagelschaden,damage,"ROOF, HOOD, TAILGATE",mittel,fertig,82%
+863652,Skoda Fabia · ZQS-A 8195,Steinschlag,damage,WINDSHIELD,mittel,storniert,95%
+868442,BMW X1 · ZQL-W 959,Inspektion,service,—,,laufend,90%
+846355,Opel Mokka · ZQB-M 919,Parkschaden,damage,"TAILGATE, DOOR_REAR_LEFT",mittel,abgeschlossen,85%
+888387,Ford Kuga · ZQS-TA 82,Inspektion,service,—,,laufend,80%
+874191,VW Polo · ZQD-F 66,Inspektion,service,—,,laufend,90%
+844124,VW Touran · QZ-E 7701,Inspektion,service,—,,laufend,95%
+888738,Audi A1 Sportback · XQE-L 516,Räder und Reifen,service,—,,fertig,82%
+875513,BMW 2er Active Tourer · XQM-PS 3054,Steinschlag,damage,WINDSHIELD,leicht,fertig,90%
+838740,Mercedes Vito · XQD-AH 30,Inspektion,service,—,,abgeschlossen,95%
+871259,Audi A4 Avant · QQB-LT 7408,Auffahrunfall,damage,BUMPER_FRONT_RIGHT,leicht,abgeschlossen,95%
+859369,VW Golf · QY-D 184,Parkschaden,damage,"FENDER_REAR_RIGHT, HOOD",leicht,neu,85%
+873582,Audi Q3 · ZQA-F 69,HU/AU,service,—,,abgeschlossen,65%
+864894,Audi A6 Avant · QQN-GW 45,Ölwechsel,service,—,,neu,95%
+832083,Audi Q3 · QQS-BT 77,Parkschaden,damage,BUMPER_REAR_FULL,leicht,abgeschlossen,90%
+857533,Seat Ateca · ZQM-C 2536,HU/AU,service,—,,abgeschlossen,90%
+853534,Opel Vivaro · QQL-L 337,Vandalismus,damage,"MIRROR_LEFT, BUMPER_REAR_LEFT",leicht,abgeschlossen,93%
+847721,Ford Kuga · QQT-T 99,Rangierschaden,damage,"BUMPER_FRONT_RIGHT, BUMPER_REAR_RIGHT",mittel,abgeschlossen,93%
+864049,Seat Leon · QQW-JP 16,Auffahrunfall,damage,"BUMPER_FRONT_FULL, BUMPER_REAR_RIGHT",mittel,laufend,92%
+877344,Audi A1 Sportback · XQE-L 63,Auffahrunfall,damage,"BUMPER_REAR_LEFT, FENDER_FRONT_LEFT, TAILGATE",leicht,neu,90%
+895520,Ford Transit Custom · ZQR-D 25,Vandalismus,damage,BUMPER_REAR_RIGHT,mittel,laufend,90%
+820002,Seat Ateca · QX-U 64,Steinschlag,damage,WINDSHIELD,schwer,abgeschlossen,95%
+888642,Ford Kuga · XQ-H 684,Parkschaden,damage,BUMPER_REAR_FULL,,abgeschlossen,50%
+823443,Audi Q2 · QQN-G 744,Inspektion,service,—,,neu,95%
+876444,BMW 5er Limousine · QY-D 443,HU/AU,service,—,,laufend,95%
+898706,VW Caddy · QQF-YV 77,Steinschlag,damage,WINDSHIELD,mittel,laufend,98%
+835914,BMW 3er Touring · QQE-PS 86,Auffahrunfall,damage,"BUMPER_FRONT_FULL, BUMPER_FRONT_LEFT",mittel,fertig,50%
+841217,Ford Fiesta · QQE-BK 5494,Hagelschaden,damage,"TAILGATE, HOOD",mittel,abgeschlossen,95%
+821901,VW Touran · XQD-K 24,HU/AU,service,—,,laufend,90%
+845060,BMW 3er Touring · XQ-KM 625,Inspektion,service,—,,fertig,95%
+894046,BMW 1er · QQF-F 7011,Rangierschaden,damage,"FENDER_FRONT_RIGHT, BUMPER_REAR_LEFT",schwer,laufend,91%
+843099,Skoda Superb Combi · QX-TE 1787,HU/AU,service,—,,abgeschlossen,95%
+858876,Skoda Scala · QQS-P 303,Bremsen,service,—,,laufend,80%
+838598,VW Tiguan · ZQC-S 2663,HU/AU,service,—,,laufend,90%
+884466,VW Passat Variant · ZQC-V 5538,Inspektion,service,—,,fertig,95%
+833610,VW Golf Variant · QQN-S 3510,Rangierschaden,damage,"BUMPER_REAR_RIGHT, FENDER_FRONT_RIGHT",mittel,laufend,90%
+879088,Seat Leon · QQB-BA 4911,Bremsen,service,—,,neu,85%
+821218,BMW 5er Limousine · QQE-E 94,Parkschaden,damage,BUMPER_REAR_LEFT,schwer,laufend,95%
+832910,Opel Mokka · QQT-U 116,Räder und Reifen,service,—,,abgeschlossen,90%
+885200,Opel Astra Sports Tourer · QQW-ZY 17,HU/AU,service,—,,fertig,90%
+862097,Audi Q3 · QQB-TL 881,Räder und Reifen,service,—,,abgeschlossen,95%
+848589,Mercedes E-Klasse · QQE-Y 394,Inspektion,service,—,,laufend,95%
+828596,VW Golf · ZQB-SP 451,HU/AU,service,—,,neu,75%
+899079,Mercedes GLC · XQA-NX 516,Vandalismus,damage,BUMPER_REAR_FULL,schwer,storniert,95%
+880278,Mercedes Sprinter · QQV-ZB 4120,Hagelschaden,damage,"HOOD, ROOF, TAILGATE",schwer,neu,97%
+884952,Ford Puma · ZQD-E 77,Bremsen,service,—,,fertig,90%
+845007,Opel Mokka · QQS-MS 61,Bremsen,service,—,,laufend,95%
+821520,Skoda Scala · XQA-G 8128,Inspektion,service,—,,fertig,95%
+829016,Mercedes Vito · XQ-K 97,Parkschaden,damage,BUMPER_FRONT_LEFT,leicht,laufend,95%
+856795,Audi Q3 · ZQR-V 6444,Ölwechsel,service,—,,abgeschlossen,95%
+848366,VW Passat Variant · ZQC-BC 64,Rangierschaden,damage,"HOOD, FENDER_FRONT_LEFT",leicht,laufend,88%
+827439,Mercedes Sprinter · QQF-X 96,Auffahrunfall,damage,HOOD,mittel,neu,95%
+872821,Skoda Kodiaq · QX-CN 5582,Räder und Reifen,service,—,,neu,95%
+832696,VW Golf Variant · ZQB-WZ 752,Hagelschaden,damage,"HOOD, TAILGATE",schwer,laufend,90%
+842939,Skoda Karoq · QQC-UW 9008,Rangierschaden,damage,MIRROR_LEFT,mittel,abgeschlossen,92%
+885805,Skoda Superb Combi · XQS-KJ 11,Hagelschaden,damage,"ROOF, HOOD",schwer,laufend,93%
+830416,Skoda Karoq · ZQC-E 706,Auffahrunfall,damage,"FENDER_REAR_LEFT, BUMPER_FRONT_FULL",leicht,abgeschlossen,95%
+854548,Seat Ibiza · QQK-V 6510,Steinschlag,damage,WINDSHIELD,leicht,storniert,90%
+866996,Seat Leon · QQT-Y 93,Bremsen,service,—,,laufend,85%
+891707,Audi Q3 · QX-H 3857,Räder und Reifen,service,—,,neu,90%
+898191,VW Golf · ZQ-KA 977,Rangierschaden,damage,FENDER_REAR_RIGHT,mittel,neu,95%
+853052,Skoda Scala · ZQL-N 9233,Räder und Reifen,service,—,,fertig,85%
+861729,Opel Mokka · QQZ-JT 32,HU/AU,service,—,,laufend,90%
+889373,VW Polo · QQ-YL 853,Parkschaden,damage,"HOOD, DOOR_REAR_RIGHT",mittel,abgeschlossen,90%
+843151,VW T-Roc · QQS-C 9273,Parkschaden,damage,"BUMPER_FRONT_RIGHT, BUMPER_REAR_FULL",mittel,neu,93%
+880104,VW Passat Variant · QQV-F 41,HU/AU,service,—,,fertig,95%
+894409,Skoda Scala · QQN-HZ 7535,Vandalismus,damage,"SILL_LEFT, DOOR_FRONT_RIGHT",leicht,laufend,70%
+875788,Mercedes Vito · QQM-HD 4866,Bremsen,service,—,,fertig,90%
+854767,Skoda Kodiaq · QQB-LM 96,Inspektion,service,—,,laufend,95%
+824102,Skoda Karoq · QQC-T 724,Räder und Reifen,service,—,,laufend,90%
+855298,Audi Q3 · ZQ-TD 63,Parkschaden,damage,"BUMPER_REAR_FULL, BUMPER_FRONT_LEFT",leicht,laufend,95%
+867957,Mercedes C-Klasse T-Modell · QQZ-LC 8457,Wildunfall,damage,FENDER_FRONT_LEFT,schwer,fertig,95%
+885016,Audi A6 Avant · QQT-W 753,HU/AU,service,—,,neu,95%
+830098,Audi A4 Avant · ZQB-GF 9,Ölwechsel,service,—,,abgeschlossen,95%
+895316,Seat Ateca · QX-RT 2179,Vandalismus,damage,"BUMPER_REAR_LEFT, DOOR_REAR_RIGHT",schwer,laufend,90%
+843889,VW Passat Variant · ZQL-JN 452,Bremsen,service,—,,fertig,90%
+843058,Audi A3 Sportback · QZ-UD 31,Auffahrunfall,damage,HOOD,leicht,abgeschlossen,95%
+830314,Mercedes GLC · QQL-S 6179,Räder und Reifen,service,—,,abgeschlossen,90%
+898686,Skoda Fabia · XQB-NV 7246,Parkschaden,damage,"DOOR_FRONT_RIGHT, DOOR_REAR_LEFT",leicht,laufend,95%
+823472,Ford Transit Custom · QQB-DY 2617,Bremsen,service,—,,laufend,90%

@@ -1,0 +1,43 @@
+[batch] model=deepseek-flash concurrency=10 cases_to_process=1000
+[batch] 25/1000 done (3.2/s) ok=25 failed=0 eta=308s
+[batch] 50/1000 done (3.2/s) ok=50 failed=0 eta=300s
+[batch] 75/1000 done (3.2/s) ok=75 failed=0 eta=290s
+[batch] 100/1000 done (3.3/s) ok=100 failed=0 eta=274s
+[batch] 125/1000 done (3.1/s) ok=125 failed=0 eta=282s
+[batch] 150/1000 done (3.0/s) ok=150 failed=0 eta=285s
+[batch] 175/1000 done (2.4/s) ok=175 failed=0 eta=338s
+[batch] 200/1000 done (2.5/s) ok=200 failed=0 eta=319s
+[batch] 225/1000 done (2.5/s) ok=225 failed=0 eta=315s
+[batch] 250/1000 done (2.4/s) ok=250 failed=0 eta=309s
+[batch] 275/1000 done (2.2/s) ok=275 failed=0 eta=324s
+[batch] 300/1000 done (2.1/s) ok=300 failed=0 eta=328s
+[batch] 325/1000 done (2.2/s) ok=325 failed=0 eta=309s
+[batch] 350/1000 done (2.2/s) ok=350 failed=0 eta=294s
+[batch] 375/1000 done (2.2/s) ok=375 failed=0 eta=283s
+[batch] 400/1000 done (2.2/s) ok=400 failed=0 eta=277s
+[batch] 425/1000 done (2.1/s) ok=425 failed=0 eta=268s
+[batch] 450/1000 done (2.1/s) ok=450 failed=0 eta=257s
+[batch] 475/1000 done (2.2/s) ok=475 failed=0 eta=242s
+[batch] 500/1000 done (2.2/s) ok=500 failed=0 eta=230s
+[batch] 525/1000 done (2.2/s) ok=525 failed=0 eta=217s
+[batch] 550/1000 done (2.2/s) ok=550 failed=0 eta=204s
+[batch] 575/1000 done (2.2/s) ok=575 failed=0 eta=192s
+[batch] 600/1000 done (2.2/s) ok=600 failed=0 eta=186s
+[batch] 625/1000 done (2.1/s) ok=625 failed=0 eta=175s
+[batch] 650/1000 done (2.2/s) ok=650 failed=0 eta=162s
+[batch] 675/1000 done (2.2/s) ok=675 failed=0 eta=149s
+[batch] 700/1000 done (2.2/s) ok=700 failed=0 eta=137s
+[batch] 725/1000 done (2.2/s) ok=725 failed=0 eta=124s
+[batch] 750/1000 done (2.2/s) ok=750 failed=0 eta=113s
+[batch] 775/1000 done (2.2/s) ok=775 failed=0 eta=102s
+[batch] 800/1000 done (2.2/s) ok=800 failed=0 eta=91s
+[batch] 825/1000 done (2.2/s) ok=825 failed=0 eta=80s
+[batch] 850/1000 done (2.1/s) ok=850 failed=0 eta=70s
+[batch] 875/1000 done (2.1/s) ok=875 failed=0 eta=58s
+[batch] 900/1000 done (2.1/s) ok=900 failed=0 eta=47s
+[batch] 925/1000 done (2.1/s) ok=925 failed=0 eta=35s
+[batch] 950/1000 done (2.1/s) ok=950 failed=0 eta=24s
+[batch] 975/1000 done (2.1/s) ok=975 failed=0 eta=12s
+[batch] 1000/1000 done (2.1/s) ok=1000 failed=0 eta=0s
+[batch] DONE in 480s: {"total":1000,"completed":1000,"failed":0,"pending":0,"processing":0}
+[batch] results: C:\Users\ycode\Desktop\hackathon uic dail\solution\data\processed\results.jsonl

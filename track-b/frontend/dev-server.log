@@ -1,0 +1,32 @@
+
+> @minimal-kit/starter-next-ts@7.5.0 dev
+> next dev -p 8083 --turbopack
+
+   ▲ Next.js 15.5.4 (Turbopack)
+   - Local:        http://localhost:8083
+   - Network:      http://172.16.61.143:8083
+
+ ✓ Starting...
+ ✓ Ready in 1479ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 13.6s
+ GET /dashboard/ 200 in 15316ms
+ ○ Compiling /dashboard/cases/[id] ...
+ ✓ Compiled /dashboard/cases/[id] in 3.8s
+ GET /dashboard/cases/898942/ 200 in 4763ms
+ GET /dashboard/ 200 in 660ms
+ ○ Compiling /dashboard/cases ...
+ ✓ Compiled /dashboard/cases in 6.5s
+ GET /dashboard/cases/ 200 in 6716ms
+ GET /dashboard/cases/ 200 in 525ms
+ GET /dashboard/cases/ 200 in 395ms
+ GET /dashboard/ 200 in 240ms
+ GET /dashboard/cases/ 200 in 247ms
+ GET /dashboard/cases/852719/ 200 in 308ms
+ GET /dashboard/cases/834726/ 200 in 252ms
+ GET /dashboard/cases/834726/ 200 in 262ms
+ GET /dashboard/cases/854904/ 200 in 277ms
+ GET /dashboard/ 200 in 307ms
+ ○ Compiling /dashboard/evaluation ...
+ ✓ Compiled /dashboard/evaluation in 2.8s
+ GET /dashboard/evaluation/ 200 in 3044ms

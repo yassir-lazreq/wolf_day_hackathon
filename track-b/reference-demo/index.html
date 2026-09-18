@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Demo Dealership Fahrzeugstatus</title>
+<meta name="description" content="Ihre Auftragsdetails: Fahrzeugstatus zum Vorgang WD-10482, Demo Dealership.">
+<meta name="theme-color" content="#f6f5f2">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2317181a'/><text x='50' y='70' font-size='62' font-family='Arial' font-weight='bold' fill='%23f6f5f2' text-anchor='middle'>D</text></svg>">
+<!-- The import map MUST come before any modulepreload link or module script.
+     Once module fetching has begun the map can no longer be applied: Firefox
+     enforces this and drops the map entirely ("bare specifier 'three' was not
+     remapped"), leaving the viewer dead. Chrome happens to tolerate the wrong
+     order, which is why this only ever failed in Firefox. Do not move it down. -->
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.184.0/build/three.module.js",
+    "three/addons/controls/OrbitControls.js": "https://unpkg.com/three@0.184.0/examples/jsm/controls/OrbitControls.js"
+  }
+}
+</script>
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<!-- Only the small first-paint model is preloaded. Preloading the 6.8 MB
+     car.glb here would saturate the connection and delay the very frame
+     this page is waiting for; car-viewer.js fetches it as a second stage. -->
+<link rel="preload" as="fetch" href="assets/car-lite.glb" crossorigin>
+<link rel="preload" as="image" href="assets/pano.jpg">
+<link rel="modulepreload" href="./car-viewer.js">
+<link rel="modulepreload" href="https://unpkg.com/three@0.184.0/build/three.module.js">
+<link rel="modulepreload" href="https://unpkg.com/three@0.184.0/examples/jsm/loaders/GLTFLoader.js">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="module" src="./car-viewer.js"></script>
+<style>
+*{box-sizing:border-box}
+:root{
+  --paper:#f6f5f2; --ink:#17181a; --muted:#8f8a83; --done:#6e6a64;
+  --pending:#b5b0a8; --line:#d6d2cb; --line2:#c9c4bd; --accent:#b3362e;
+  --panel:#efedea;
+}
+html,body{margin:0;padding:0;background:var(--paper);color:var(--ink)}
+body{font-family:'Schibsted Grotesk',Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+button{font-family:inherit}
+car-viewer{display:block}
+
+.screen{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+#gate{overflow:hidden}
+.screen[hidden]{display:none}
+.brand{display:flex;align-items:center;padding:26px 48px;z-index:2}
+.brand img{height:34px;display:block}
+.brand .wordmark{font-size:15px;font-weight:600;letter-spacing:.02em}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding:26px 48px;font-size:13px;color:var(--muted)}
+.foot .right{display:flex;gap:20px;align-items:baseline}
+.foot .dail{color:var(--pending)}
+.foot .dail b{font-weight:700;color:var(--muted)}
+.foot-m{display:none}
+
+/* ---------- Gate ---------- */
+#gate .body{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 28px}
+.vorgang{font-size:13px;color:var(--muted)}
+#gate h1{font-size:34px;font-weight:500;letter-spacing:-0.015em;margin:12px 0 0}
+.hint{font-size:15px;color:var(--muted);margin-top:14px;max-width:420px;line-height:1.5}
+.pin{display:flex;gap:10px;margin-top:38px}
+.pin input{
+  width:50px;height:62px;border:1px solid var(--line);background:#fff;color:var(--ink);
+  text-align:center;font-size:26px;font-weight:500;font-family:inherit;
+  border-radius:0;outline:none;-moz-appearance:textfield;padding:0
+}
+.pin input::-webkit-outer-spin-button,.pin input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.pin input:focus{border-color:var(--ink)}
+.pin.err input{border-color:var(--accent)}
+.pin.shake{animation:shake .38s}
+@keyframes shake{
+  0%,100%{transform:translateX(0)} 20%{transform:translateX(-7px)}
+  40%{transform:translateX(6px)} 60%{transform:translateX(-4px)} 80%{transform:translateX(3px)}
+}
+.cta{margin-top:38px;background:var(--ink);color:var(--paper);border:none;padding:14px 34px;font-size:15px;cursor:pointer}
+.cta:hover{background:#000}
+.linkish{margin-top:18px;font-size:13px;color:var(--muted);text-decoration:underline;background:none;border:none;cursor:pointer}
+.err-msg{margin-top:16px;font-size:13px;color:var(--accent);min-height:18px}
+.demo{margin-top:26px;font-size:12px;color:var(--pending);letter-spacing:.03em}
+.demo b{color:var(--muted);font-weight:600}
+
+/* ---------- Status ---------- */
+#status{position:relative}
+#status .brand{position:absolute;top:0;left:0;right:0}
+.stage{position:relative;flex:none}
+#viewer{height:500px;flex:none}
+#viewer.dim{filter:saturate(0.7) opacity(0.8)}
+#loading{
+  position:absolute;left:0;right:0;bottom:16px;text-align:center;
+  font-size:12px;letter-spacing:.06em;color:var(--pending);pointer-events:none;
+  transition:opacity .4s
+}
+#loading[hidden]{display:none}
+#loading .bar{display:block;width:132px;height:1px;margin:9px auto 0;background:var(--line);overflow:hidden}
+#loading .bar i{display:block;width:40%;height:100%;background:var(--muted);animation:slide 1.15s ease-in-out infinite}
+@keyframes slide{0%{transform:translateX(-100%)}100%{transform:translateX(350%)}}
+.deg{text-align:center;font-size:11px;letter-spacing:0.1em;color:var(--pending);margin-top:4px}
+
+.info{text-align:center;margin-top:20px;padding:0 28px}
+.veh{font-size:13px;color:var(--muted)}
+.mwtag{
+  display:inline-block;margin-top:16px;font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);border:1px solid var(--line2);
+  padding:5px 11px
+}
+#headline{font-size:34px;font-weight:500;letter-spacing:-0.015em;line-height:1.25;max-width:980px;margin:14px auto 0}
+#sub{font-size:14px;color:var(--muted);margin-top:12px}
+#sub:empty{display:none}
+#action{margin-top:26px;background:transparent;color:var(--ink);border:1px solid var(--ink);padding:12px 24px;font-size:15px;cursor:pointer}
+#action[hidden]{display:none}
+#action:disabled{border-color:var(--line2);color:var(--muted);cursor:default}
+
+/* sub-status chips of the current Meldeweg */
+.vars{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:26px}
+.vars button{
+  background:transparent;border:1px solid var(--line);color:var(--muted);
+  padding:7px 13px;font-size:11px;letter-spacing:.05em;cursor:pointer;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace
+}
+.vars button:hover{border-color:var(--line2);color:var(--ink)}
+.vars button.on{border-color:var(--accent);color:var(--accent);font-weight:600}
+
+/* the nine Meldewege as a numbered rail */
+.rail{display:flex;justify-content:center;margin:34px auto 0;max-width:1180px;padding:0 4px}
+.rail .r{
+  flex:1 1 0;min-width:0;background:none;border:none;padding:0;cursor:pointer;
+  font-family:inherit;display:flex;flex-direction:column;align-items:center;
+  position:relative;color:var(--pending)
+}
+.rail .r::before{
+  content:'';position:absolute;top:11px;left:-50%;width:100%;height:1px;
+  background:var(--line);z-index:0
+}
+.rail .r:first-child::before{display:none}
+.rail .r.done::before,.rail .r.now::before{background:var(--done)}
+.rail .n{
+  width:23px;height:23px;border-radius:50%;border:1px solid var(--line2);
+  background:var(--paper);display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:600;position:relative;z-index:1;flex:none
+}
+.rail .l{
+  font-size:10px;letter-spacing:.04em;line-height:1.3;margin-top:8px;
+  text-align:center;padding:0 3px
+}
+.rail .r.done{color:var(--done)}
+.rail .r.done .n{background:var(--done);border-color:var(--done);color:var(--paper)}
+.rail .r.now{color:var(--accent)}
+.rail .r.now .n{background:var(--accent);border-color:var(--accent);color:#fff}
+.rail .r:hover .n{border-color:var(--ink)}
+
+/* technical panel */
+.techwrap{max-width:1000px;margin:30px auto 0;text-align:left}
+#techtoggle{
+  display:block;margin:0 auto;background:none;border:none;color:var(--muted);
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;
+  padding:8px 4px;border-bottom:1px solid var(--line)
+}
+#techtoggle:hover{color:var(--ink);border-color:var(--ink)}
+#tech{margin-top:22px;background:var(--panel);padding:26px 28px}
+#tech[hidden]{display:none}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 40px}
+.cell h4{
+  margin:0 0 10px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--muted);font-weight:600
+}
+.cell ul{margin:0;padding-left:16px;font-size:13px;line-height:1.65}
+.cell p{margin:0;font-size:13px;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tags span{
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;
+  background:var(--paper);border:1px solid var(--line);padding:4px 8px;color:var(--done)
+}
+.tags span.lead{border-color:var(--ink);color:var(--ink);font-weight:600}
+pre{
+  margin:0;background:var(--ink);color:#e8e5e0;padding:16px 18px;overflow-x:auto;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.6
+}
+.full{grid-column:1/-1}
+.note{
+  grid-column:1/-1;margin:0;padding-top:20px;border-top:1px solid var(--line2);
+  font-size:12px;color:var(--muted);line-height:1.6
+}
+
+.nav{display:flex;justify-content:center;align-items:center;gap:14px;margin:34px 0 0}
+.nav button{
+  background:transparent;border:1px solid var(--line2);color:var(--ink);
+  padding:10px 20px;font-size:14px;cursor:pointer
+}
+.nav button:hover:not(:disabled){border-color:var(--ink)}
+.nav button:disabled{opacity:.35;cursor:default}
+.nav .count{font-size:13px;color:var(--muted);min-width:52px;text-align:center}
+
+@media (max-width:980px){
+  .rail .l{display:none}
+  .rail{max-width:520px;margin-top:28px}
+}
+@media (max-width:860px){
+  .brand{padding:20px 24px}
+  .brand img{height:26px}
+  #gate h1{font-size:26px}
+  .hint{font-size:14px;margin-top:12px}
+  .pin{gap:8px;margin-top:32px}
+  .pin input{width:44px;height:56px;font-size:22px}
+  .cta{margin-top:32px;padding:15px 0;width:100%;max-width:334px}
+  #viewer{height:320px}
+  .deg{font-size:10px;margin-top:2px}
+  .info{text-align:left;margin-top:20px;padding:0 24px}
+  .mwtag{margin-top:14px}
+  #headline{font-size:23px;letter-spacing:-0.01em;line-height:1.3;margin-top:10px}
+  #sub{font-size:13px;margin-top:8px}
+  #action{width:100%;padding:14px 0;margin-top:22px}
+  .vars{justify-content:flex-start;margin-top:22px}
+  .techwrap{margin-top:26px}
+  #tech{padding:22px 20px}
+  .grid{grid-template-columns:1fr;gap:22px}
+  .nav{justify-content:space-between;margin-top:28px}
+  .foot{display:none}
+  .foot-m{display:block;margin-top:auto;text-align:center;padding:18px 24px;font-size:12px;color:var(--muted)}
+  .foot-m .dail{color:var(--pending)}
+  .foot-m .dail b{font-weight:700;color:var(--muted)}
+}
+@media (max-width:380px){ .pin input{width:40px;height:52px;font-size:20px} }
+</style>
+</head>
+<body>
+
+<!-- ===================== GATE ===================== -->
+<section class="screen" id="gate">
+  <div class="brand"><span class="wordmark">Demo Dealership</span></div>
+  <div class="body">
+    <div class="vorgang">Vorgang WD-10482</div>
+    <h1>Ihre Auftragsdetails</h1>
+    <p class="hint">Geben Sie den 6-stelligen Code ein, den wir Ihnen per SMS geschickt haben.</p>
+    <form id="pinform">
+      <div class="pin" id="pin">
+        <input type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="1" aria-label="Ziffer 1" value="4">
+        <input type="text" inputmode="numeric" maxlength="1" aria-label="Ziffer 2" value="8">
+        <input type="text" inputmode="numeric" maxlength="1" aria-label="Ziffer 3" value="2">
+        <input type="text" inputmode="numeric" maxlength="1" aria-label="Ziffer 4">
+        <input type="text" inputmode="numeric" maxlength="1" aria-label="Ziffer 5">
+        <input type="text" inputmode="numeric" maxlength="1" aria-label="Ziffer 6">
+      </div>
+      <div class="err-msg" id="err" role="alert"></div>
+      <button class="cta" type="submit">Bestätigen</button>
+    </form>
+    <button class="linkish" id="resend" type="button">Code erneut senden</button>
+    <p class="demo">Demo — Code <b>482000</b></p>
+  </div>
+  <div class="foot">
+    <span>Demo Dealership</span>
+    <span class="right"><span class="dail">powered by <b>DaiL</b></span></span>
+  </div>
+  <div class="foot-m">Demo Dealership<br><span class="dail">powered by <b>DaiL</b></span></div>
+</section>
+
+<!-- ===================== STATUS ===================== -->
+<section class="screen" id="status" hidden>
+  <div class="brand"><span class="wordmark">Demo Dealership</span></div>
+  <div class="stage">
+    <car-viewer id="viewer" azimuth="0.8" auto="1" speed="0.14"></car-viewer>
+    <div id="loading">Fahrzeugansicht wird geladen<span class="bar"><i></i></span></div>
+  </div>
+  <div class="deg">360°</div>
+  <div class="info">
+    <div class="veh">Golf VIII, silber · D-AIL 26 · Vorgang WD-10482</div>
+    <div class="mwtag" id="mwtag"></div>
+    <div id="headline"></div>
+    <div id="sub"></div>
+    <button id="action" hidden></button>
+    <div class="vars" id="vars"></div>
+    <div class="rail" id="rail"></div>
+
+    <div class="techwrap">
+      <button id="techtoggle" type="button" aria-expanded="false" aria-controls="tech">Technische Sicht einblenden</button>
+      <div id="tech" hidden>
+        <div class="grid">
+          <div class="cell">
+            <h4>Diese Ereignisse lösen aus</h4>
+            <ul id="t-ereignisse"></ul>
+          </div>
+          <div class="cell">
+            <h4>Was DMS bekommt</h4>
+            <ul id="t-daten"></ul>
+          </div>
+          <div class="cell">
+            <h4>Status</h4>
+            <div class="tags" id="t-status"></div>
+          </div>
+          <div class="cell">
+            <h4>Zeitpunkt und Auslöser</h4>
+            <p id="t-zeit"></p>
+          </div>
+          <div class="cell full">
+            <h4>Beispiel</h4>
+            <p id="t-beispiel"></p>
+          </div>
+          <div class="cell full">
+            <h4>Beispiel-Payload an DMS</h4>
+            <pre id="t-payload"></pre>
+          </div>
+          <p class="note" id="t-note"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <button id="prev" type="button">← Zurück</button>
+      <span class="count" id="count"></span>
+      <button id="next" type="button">Weiter →</button>
+    </div>
+  </div>
+  <div class="foot">
+    <span>Demo Dealership</span>
+    <span class="right"><span class="dail">powered by <b>DaiL</b></span></span>
+  </div>
+  <div class="foot-m">Demo Dealership<br><span class="dail">powered by <b>DaiL</b></span></div>
+</section>
+
+<script>
+(function () {
+  var CODE = '482000';
+
+  var CALLOUT_FRONT = '2.15,0.55,0.35';
+  var CALLOUT_SIDE  = '0.35,0.85,0.9';
+
+  var MW = [
+    {
+      nr:1, kurz:'Auftrag übernommen', rail:'Auftrag<br>übernommen', aus:'Schritte 1 und 2',
+      kurzinfo:'Auftrag empfangen und im Betrieb angelegt',
+      ereignisse:['Auftrag per E-Mail oder digitalem Eingang empfangen','Vorgang in unseren Systemen angelegt'],
+      daten:['DMS-Auftragsnummer','interne Auftragsnummer','Kennzeichen','FIN','Eingang Datum/Uhrzeit','Betrieb','Auftraggeber'],
+      zeitpunkt:'bei Eingang und nach der Anlage', trigger:'automatisch', event:'auftrag_empfangen',
+      beispiel:'Auftrag 123456 am 01.09.2026 um 08:14 Uhr eingegangen, um 08:31 Uhr in Demo Dealership angelegt.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "interneAuftragsnummer": "IGF-123456-VR1",\n  "ereignis": "auftrag_empfangen",\n  "status": "AUFTRAG_EMPFANGEN",\n  "zeitpunkt": "2026-09-01T08:14:00+02:00",\n  "kennzeichen": "M-XY 1234",\n  "betrieb": "Demo Dealership"\n}',
+      note:'Einziger Meldeweg mit fertiger DA-Zuordnung: Statable 1199 (Kategorie 67) und 1590 (Kategorie 107), Ausgang 1148, Auslöser automatisch. DMS sieht damit, ob der Reparaturauftrag von uns angenommen wurde.',
+      az:0.8, auto:'1',
+      vars:[
+        {code:'AUFTRAG_EMPFANGEN', kunde:'Ihr Auftrag ist bei uns eingegangen.', sub:'Eingang am 01.09.2026 um 08:14 Uhr.'},
+        {code:'AUFTRAG_ANGELEGT', kunde:'Ihr Auftrag ist angelegt. Wir melden uns in Kürze.', sub:'Demo Dealership · angelegt um 08:31 Uhr.'}
+      ]
+    },
+    {
+      nr:2, kurz:'Kundenkontakt', rail:'Kunden-<br>kontakt', aus:'Schritte 3, 4 und 5',
+      kurzinfo:'Kontaktversuch und Ergebnis des Gesprächs',
+      ereignisse:['Vorgang zur Kontaktaufnahme eingesteuert','Kontaktversuch durchgeführt','Kunde erreicht oder nicht erreicht','Rückruf erforderlich','Kontaktdaten falsch'],
+      daten:['Kontaktversuch JA/NEIN','Datum','Uhrzeit','Kontaktweg','Ergebnis','Nummer des Versuchs'],
+      zeitpunkt:'nach jedem Kontaktversuch', trigger:'Mitarbeitereingabe', event:'kunde_kontaktiert',
+      beispiel:'Zweiter Versuch am 01.09.2026 um 11:20 Uhr per Mobiltelefon, Kunde nicht erreicht.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "kunde_kontaktiert",\n  "status": "KUNDE_NICHT_ERREICHT",\n  "zeitpunkt": "2026-09-01T11:20:00+02:00",\n  "kontaktweg": "mobiltelefon",\n  "versuchNr": 2,\n  "ergebnis": "nicht_erreicht"\n}',
+      note:'DMS bekommt den Status MW 2 Kundenkontakt mit den Informationen aus dem Anmerkungstext. DA-Zuordnung: Statables 89, 92, 106 · Ausgang 984, 979, 975 · Kategorie 107 noch ohne Statable.',
+      az:1.35, auto:'1',
+      vars:[
+        {code:'KONTAKTVERSUCH', kunde:'Wir versuchen, Sie zu erreichen.', sub:'1. Versuch am 01.09.2026 um 09:40 Uhr.'},
+        {code:'KUNDE_ERREICHT', kunde:'Danke für das Gespräch. Wir haben alles notiert.', sub:'01.09.2026, 11:52 Uhr.'},
+        {code:'KUNDE_NICHT_ERREICHT', kunde:'Wir haben Sie leider nicht erreicht.', sub:'2. Versuch am 01.09.2026 um 11:20 Uhr, Mobiltelefon.', action:'Rückruf anfordern', done:'Rückruf ist notiert'},
+        {code:'RUECKRUF_ERFORDERLICH', kunde:'Bitte rufen Sie uns kurz zurück.', sub:'Demo Dealership · Mo–Fr 7:30–17:30 Uhr.'},
+        {code:'KONTAKTDATEN_FEHLERHAFT', kunde:'Ihre Kontaktdaten stimmen nicht mehr.', sub:'Bitte prüfen Sie Telefonnummer und E-Mail-Adresse.', action:'Kontaktdaten korrigieren', done:'Link per SMS gesendet'}
+      ]
+    },
+    {
+      nr:3, kurz:'Termin vereinbart', rail:'Termin<br>vereinbart', aus:'Schritt 6',
+      kurzinfo:'Besichtigung oder Reparaturannahme',
+      ereignisse:['Besichtigungstermin vereinbart','Annahmetermin vereinbart','Termin verschoben oder noch offen'],
+      daten:['Terminart','Datum','Uhrzeit','Standort'],
+      zeitpunkt:'nach der Terminvereinbarung', trigger:'Mitarbeitereingabe', event:'termin_vereinbart',
+      beispiel:'Besichtigung am 04.09.2026 um 10:30 Uhr in Demo Dealership.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "termin_vereinbart",\n  "status": "TERMIN_VEREINBART",\n  "terminart": "besichtigung",\n  "terminBeginn": "2026-09-04T10:30:00+02:00"\n}',
+      note:'DA-Zuordnung noch offen. Im DA liegen hier die Stati Termin vereinbart, Termin bestätigt und Termin unsicher unter TO DOs Serviceberater.',
+      az:1.9, auto:'1',
+      vars:[
+        {code:'TERMIN_VEREINBART', kunde:'Ihr Termin steht.', sub:'04.09.2026 um 10:30 Uhr, Demo Dealership.'},
+        {code:'BESICHTIGUNGSTERMIN', kunde:'Besichtigungstermin vereinbart.', sub:'04.09.2026 um 10:30 Uhr, Demo Dealership.'},
+        {code:'ANNAHMETERMIN', kunde:'Annahmetermin vereinbart.', sub:'04.09.2026 um 10:30 Uhr, Demo Dealership.'},
+        {code:'TERMIN_OFFEN', kunde:'Der Termin ist noch offen.', sub:'Wir melden uns mit einem Vorschlag.', action:'Wunschtermin vorschlagen', done:'Vorschlag ist bei uns eingegangen'}
+      ]
+    },
+    {
+      nr:4, kurz:'Fahrzeug eingetroffen', rail:'Fahrzeug<br>eingetroffen', aus:'Schritt 7',
+      kurzinfo:'Fahrzeug ist im Betrieb, Standzeit läuft',
+      ereignisse:['Fahrzeug angenommen','Anlieferung durch Kunde, Holdienst oder Abschleppdienst'],
+      daten:['Datum','Uhrzeit','Kilometerstand','Art der Anlieferung'],
+      zeitpunkt:'bei Fahrzeugannahme', trigger:'automatisch', event:'fahrzeug_eingetroffen',
+      beispiel:'Fahrzeug am 04.09.2026 um 10:42 Uhr eingetroffen, Kunde hat gebracht, 84.320 km.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "fahrzeug_eingetroffen",\n  "status": "FAHRZEUG_EINGETROFFEN",\n  "zeitpunkt": "2026-09-04T10:42:00+02:00",\n  "kilometerstand": 84320,\n  "anlieferung": "kunde_gebracht"\n}',
+      note:'DA-Zuordnung noch offen. Im DA entspricht das Fo im Haus, Ed im Haus und MUC im Haus.',
+      az:2.35, auto:'1',
+      vars:[
+        {code:'FAHRZEUG_EINGETROFFEN', kunde:'Ihr Fahrzeug ist bei uns eingetroffen.', sub:'04.09.2026, 10:42 Uhr · 84.320 km · von Ihnen gebracht.'}
+      ]
+    },
+    {
+      nr:5, kurz:'Kalkulation und Freigabe', rail:'Kalkulation<br>Freigabe', aus:'Schritte 8 und 9',
+      kurzinfo:'KV oder Gutachten, danach Freigabestand',
+      ereignisse:['Kostenvoranschlag erstellt und eingereicht','Gutachter beauftragt, Termin, Gutachten eingegangen','Freigabe erteilt, teilweise erteilt oder abgelehnt','Nachkalkulation erforderlich'],
+      daten:['Bewertungsweg','Einreichungsdatum','Betrag','Dokument-Referenz','Freigabedatum','Freigabeumfang'],
+      zeitpunkt:'bei Einreichung und bei jeder Rückmeldung', trigger:'automatisch', event:'freigabestatus_geaendert',
+      beispiel:'KV über 3.420,00 EUR am 05.09.2026 eingereicht, Freigabe am 06.09.2026 erhalten.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "freigabestatus_geaendert",\n  "status": "FREIGABE_ERTEILT",\n  "zeitpunkt": "2026-09-06T09:12:00+02:00",\n  "betrag": 3420.00,\n  "dokumentReferenz": "KV-2026-004711"\n}',
+      note:'DA-Zuordnung noch offen. Berührt die DMS-Kategorien 1591 technische Freigabe Kostenvoranschlag/Gutachten, 1594 Kostenvoranschlag liegt zur Prüfung vor, 1597 Information zum KV, 1600 Rückfrage Sachverständiger und 1605 Kostenvoranschlag offen.',
+      az:2.15, auto:'1', callout:'Stoßfänger vorn · kalkuliert', at:CALLOUT_FRONT,
+      vars:[
+        {code:'KV_EINGEREICHT', kunde:'Der Kostenvoranschlag ist eingereicht.', sub:'3.420,00 EUR · KV-2026-004711 · 05.09.2026.'},
+        {code:'GUTACHTER_BEAUFTRAGT', kunde:'Wir haben einen Gutachter beauftragt.', sub:'Der Besichtigungstermin wird gerade abgestimmt.'},
+        {code:'GUTACHTEN_EINGEGANGEN', kunde:'Das Gutachten liegt uns vor.', sub:'Wir reichen es zur Freigabe ein.'},
+        {code:'FREIGABE_AUSSTEHEND', kunde:'Wir warten noch auf die Freigabe.', sub:'Der Kostenvoranschlag liegt beim Auftraggeber zur Prüfung.', action:'Unterlagen nachreichen', done:'Upload-Link per SMS gesendet'},
+        {code:'FREIGABE_ERTEILT', kunde:'Die Freigabe ist da. Wir starten die Reparatur.', sub:'Freigegeben am 06.09.2026 um 09:12 Uhr · 3.420,00 EUR.'},
+        {code:'REPARATUR_ABGELEHNT', kunde:'Die Reparatur wurde nicht freigegeben.', sub:'Wir rufen Sie an und besprechen das weitere Vorgehen.'}
+      ]
+    },
+    {
+      nr:6, kurz:'Reparatur und Prognose', rail:'Reparatur<br>Prognose', aus:'Schritte 10 und 11',
+      kurzinfo:'Beginn, Verzögerungen, voraussichtliche Fertigstellung',
+      ereignisse:['Reparatur begonnen','Verzögerung festgestellt, zum Beispiel fehlendes Teil oder Nachtrag','Fertigstellungsprognose gesetzt oder geändert'],
+      daten:['Startdatum','geplante Dauer','Verzögerungsgrund','neue voraussichtliche Fertigstellung','vorherige Prognose'],
+      zeitpunkt:'bei Beginn und bei jeder Änderung', trigger:'automatisch', event:'reparaturstatus_geaendert',
+      beispiel:'Reparatur am 06.09.2026 begonnen. Am 08.09.2026 Teil fehlt, neue Fertigstellung 14.09.2026.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "reparatur_verzoegert",\n  "status": "REPARATUR_VERZOEGERT",\n  "zeitpunkt": "2026-09-08T14:05:00+02:00",\n  "verzoegerungsgrund": "teil_fehlt",\n  "neueFertigstellung": "2026-09-14T16:00:00+02:00"\n}',
+      note:'DA-Zuordnung noch offen. Im DA entspricht das den Gruppen Lack/Karosserie in Bearbeitung sowie Teil im Rückstand und Teil immer noch nicht geliefert.',
+      az:2.5, auto:'1', callout:'Stoßfänger vorn · wird lackiert', at:CALLOUT_FRONT,
+      vars:[
+        {code:'REPARATUR_BEGONNEN', kunde:'Ihr Fahrzeug ist in der Werkstatt.', sub:'Begonnen am 06.09.2026 · voraussichtlich fertig am 12.09.2026.'},
+        {code:'REPARATUR_VERZOEGERT', kunde:'Es dauert leider etwas länger.', sub:'Ein Teil ist im Rückstand. Neue Fertigstellung: 14.09.2026 um 16:00 Uhr.'},
+        {code:'NACHTRAG_ERFORDERLICH', kunde:'Wir haben zusätzlichen Schaden gefunden.', sub:'Der Nachtrag geht zur Freigabe. Wir melden uns, sobald sie da ist.', callout:'Nachtrag · Seitenwand links', at:CALLOUT_SIDE},
+        {code:'FERTIGSTELLUNG_AKTUALISIERT', kunde:'Es gibt einen neuen Fertigstellungstermin.', sub:'Statt 12.09.2026 jetzt 14.09.2026 um 16:00 Uhr.'}
+      ]
+    },
+    {
+      nr:7, kurz:'Fertig und Kunde informiert', rail:'Fertig<br>informiert', aus:'Schritte 12 und 13',
+      kurzinfo:'Reparatur abgeschlossen, Kunde verständigt',
+      ereignisse:['Reparatur abgeschlossen','Qualitätskontrolle bestanden, Fahrzeug abholbereit','Kunde über Fertigstellung informiert'],
+      daten:['Fertigstellungsdatum','Fertigstellungszeit','Endkontrolle','Kunde informiert Datum/Uhrzeit','Kontaktweg'],
+      zeitpunkt:'bei Fertigmeldung und nach der Kundeninformation', trigger:'automatisch und Eingabe', event:'reparatur_abgeschlossen',
+      beispiel:'Am 14.09.2026 um 15:10 Uhr fertig, Kunde um 15:35 Uhr telefonisch informiert.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "reparatur_abgeschlossen",\n  "status": "FAHRZEUG_ABHOLBEREIT",\n  "zeitpunkt": "2026-09-14T15:10:00+02:00",\n  "endkontrolle": "bestanden"\n}',
+      note:'DA-Zuordnung noch offen. Im DA entspricht das der Gruppe Abgeschlossen/Erledigt: Fertig zur Abholung, MUC Abholbereit, ED Abholbereit.',
+      az:1.75, auto:'1',
+      vars:[
+        {code:'REPARATUR_ABGESCHLOSSEN', kunde:'Die Reparatur ist fertig.', sub:'14.09.2026, 15:10 Uhr · Endkontrolle bestanden.'},
+        {code:'FAHRZEUG_ABHOLBEREIT', kunde:'Ihr Fahrzeug ist abholbereit.', sub:'Demo Dealership · Mo–Fr 7:30–17:30 Uhr.', action:'Abholtermin wählen', done:'Abholtermin ist vorgemerkt'},
+        {code:'KUNDE_INFORMIERT', kunde:'Wir haben Sie über die Fertigstellung informiert.', sub:'14.09.2026, 15:35 Uhr, telefonisch.'}
+      ]
+    },
+    {
+      nr:8, kurz:'Fahrzeugausgang', rail:'Fahrzeug-<br>ausgang', aus:'Schritt 14',
+      kurzinfo:'Abholung oder Zustellung, geplant und tatsächlich',
+      ereignisse:['Abholung oder Zustellung vereinbart','Fahrzeug abgeholt oder zugestellt'],
+      daten:['Übergabeart','geplanter Termin','tatsächlicher Termin','übernehmende Person'],
+      zeitpunkt:'bei Terminvereinbarung und bei Übergabe', trigger:'automatisch', event:'fahrzeug_uebergeben',
+      beispiel:'Abholung für 15.09.2026 um 09:00 Uhr vereinbart, abgeholt um 09:24 Uhr.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "fahrzeug_uebergeben",\n  "status": "FAHRZEUG_ABGEHOLT",\n  "zeitpunkt": "2026-09-15T09:24:00+02:00",\n  "uebergabeart": "abholung"\n}',
+      note:'DA-Zuordnung noch offen. Im DA entspricht das Abgeholt und Ausgeliefert sowie den Transport-, Hol- und Bringservice-Stati.',
+      az:3.9, auto:'1',
+      vars:[
+        {code:'FAHRZEUG_UEBERGEBEN', kunde:'Ihr Fahrzeug ist übergeben.', sub:'15.09.2026, 09:24 Uhr.', dim:true},
+        {code:'ABHOLUNG_VEREINBART', kunde:'Die Abholung ist vereinbart.', sub:'15.09.2026 um 09:00 Uhr, Demo Dealership.'},
+        {code:'ZUSTELLUNG_VEREINBART', kunde:'Die Zustellung ist vereinbart.', sub:'15.09.2026, Lieferung an Ihre Adresse.'},
+        {code:'FAHRZEUG_ABGEHOLT', kunde:'Ihr Fahrzeug wurde abgeholt.', sub:'15.09.2026 um 09:24 Uhr.', dim:true},
+        {code:'FAHRZEUG_ZUGESTELLT', kunde:'Ihr Fahrzeug wurde zugestellt.', sub:'15.09.2026 · übernommen an Ihrer Adresse.', dim:true}
+      ]
+    },
+    {
+      nr:9, kurz:'Rechnung', rail:'Rechnung', aus:'Schritt 15',
+      kurzinfo:'Rechnung erstellt und eingereicht',
+      ereignisse:['Rechnung erstellt','Rechnung an DMS übermittelt','Rechnung geprüft oder gekürzt'],
+      daten:['Rechnungsnummer','Rechnungsdatum','Rechnungsbetrag','Einreichungsdatum','Auftragsreferenz'],
+      zeitpunkt:'bei Erstellung und bei Übermittlung', trigger:'automatisch', event:'rechnung_eingereicht',
+      beispiel:'Rechnung RE-2026-008812 über 3.420,00 EUR am 15.09.2026 eingereicht.',
+      payload:'{\n  "dmsAuftragsnummer": "123456",\n  "ereignis": "rechnung_eingereicht",\n  "status": "RECHNUNG_EINGEREICHT",\n  "rechnungsnummer": "RE-2026-008812",\n  "rechnungsbetrag": 3420.00\n}',
+      note:'DA-Zuordnung noch offen. Im DA entspricht das abgerechnet und Auftrag erledigt abgeschlossen.',
+      az:4.4, auto:'0',
+      vars:[
+        {code:'RECHNUNG_EINGEREICHT', kunde:'Die Rechnung ist eingereicht.', sub:'RE-2026-008812 · 3.420,00 EUR · 15.09.2026.', dim:true, action:'Rechnung ansehen', done:'Rechnung per E-Mail gesendet'},
+        {code:'RECHNUNG_ERSTELLT', kunde:'Die Rechnung ist erstellt.', sub:'RE-2026-008812 · 3.420,00 EUR.', dim:true},
+        {code:'RECHNUNG_GEPRUEFT', kunde:'Die Rechnung wurde geprüft.', sub:'Vorgang WD-10482 ist abgeschlossen.', dim:true}
+      ]
+    }
+  ];
+
+  var gate = document.getElementById('gate');
+  var status = document.getElementById('status');
+  var pin = document.getElementById('pin');
+  var boxes = Array.prototype.slice.call(pin.querySelectorAll('input'));
+  var err = document.getElementById('err');
+  var viewer = document.getElementById('viewer');
+  var mwtag = document.getElementById('mwtag');
+  var headline = document.getElementById('headline');
+  var sub = document.getElementById('sub');
+  var action = document.getElementById('action');
+  var varsEl = document.getElementById('vars');
+  var railEl = document.getElementById('rail');
+  var techToggle = document.getElementById('techtoggle');
+  var tech = document.getElementById('tech');
+  var prev = document.getElementById('prev');
+  var next = document.getElementById('next');
+  var count = document.getElementById('count');
+  var idx = 0, vi = 0;
+
+  /* The loading line goes as soon as stage 1 of the model is on screen;
+     stage 2 then swaps in silently behind the user. */
+  var loading = document.getElementById('loading');
+  var bar = loading ? loading.querySelector('.bar i') : null;
+  function hideLoading() {
+    if (!loading || loading.hidden) return;
+    loading.style.opacity = '0';
+    setTimeout(function () { loading.hidden = true; }, 400);
+  }
+  function viewerUnavailable(msg) {
+    if (!loading) return;
+    loading.hidden = false;
+    loading.style.opacity = '1';
+    loading.textContent = msg;
+  }
+  window.addEventListener('car-viewer-ready', function (e) {
+    if (e.detail && e.detail.webgl === false) {
+      viewerUnavailable('3D-Ansicht in diesem Browser nicht verfügbar.');
+      return;
+    }
+    hideLoading();
+  });
+  window.addEventListener('car-viewer-progress', function (e) {
+    if (!bar || !e.detail || loading.hidden) return;
+    var f = Math.max(0, Math.min(1, e.detail.frac / 0.5)); // stage 1 only
+    bar.style.animation = 'none';
+    bar.style.width = (f * 100).toFixed(0) + '%';
+    bar.style.transform = 'none';
+  });
+  /* Import maps need Safari 16.4+. Without one the viewer module cannot
+     resolve three at all, so say so rather than spinning forever. */
+  if (typeof HTMLScriptElement === 'undefined' ||
+      !HTMLScriptElement.supports || !HTMLScriptElement.supports('importmap')) {
+    viewerUnavailable('3D-Ansicht benötigt einen neueren Browser.');
+  }
+  setTimeout(function () {
+    if (loading && !loading.hidden && loading.querySelector('.bar')) {
+      viewerUnavailable('Fahrzeugansicht konnte nicht geladen werden.');
+    }
+  }, 25000);
+
+  /* ---------- build the rail of nine Meldewege ---------- */
+  MW.forEach(function (m, i) {
+    var b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'r';
+    b.title = 'Meldeweg ' + m.nr + ' — ' + m.kurz + ': ' + m.kurzinfo;
+    b.innerHTML = '<span class="n">' + m.nr + '</span><span class="l">' + m.rail + '</span>';
+    b.addEventListener('click', function () { go(i, 0); });
+    railEl.appendChild(b);
+  });
+  var railEls = Array.prototype.slice.call(railEl.children);
+
+  /* ---------- PIN ---------- */
+  function value() { return boxes.map(function (b) { return b.value; }).join(''); }
+
+  boxes.forEach(function (box, i) {
+    box.addEventListener('input', function () {
+      box.value = box.value.replace(/\D/g, '').slice(0, 1);
+      clearErr();
+      if (box.value && i < boxes.length - 1) boxes[i + 1].focus();
+      if (value().length === 6) submit();
+    });
+    box.addEventListener('keydown', function (e) {
+      if (e.key === 'Backspace' && !box.value && i > 0) {
+        boxes[i - 1].focus();
+        boxes[i - 1].value = '';
+        e.preventDefault();
+        clearErr();
+      }
+      if (e.key === 'ArrowLeft' && i > 0) { boxes[i - 1].focus(); e.preventDefault(); }
+      if (e.key === 'ArrowRight' && i < boxes.length - 1) { boxes[i + 1].focus(); e.preventDefault(); }
+    });
+    box.addEventListener('focus', function () { box.select(); });
+    box.addEventListener('paste', function (e) {
+      e.preventDefault();
+      var t = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '');
+      if (!t) return;
+      for (var k = 0; k < boxes.length; k++) boxes[k].value = t[k] || '';
+      clearErr();
+      boxes[Math.min(t.length, boxes.length - 1)].focus();
+      if (value().length === 6) submit();
+    });
+  });
+
+  function clearErr() { err.textContent = ''; pin.classList.remove('err'); }
+
+  function submit() {
+    if (value().length < 6) {
+      err.textContent = 'Bitte alle sechs Ziffern eingeben.';
+      pin.classList.add('err');
+      return;
+    }
+    if (value() !== CODE) {
+      err.textContent = 'Dieser Code stimmt nicht. Bitte prüfen Sie die SMS.';
+      pin.classList.add('err');
+      pin.classList.add('shake');
+      setTimeout(function () { pin.classList.remove('shake'); }, 400);
+      boxes[3].value = ''; boxes[4].value = ''; boxes[5].value = '';
+      boxes[3].focus();
+      return;
+    }
+    unlock();
+  }
+
+  document.getElementById('pinform').addEventListener('submit', function (e) {
+    e.preventDefault(); submit();
+  });
+  document.getElementById('resend').addEventListener('click', function () {
+    err.style.color = 'var(--muted)';
+    err.textContent = 'Neuer Code wurde an Ihre Mobilnummer gesendet.';
+    setTimeout(function () { err.style.color = ''; err.textContent = ''; }, 3200);
+  });
+
+  /* ---------- screens ---------- */
+  function unlock() {
+    gate.hidden = true;
+    status.hidden = false;
+    go(0, 0, true);
+    window.scrollTo(0, 0);
+  }
+
+  function lock() {
+    status.hidden = true;
+    gate.hidden = false;
+    boxes[3].value = ''; boxes[4].value = ''; boxes[5].value = '';
+    clearErr();
+    if (location.hash) history.replaceState(null, '', location.pathname);
+    boxes[3].focus();
+  }
+
+  function li(items) {
+    return items.map(function (t) { return '<li>' + t + '</li>'; }).join('');
+  }
+
+  function go(i, v, initial) {
+    idx = Math.max(0, Math.min(MW.length - 1, i));
+    var m = MW[idx];
+    vi = Math.max(0, Math.min(m.vars.length - 1, v || 0));
+    var s = m.vars[vi];
+
+    /* --- customer view --- */
+    mwtag.textContent = 'Meldeweg ' + m.nr + ' · ' + m.kurz;
+    headline.textContent = s.kunde;
+    sub.textContent = s.sub || '';
+
+    if (s.action) {
+      action.hidden = false;
+      action.disabled = false;
+      action._label = s.action;
+      action._done = s.done || 'Erledigt';
+      action.textContent = s.action;
+    } else {
+      action.hidden = true;
+    }
+
+    /* --- sub-status chips of this Meldeweg --- */
+    varsEl.innerHTML = '';
+    m.vars.forEach(function (vv, k) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.textContent = vv.code;
+      if (k === vi) b.className = 'on';
+      b.addEventListener('click', function () { go(idx, k); });
+      varsEl.appendChild(b);
+    });
+
+    /* --- rail --- */
+    railEls.forEach(function (el, k) {
+      el.className = 'r' + (k < idx ? ' done' : k === idx ? ' now' : '');
+      el.setAttribute('aria-current', k === idx ? 'step' : 'false');
+    });
+
+    /* --- technical panel --- */
+    document.getElementById('t-ereignisse').innerHTML = li(m.ereignisse);
+    document.getElementById('t-daten').innerHTML = li(m.daten);
+    document.getElementById('t-status').innerHTML = m.vars.map(function (vv, k) {
+      return '<span class="' + (k === 0 ? 'lead' : '') + '">' + vv.code + '</span>';
+    }).join('');
+    document.getElementById('t-zeit').textContent =
+      'Zeitpunkt: ' + m.zeitpunkt + '. Auslöser: ' + m.trigger +
+      '. Event: ' + m.event + '. Aus ' + m.aus + '.';
+    document.getElementById('t-beispiel').textContent = m.beispiel;
+    document.getElementById('t-payload').textContent = m.payload;
+    document.getElementById('t-note').textContent = m.note;
+
+    /* --- 3D view --- */
+    var callout = s.callout || m.callout;
+    var at = s.at || m.at;
+    if (callout) {
+      viewer.setAttribute('callout', callout);
+      viewer.setAttribute('callout-at', at);
+    } else {
+      viewer.removeAttribute('callout');
+      viewer.removeAttribute('callout-at');
+    }
+    viewer.setAttribute('auto', s.auto || m.auto);
+    viewer.classList.toggle('dim', !!s.dim);
+    if (viewer._az !== undefined) { viewer._az = m.az; viewer._dirty = true; }
+
+    prev.disabled = idx === 0;
+    next.textContent = idx === MW.length - 1 ? 'Von vorn ↺' : 'Weiter →';
+    count.textContent = m.nr + ' / ' + MW.length;
+
+    if (!initial) {
+      history.replaceState(null, '', '#mw' + m.nr + (vi ? '-' + (vi + 1) : ''));
+    }
+  }
+
+  prev.addEventListener('click', function () { go(idx - 1, 0); });
+  next.addEventListener('click', function () {
+    if (idx === MW.length - 1) lock(); else go(idx + 1, 0);
+  });
+  action.addEventListener('click', function () {
+    action.textContent = action._done;
+    action.disabled = true;
+    setTimeout(function () {
+      action.textContent = action._label;
+      action.disabled = false;
+    }, 3000);
+  });
+
+  techToggle.addEventListener('click', function () {
+    var open = tech.hidden;
+    tech.hidden = !open;
+    techToggle.setAttribute('aria-expanded', String(open));
+    techToggle.textContent = open ? 'Technische Sicht ausblenden' : 'Technische Sicht einblenden';
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (status.hidden) return;
+    if (e.target && /^(INPUT|TEXTAREA)$/.test(e.target.tagName)) return;
+    if (e.key === 'ArrowRight' && idx < MW.length - 1) go(idx + 1, 0);
+    if (e.key === 'ArrowLeft' && idx > 0) go(idx - 1, 0);
+    if (e.key === 'ArrowDown') { e.preventDefault(); go(idx, vi + 1); }
+    if (e.key === 'ArrowUp') { e.preventDefault(); go(idx, vi - 1); }
+  });
+
+  /* deep link: #mw6 opens Meldeweg 6, #mw6-2 its second sub-status.
+     Also honoured on hashchange, so pasting a link into an already
+     open tab jumps there instead of silently doing nothing. */
+  function fromHash(initial) {
+    var m0 = /^#mw([1-9])(?:-(\d))?$/.exec(location.hash);
+    if (!m0) return false;
+    gate.hidden = true; status.hidden = false;
+    go(parseInt(m0[1], 10) - 1, m0[2] ? parseInt(m0[2], 10) - 1 : 0, initial);
+    return true;
+  }
+  window.addEventListener('hashchange', function () { fromHash(true); });
+  if (!fromHash(true)) boxes[3].focus();
+})();
+</script>
+</body>
+</html>

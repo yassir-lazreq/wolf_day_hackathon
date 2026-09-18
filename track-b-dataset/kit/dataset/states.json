@@ -1,0 +1,1743 @@
+{
+ "note": "Workshop status vocabulary. Category and status names are the process vocabulary of the source system; every entry carrying a person, site or third-party name was removed.",
+ "state_categories": [
+  {
+   "id": 1,
+   "name": "🛒🔨Teile Status"
+  },
+  {
+   "id": 4,
+   "name": "Vorgangsstatus"
+  },
+  {
+   "id": 5,
+   "name": "📅Terminstatus"
+  },
+  {
+   "id": 23,
+   "name": "3.1.0 Werkstattstatus Mech."
+  },
+  {
+   "id": 61,
+   "name": "2.1.0 Karosserie Status"
+  },
+  {
+   "id": 64,
+   "name": "4.0.0 Teiledienst"
+  },
+  {
+   "id": 69,
+   "name": "2.3.0 Lack Status"
+  },
+  {
+   "id": 107,
+   "name": "8.1.0 Aufgaben Schadensteuerer"
+  }
+ ],
+ "states": [
+  {
+   "id": 9,
+   "name": "🏁 Abgeholt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 11,
+   "name": "👽💣Rückstand ohne Termin! Teilerückstand Fzg. bei uns",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 12,
+   "name": "👍 Fertig zur Abholung",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 13,
+   "name": "😢 Kunde nicht erschienen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 14,
+   "name": "🚛✅ Ausgeliefert",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 15,
+   "name": "🚧Wurde Totalschaden",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 16,
+   "name": "⚠️Warte auf Freigabe",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 17,
+   "name": "♻️In Bearbeitung",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 18,
+   "name": "☢️ Auftrag steht ☢️",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 25,
+   "name": "👇🚚 Holservice",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 26,
+   "name": "👆🚚 Bringservice",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 27,
+   "name": "✔️Termin bestätigt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 28,
+   "name": "❓Termin unsicher",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 33,
+   "name": "⚠️Schadensfeststellung",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 34,
+   "name": "🌗✔️Nachbestellung Termin bestätigt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 35,
+   "name": "☹️Absage Termin",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 36,
+   "name": "🏁🔜Abgeholt/Ausgeliefert - Folgetermin offen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 37,
+   "name": "🔜Neuer Folgetermin",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 38,
+   "name": "👍 🔜Fertig zur Abholung mit Folgetermin",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 39,
+   "name": "📞🔜✔️Abholbereit Folgetermin vereinbaren",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 40,
+   "name": "❌ Auftrag storniert",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 41,
+   "name": "🛑 Wartet auf Abholung durch Verwerter/Leasing/sonstige",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 44,
+   "name": "📆✔Termin vereinbart",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 78,
+   "name": "☢️Reklamation in Bearbeitung☢️",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": false
+  },
+  {
+   "id": 88,
+   "name": "🙂Vorgang angelegt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 89,
+   "name": "😪☎Kunde nicht erreicht",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 91,
+   "name": "🦊☎Haftung unklar Wiedervorlage",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 92,
+   "name": "😀↪🕧Kunde erreicht Meldet sich",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 106,
+   "name": "😊📲Kunde erreicht DSA/Bilder angefordert",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 121,
+   "name": "abgerechnet ! Auftrag erledigt abgeschlossen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 157,
+   "name": "🛒MECHANIK Teile vorab bestellen!",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 435,
+   "name": "🕋🤔Antwort Versicherer/GA/Leasing/Kunde fehlt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 436,
+   "name": "👋 Termin bitte vereinbaren /Teile/Freigabe/etc. eingetroffen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 495,
+   "name": "👽⚡🛒Teil im Rückstand Fzg. teilrepariert beim Kunden",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 530,
+   "name": "🚀Auftrag erteilt/Teile vorbestellt/Termin wenn Teile da",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 533,
+   "name": "📲✅Vorkalkulation erledigt bitte Termin vereinbaren",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 534,
+   "name": "📲🔰DSA/Bilder/GA/Infos erhalten bitte Kalkulieren",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 621,
+   "name": "🕐⚡🛒 Teil immer noch nicht geliefert Termin kann nicht gehalten werden",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 721,
+   "name": "🌝 Fzg angekauft",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": true,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1153,
+   "name": "👆🚚 Bringservice mit Folgetermin",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1164,
+   "name": "FZG in Fremdwerkstatt",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1291,
+   "name": "Fahrzeug reinholen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1422,
+   "name": "Fahrzeug abgeholt (/kommt nochmal)",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1480,
+   "name": "Hagel Termin vereinbaren !",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1559,
+   "name": "🔧📞 Mechanik Termin bitte vereinbaren /Teile, Freigabe eingetroffen",
+   "category_id": 4,
+   "category": "Vorgangsstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 2,
+   "name": "✔️Lieferung vollständig",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 3,
+   "name": "👽 Rückstand laufender Auftrag",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 100,
+   "name": "🥛Lieferung unvollständig",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 101,
+   "name": "🛑❌Rückstand ohne Termin!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 399,
+   "name": "🦼Liefertermin lang voraussichtlich bestätigt",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 406,
+   "name": "🔺🔺Nachbestellung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 434,
+   "name": "🏁👽 Fzg. noch im Haus Vollständig nach Rückstand",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 437,
+   "name": "📞🔜 👽 Rückstandsteil eingetroffen Nachtermin erforderlich",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 438,
+   "name": "🐌Sonderbestellung läuft lange Lieferzeit",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 476,
+   "name": "❓❓Nachhaken was mit dem Teil ist?",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 480,
+   "name": "↪Retoure angemeldet",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 485,
+   "name": "😫Teil defekt geliefert Reklamiert",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 486,
+   "name": "❌ Kann nicht zurück, berechnen?",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 487,
+   "name": "3️⃣3. x nachgehackt !!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 488,
+   "name": "2️⃣2. x nachgehackt!!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 489,
+   "name": "1️⃣1. x nachgehackt!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 532,
+   "name": "💥Auftrag Storniert was machen wir mit den Teilen?",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 597,
+   "name": "🔞Falsches Teil gekommen",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 598,
+   "name": "👁‍🗨Teile sollten da sein Nochmals Kontrolle",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 602,
+   "name": "💢Auftrag für Rückstandsteil Hauptauftrag abgerechnet!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 609,
+   "name": "💛 2. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 610,
+   "name": "🧡 3. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 611,
+   "name": "🤍 6. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 612,
+   "name": "💚 1. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 613,
+   "name": "🖤 5. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 614,
+   "name": "💙 4. Teillieferung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 648,
+   "name": "✅Teile konnten zurück gegeben werden",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 860,
+   "name": "📦Teile per Post an KD verschickt",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 861,
+   "name": "Termin vereinbaren trotz Rückstand",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 865,
+   "name": "🥽Unvollständig aber Auto reinholen wg. Muster",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1174,
+   "name": "Rückstand aus Vorbestellung",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1566,
+   "name": "ET bestellt - Nachkalkulation notwendig!",
+   "category_id": 1,
+   "category": "🛒🔨Teile Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 45,
+   "name": "🛒📅Vorab Teile bestellen Rep. Termin vereinbart",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 50,
+   "name": "🛒🚀Bitte Teile bestellen Fzg. im Haus",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 51,
+   "name": "🛑🔙Folgetermin vereinbaren",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 99,
+   "name": "🛒📣📣Teile Nachbestellen",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 107,
+   "name": "👁‍🗨📆Besichtigung  erledigt",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 108,
+   "name": "👁‍🗨❌Besichtigung erledigt keine Reparatur",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 109,
+   "name": "👁‍🗨🕘Besichtigung erl. Kd. meldet sich wg. Rep Wiedervorlage",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 110,
+   "name": "😠🧮KV Service ohne Reparatur",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 156,
+   "name": "🛒🎨Teile bestellen und vorab lackieren!",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 469,
+   "name": "⁉Besichtigung erl. Freigabe einholen und rep. Termin vereinbaren",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 470,
+   "name": "💥Unklar!!",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 496,
+   "name": "1️⃣Kunde informiert und 1. Zwischeninfo gegeben!",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 497,
+   "name": "3️⃣Kunde informiert und 1. Zwischeninfo gegeben!",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 498,
+   "name": "2️⃣Kunde informiert und 1. Zwischeninfo gegeben!",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 499,
+   "name": "💌Teil im Rückstand Kunden Zwischeninfo geben",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 501,
+   "name": "🛠📢 Reparaturtermin vereinbaren",
+   "category_id": 5,
+   "category": "📅Terminstatus",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 180,
+   "name": "📞KV erstellen und Freigabe einholen",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 182,
+   "name": "Rep Freigabe vom Kd/Leasing erhalten",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 184,
+   "name": "📑Garantie/Kulanzantrag stellen",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 186,
+   "name": "❌Garantie/Kulanz abgelehnt",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 235,
+   "name": "🚨Vermessen Kalibr. Räder",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 236,
+   "name": "❗Achse defekt",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 237,
+   "name": "✔ Achswerte iO.",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 238,
+   "name": "⚠️Warte auf Freigabe",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 239,
+   "name": "😃Auto fertig Rechnung schreiben",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 240,
+   "name": "🙏🛒Teile Nachbestellen",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 241,
+   "name": "😏🛒Mech Warte auf Teile",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 242,
+   "name": "📝Rechnung geschrieben",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 245,
+   "name": "🛒📢Teile Vorab bestellen/ Termin vereinbaren",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 391,
+   "name": "🧿✅Räder vorbereitet",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 392,
+   "name": "🧿⚙️Räder wuchten",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 393,
+   "name": "🧿🧿Räder vormontiert✅",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 394,
+   "name": "⚙️🧿✅Räder gewuchtet",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 395,
+   "name": "⚠️ 4 Reifen abgefahren ⚠️",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 396,
+   "name": "🚫 2 Reifen beschädigt 🚫",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 397,
+   "name": "⚠️2 Reifen abgefahren",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 398,
+   "name": "🚫 1 Reifen beschädigt",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 484,
+   "name": "🙏🧿Bitte Räder vorbereiten",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 785,
+   "name": "🆘Garantie/Kulanzantrag abrechnen/Rechnung an Kunden geschrieben",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 796,
+   "name": "🏃‍♀️Kollegenwerkstatt",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 918,
+   "name": "😶‍🌫️Statusbereinigung",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 926,
+   "name": "🛼Fzg. in Fremdwerkstatt!!",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1308,
+   "name": "Endkontrolle",
+   "category_id": 23,
+   "category": "3.1.0 Werkstattstatus Mech.",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 936,
+   "name": "🎨✅Lack fertig",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 937,
+   "name": "🎫 ✅Fertig für Vorbereitung und Lack",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 938,
+   "name": "🎫🚀 Karosserie neu",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 946,
+   "name": "Steht beim lackieren",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 947,
+   "name": "Zerlegen Schadenfeststellung / Karosserievermessung",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 948,
+   "name": "Teile fehlen Auto steht",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 949,
+   "name": "Vermessen und Kalibrieren",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 950,
+   "name": "Termin bestätigen",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 951,
+   "name": "Fertig zur Abholung/Auslieferung",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 952,
+   "name": "👨Spengler zugewiesen",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 953,
+   "name": "Eingang AufträgeTeile Vollständig",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 954,
+   "name": "Problemfall/Reklamation",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 955,
+   "name": "Wartet oder Folgetermin",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 956,
+   "name": "Teile noch nicht da",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 957,
+   "name": "Termin unsicher",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 958,
+   "name": "Lack Finish fertig",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 993,
+   "name": "Fertig zur Abholung bitte Folgetermin!!",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1010,
+   "name": "Reparaturerweiterung Absprache mit Serviceberater",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1139,
+   "name": "Abgeholt",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1562,
+   "name": "Teile fehlen länger",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1563,
+   "name": "(Karo) Fzg. abgeholt - Folgetermin offen",
+   "category_id": 61,
+   "category": "2.1.0 Karosserie Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1080,
+   "name": "Lack Neu",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1081,
+   "name": "Vorbereitung zugewiesen",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1082,
+   "name": "Box fertig",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1083,
+   "name": "Vorbereitung in Arbeit",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1084,
+   "name": "Box zugewiesen",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1085,
+   "name": "Fertig für Lackbox",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1086,
+   "name": "Im Zulauf für Box",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1087,
+   "name": "Lack fertig!",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1088,
+   "name": "Nochmal lackieren!!",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1099,
+   "name": "Multiboxen!",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1100,
+   "name": "Industrielackierung",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1149,
+   "name": "Teile mitmachen ohne Fahzeuge",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1150,
+   "name": "Neuteile mit Beilackierung",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1151,
+   "name": "Große Vorbereitungsarbeit",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1512,
+   "name": "Farbtonfindung",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1571,
+   "name": "Lackierung klein",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1572,
+   "name": "Teile ohne Fahrzeug",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1573,
+   "name": "Lackierung groß",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1576,
+   "name": "Multiboxen lackieren",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1585,
+   "name": "Heute",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1586,
+   "name": "Morgen",
+   "category_id": 69,
+   "category": "2.3.0 Lack Status",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 994,
+   "name": "Mechaniker neue Bestellung",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 996,
+   "name": "Vorbestellungen Termin nach Teileeingang",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 997,
+   "name": "Rückstand laufender Auftrag",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 998,
+   "name": "Reifenbestellung",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 999,
+   "name": "Kostenangebot Reifen",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1000,
+   "name": "Bestellt",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1001,
+   "name": "Rückstand ohne Termin",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1002,
+   "name": "Teillieferung laufender Auftrag",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1006,
+   "name": "Teil aus alter Bestellung eingetroffen Auto reinholen (Karosserie)",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1012,
+   "name": "Fertig für Abrechnung K und L kontrolliert",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1013,
+   "name": "Alle Aufträge dieses Autos vollständig!!",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1014,
+   "name": "K und L Auftrag fertig machen",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1027,
+   "name": "Nachfrage Dispo wg Teil",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1042,
+   "name": "Termin: bitte Teile vorbestellen!",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1131,
+   "name": "Erledigt und korrigiert!",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1147,
+   "name": "Nachbestellung für laufenden Auftrag!",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1170,
+   "name": "Gutschriften",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1172,
+   "name": "Gutschrift erhalten/Vorgang abgeschlossen",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1173,
+   "name": "Gutschrift erhalten - weiter zur Nachberechnung",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1175,
+   "name": "Rückstand aus Vorbestellung",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1200,
+   "name": "Teil aus Bestellung eingetroffen Auto reinholen (Mechanik)",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1220,
+   "name": "Auftrag storniert - prüfen (wg. Teile)",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1249,
+   "name": "ET Lieferung kpl. eingegangen - Dispo Termin vereinbaren",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1266,
+   "name": "Fzg reinholen nach Absprache",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1270,
+   "name": "Wunschtermin -> bestellt",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1449,
+   "name": "Teile für KV aufbuchen",
+   "category_id": 64,
+   "category": "4.0.0 Teiledienst",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1590,
+   "name": "Neuer Reparaturauftrag",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1591,
+   "name": "Technische Freigabe",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1592,
+   "name": "Auftragsstornierung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1593,
+   "name": "Auftragsannahmebestätigung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1594,
+   "name": "KV in Prüfung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1595,
+   "name": "KV/Gutachten in Prüfung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1596,
+   "name": "Erinnerung Auftragsannahme",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1597,
+   "name": "Neuer KV-Auftrag",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1598,
+   "name": "Gutachterbeauftragung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1599,
+   "name": "Stornierungsantrag abgelehnt",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1600,
+   "name": "SV-Rückfrage",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1601,
+   "name": "Ablehnung Rechnung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1602,
+   "name": "Ablehnung KV",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1604,
+   "name": "Wurde Kunde erreicht?",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1605,
+   "name": "Kostenvoranschlag offen",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1606,
+   "name": "Reparaturtermin offen",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1607,
+   "name": "Freigabe abgelehnt!!",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1608,
+   "name": "Rechnungsablehnung!",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1609,
+   "name": "Neue Info vom Schadensteuerer",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1615,
+   "name": "Nachfrage von Schadensteuerer",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1618,
+   "name": "Wiedereröffnung Auftrag",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1619,
+   "name": "Plausibilitätsprüfung",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1620,
+   "name": "Rechnungsfreigabe",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1621,
+   "name": "RKÜ erteilt",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  },
+  {
+   "id": 1624,
+   "name": "Reklamation",
+   "category_id": 107,
+   "category": "8.1.0 Aufgaben Schadensteuerer",
+   "is_done": false,
+   "used_in_dataset": true
+  }
+ ]
+}
