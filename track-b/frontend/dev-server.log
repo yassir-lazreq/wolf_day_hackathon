@@ -30,3 +30,72 @@
  ○ Compiling /dashboard/evaluation ...
  ✓ Compiled /dashboard/evaluation in 2.8s
  GET /dashboard/evaluation/ 200 in 3044ms
+ ○ Compiling / ...
+ ✓ Compiled / in 2.5s
+ GET / 200 in 2720ms
+ GET /dashboard/ 200 in 290ms
+ GET /dashboard/ 200 in 292ms
+ GET /dashboard/cases/ 200 in 241ms
+ GET /dashboard/cases/834726/ 200 in 298ms
+ GET /dashboard/ 200 in 260ms
+ GET /dashboard/cases/ 200 in 270ms
+ GET /dashboard/evaluation/ 200 in 225ms
+ GET /dashboard/ 200 in 414ms
+ ○ Compiling /dashboard/group ...
+ ✓ Compiled /dashboard/group in 3.7s
+ GET /dashboard/group/ 200 in 4036ms
+ GET /dashboard/group/ 200 in 786ms
+ ○ Compiling /dashboard/group/five ...
+ ✓ Compiled /dashboard/group/five in 3.3s
+ GET /dashboard/group/five/ 200 in 3607ms
+ GET /dashboard/group/five/ 200 in 368ms
+ ○ Compiling /dashboard/group/six ...
+ ✓ Compiled /dashboard/group/six in 3.6s
+ GET /dashboard/group/six/ 200 in 3909ms
+ ✓ Compiled in 159ms
+ GET /dashboard/ 200 in 1027ms
+ GET /dashboard/ 200 in 349ms
+ GET /dashboard/group/six/ 200 in 649ms
+ GET /dashboard/ 200 in 336ms
+ GET /dashboard/ 200 in 654ms
+ GET /dashboard/ 200 in 543ms
+ GET /dashboard/evaluation/ 200 in 204ms
+ GET /dashboard/ 200 in 323ms
+ GET /dashboard/cases/ 200 in 355ms
+ GET /dashboard/ 200 in 328ms
+ GET /dashboard/cases/ 200 in 336ms
+ GET /dashboard/cases/852719/ 200 in 379ms
+ GET /dashboard/cases/834726/ 200 in 363ms
+ GET /dashboard/ 200 in 370ms
+ GET /dashboard/cases/ 200 in 324ms
+ GET /dashboard/evaluation/ 200 in 344ms
+ GET / 200 in 328ms
+ GET /dashboard/ 200 in 347ms
+ GET /dashboard/ 200 in 338ms
+ GET /dashboard/ 200 in 634ms
+ ✓ Compiled in 3.4s
+ ✓ Compiled /dashboard in 161ms
+ GET /dashboard/ 200 in 2186ms
+ ✓ Compiled in 14ms
+ GET /dashboard/ 200 in 2285ms
+ ✓ Compiled in 58ms
+ GET /dashboard/ 200 in 821ms
+ ✓ Compiled /dashboard in 319ms
+ ✓ Compiled in 5.6s
+ GET /dashboard/ 200 in 2176ms
+ GET /dashboard/ 200 in 3024ms
+ GET /dashboard/ 200 in 677ms
+ GET /dashboard/ 200 in 855ms
+ ✓ Compiled in 52ms
+ GET /dashboard/ 200 in 699ms
+ GET /dashboard/ 200 in 564ms
+ ✓ Compiled /dashboard/cases in 228ms
+ GET /dashboard/cases/ 200 in 694ms
+ ✓ Compiled /dashboard/evaluation in 207ms
+ GET /dashboard/evaluation/ 200 in 685ms
+ GET /dashboard/cases/ 200 in 361ms
+ ✓ Compiled /dashboard/cases/[id] in 205ms
+ GET /dashboard/cases/854904/ 200 in 684ms
+ GET /dashboard/ 200 in 363ms
+ GET /dashboard/cases/ 200 in 354ms
+ GET /dashboard/cases/823107/ 200 in 332ms
