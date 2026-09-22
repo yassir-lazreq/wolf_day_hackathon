@@ -99,3 +99,14 @@
  GET /dashboard/ 200 in 363ms
  GET /dashboard/cases/ 200 in 354ms
  GET /dashboard/cases/823107/ 200 in 332ms
+ GET /dashboard/cases/ 200 in 2608ms
+ GET /dashboard/cases/898942/ 200 in 3153ms
+ GET / 200 in 708ms
+ GET /dashboard/ 200 in 422ms
+ GET /dashboard/ 200 in 379ms
+ GET /dashboard/cases/ 200 in 500ms
+ GET /dashboard/cases/854904/ 200 in 468ms
+ GET /dashboard/evaluation/ 200 in 771ms
+ GET /dashboard/cases/834742/ 200 in 1474ms
+ GET /dashboard/cases/ 200 in 488ms
+ GET /dashboard/evaluation/ 200 in 551ms
